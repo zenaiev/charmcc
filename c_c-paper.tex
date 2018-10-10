@@ -6,7 +6,6 @@
 \RequirePackage{mathptmx}      % use Times fonts if available on your TeX system
 \RequirePackage{flushend}
 \RequirePackage[numbers,sort&compress]{natbib}
-\RequirePackage[colorlinks,citecolor=blue,urlcolor=blue,linkcolor=blue]{hyperref}
 \RequirePackage{amsmath}
 \RequirePackage[british]{babel} 
 \RequirePackage{bm}              
@@ -35,7 +34,8 @@
 \newcommand{\fonll} {{FONLL-B}\xspace}
 \newcommand{\ffns} {{FFNS}\xspace}
 
-
+% Hyperref needs to be loaded last
+\RequirePackage[colorlinks,citecolor=blue,urlcolor=blue,linkcolor=blue]{hyperref}
 \begin{document}
 \sloppy
 
