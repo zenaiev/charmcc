@@ -107,7 +107,7 @@
 %\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\linenumbers
+\linenumbers
 
 \section{Introduction}
  The Deep-inelastic-scattering (DIS) experiments traditionally were an important probe of pQCD and used to precise determination of parton distribution functions (PDFs) at lepton-nucleon and nucleon-nucleon colliders. The various dedicated experiments such as HERA have been performed by colliding electron and positron with proton to investigate the nucleon structure. The broad kinematic region of  charge-current (CC) and Neutral-current (NC) DIS data at HERA base on negative transverse momentum squared $Q^2$ and Bjorken variable $x$ caused that these data play important role on modern determination of the parton distribution function \cite{Abdolmaleki:2018jln, Abramowicz:2015mha,Gao:2017yyd}.
@@ -167,6 +167,25 @@ Figures~\ref{fig:thpred-x}, \ref{fig:thpred-q2} and \ref{fig:thpred-y} show theo
     \caption{The theoretical predictions with their total uncertainties for charm CC production at the LHeC as a function of $y$ for different values of $Q^2$ calculated in the \ffns and \fonll schemes. The bottom panel display the theoretical predictions normalised to the nominal values of the \ffns predictions.}
     \label{fig:thpred-y}
 \end{figure}
+
+In Fig.~\ref{fig:thpred-q2-unc} the PDF and scale uncertainties of charm CC cross sections as a function of $Q^2$ for different values of \xbj calculated in the \ffns and \fonll schemes are shown. On average, in the \fonll scheme both the PDF and scale uncertainties exceed those in the \ffns scheme. Furthermore, Fig.~\ref{fig:thpred-q2-varmu} shows the impact of separate scale variations in the two schemes. In the \fonll scheme, the variation of $\mu_f$ has a much larger impact on the predictions than the variation of $\mu_r$, and thus it is dominant for the resulting scale uncertainties. {\bf [Valerio, could you please discuss more here?]} Only the simultaneous $\mu_f = \mu_r$ variation is available in the implementation of the \ffns scheme. 
+%Overall, the scale variations in the \fonll scheme appears to be larger than those in the \ffns scheme.
+
+\begin{figure*}
+    \centering
+    \centering{{\includegraphics[width=0.49\textwidth]{pics/plots-130918/plot-unc-q2-em-FFABM.pdf}}}
+    \centering{{\includegraphics[width=0.49\textwidth]{pics/plots-130918/plot-unc-q2-em-FONLL.pdf}}}
+    \caption{Relative theoretical uncertainties of charm CC predictions for the LHeC as a function of $Q^2$ for different values of \xbj calculated in the \ffns and \fonll schemes. The PDF and scale uncertainties are shown separately.}
+    \label{fig:thpred-q2-unc}
+\end{figure*}
+
+\begin{figure*}
+    \centering
+    \centering{{\includegraphics[width=0.49\textwidth]{pics/plots-130918/plot-varmu-q2-em-FFABM.pdf}}}
+    \centering{{\includegraphics[width=0.49\textwidth]{pics/plots-130918/plot-varmu-q2-em-FONLL.pdf}}}
+    \caption{The impact of separate scale variations on charm CC predictions for the LHeC as a function of $Q^2$ for different values of \xbj calculated in the \ffns and \fonll schemes.}
+    \label{fig:thpred-q2-varmu}
+\end{figure*}
 
 To explore whether the differences between the two sets of theoretical predictions appear due to the different treatment of heavy quarks or due to different PDF sets, theoretical calculations in the \ffns and \fonll schemes are repeated with PDF sets extracted from the fit to the HERA DIS data~\cite{Abramowicz:2015mha}. The fit settings follow the HERAPDF2.0 analysis~\cite{Abramowicz:2015mha}. 
 In this study, consistent conditions of the PDF extraction eliminate possible differences between the predictions for the LHeC arising from the dissimilarities of the \abmp and \nnpdf analysis. The obtained results are similar to the ones displayed in Figs.~\ref{fig:thpred-x}--\ref{fig:thpred-y} and prove that these differences arise due to the different treatment of heavy quarks in the two schemes.
@@ -333,6 +352,7 @@ Also the gluon PDF uncertainties are decreased. Furthermore, in the case of the 
     \label{fig:pdf-nnpdf-100000}
 \end{figure}
 
+\section{Discussion and summary}
 
 \begin{acknowledgements}
 %  We would like to thank Juan Rojo for a cri\-ti\-cal reading of this
@@ -345,8 +365,6 @@ Also the gluon PDF uncertainties are decreased. Furthermore, in the case of the 
 %  M.~B.\ is supported by the by the Marie Sk\l{}odowska Curie grant
 %  HiPPiE@LHC.
 \end{acknowledgements}
-
-\section{Discussion and summary}
 
 \bibliographystyle{spphys}
 \bibliography{c_cpaper}
