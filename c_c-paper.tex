@@ -32,7 +32,10 @@
 \newcommand{\lhapdf} {{\textsc{lhapdf}}\xspace}
 \newcommand{\xbj}{\ensuremath{x_{\text{Bj}}}\xspace}
 \newcommand{\fonll} {{FONLL-B}\xspace}
-\newcommand{\ffns} {{FFNS}\xspace}
+\newcommand{\ffns} {{FFNS A}\xspace}
+\newcommand{\ffnsb} {{FFNS B}\xspace}
+\newcommand{\ffthreea} {{HERAPDF2.0 FF3A}\xspace}
+\newcommand{\ffthreeb} {{HERAPDF2.0 FF3B}\xspace}
 
 % Hyperref needs to be loaded last
 \RequirePackage[colorlinks,citecolor=blue,urlcolor=blue,linkcolor=blue]{hyperref}
@@ -131,10 +134,12 @@ The charm CC process is defined in terms of the CKM matrix, namely the contribut
 The values of the CKM matrix elements $V_{cd} = 0.2252$ and $V_{cs} = 0.9734$ are used.
 Two heavy-flavour schemes are employed:
 \begin{itemize}
-  \item FFNS with $n_f = 3$ at NLO and \abmp NLO PDF set~\cite{Alekhin:2018pai},
+  \item \ffns with $n_f = 3$ at NLO and \abmp~\cite{Alekhin:2018pai} or \ffthreea~\cite{Abramowicz:2015mha} NLO PDF set,
+  \item \ffnsb with $n_f = 3$ at NLO and \abmp~\cite{Alekhin:2018pai} or \ffthreeb~\cite{Abramowicz:2015mha} NLO PDF set,
   \item FONLL-B with $n_f = 3$ and \nnpdf NLO PDF set~\cite{Ball:2017nwa}.
 \end{itemize}
-Both calculations are interfaced in \xfitter and available in the scheme using the running $\overline{MS}$ charm mass, $m_c(m_c)$.
+All calculations are interfaced in \xfitter and available in the scheme using the running $\overline{MS}$ charm mass, $m_c(m_c)$.
+{\bf [TODO: Achim, could you please describe here the differences between the \ffns and \ffnsb NLO calculations?]}
 The $\overline{MS}$ charm mass is set to $m_c(m_c) = 1.27$ GeV~\cite{pdg}, and $\alpha_s$ is set to the value used for the corresponding PDF extraction ($\alpha_s(M_Z) = 0.1191$ for \abmp, and $\alpha_s(M_Z) = 0.118$ for \nnpdf).
 The renormalisation and factorisation scales are chosen to be $\mu_\mathrm{r} = \mu_\mathrm{f} = Q^2$.
 
@@ -188,7 +193,35 @@ In Fig.~\ref{fig:thpred-q2-unc} the PDF and scale uncertainties of charm CC cros
 \end{figure*}
 
 To explore whether the differences between the two sets of theoretical predictions appear due to the different treatment of heavy quarks or due to different PDF sets, theoretical calculations in the \ffns and \fonll schemes are repeated with PDF sets extracted from the fit to the HERA DIS data~\cite{Abramowicz:2015mha}. The fit settings follow the HERAPDF2.0 analysis~\cite{Abramowicz:2015mha}. 
-In this study, consistent conditions of the PDF extraction eliminate possible differences between the predictions for the LHeC arising from the dissimilarities of the \abmp and \nnpdf analysis. The obtained results are similar to the ones displayed in Figs.~\ref{fig:thpred-x}--\ref{fig:thpred-y} and prove that these differences arise due to the different treatment of heavy quarks in the two schemes.
+In this study, consistent conditions of the PDF extraction eliminate possible differences between the predictions for the LHeC arising from the dissimilarities of the \abmp and \nnpdf analysis. The obtained results are displayed in Figs.~\ref{fig:thpred-fit-y}--\ref{fig:thpred-fit-x}. The differences between the \ffns and \fonll schemes in these predictions are similar to the ones displayed in Figs.~\ref{fig:thpred-x}--\ref{fig:thpred-y} and prove that these differences arise due to the different treatment of heavy quarks in the two schemes.
+
+Furthermore, the predictions in the \ffns and \ffnsb schemes calculated using the \ffthreea and \ffthreeb PDF sets are displayed in Figs.~\ref{fig:thpred-fit-y}--\ref{fig:thpred-fit-x}. Because of the similarities of the two HERAPDF2.0 PDF sets, the differences between the two sets of the predictions arise mainly due to the different treatment of heavy quarks in the two schemes. Remarkably, the differences between \ffns and \fonll predictions are similar to the ones between \ffns and \ffnsb, i.e.\ a larger part of these differences arise due to the different treatment of heavy quarks in $\alpha_s(\mu)$ running.
+{\bf [TODO: Achim, could you please comment more here?]}
+
+
+\begin{figure*}
+    \centering
+    \centering{{\includegraphics[width=0.49\textwidth]{pics/plots-191018/plot-fit-y-em.pdf}}}
+    \centering{{\includegraphics[width=0.49\textwidth]{pics/plots-191018/plot-FF3AB-y-em.pdf}}}
+    \caption{(left) The theoretical predictions for charm CC production at the LHeC as a function of $y$ for different values of $Q^2$ obtained in the fit to the HERA data in the \ffns and \fonll schemes. The bottom panel display the theoretical predictions normalised to the nominal values of the \ffns predictions. (right) Same predictions but obtained in the \ffns and \ffnsb schemes using the \ffthreea and \ffthreeb sets, respectively. The bottom panel display the theoretical predictions normalised to the nominal values of the \ffnsb predictions.}
+    \label{fig:thpred-fit-y}
+\end{figure*}
+
+\begin{figure*}
+    \centering
+    \centering{{\includegraphics[width=0.49\textwidth]{pics/plots-191018/plot-fit-q2-em.pdf}}}
+    \centering{{\includegraphics[width=0.49\textwidth]{pics/plots-191018/plot-FF3AB-q2-em.pdf}}}
+    \caption{(left) The theoretical predictions for charm CC production at the LHeC as a function of $Q^2$ for different values of $\xbj$. See Fig.~\ref{fig:thpred-fit-y} for further details.}
+    \label{fig:thpred-fit-q2}
+\end{figure*}
+
+\begin{figure*}
+    \centering
+    \centering{{\includegraphics[width=0.49\textwidth]{pics/plots-191018/plot-fit-x-em.pdf}}}
+    \centering{{\includegraphics[width=0.49\textwidth]{pics/plots-191018/plot-FF3AB-x-em.pdf}}}
+    \caption{(left) The theoretical predictions for charm CC production at the LHeC as a function of $Q^2$ for different values of $\xbj$. See Fig.~\ref{fig:thpred-fit-y} for further details.}
+    \label{fig:thpred-fit-x}
+\end{figure*}
 
 Furthermore, to investigate the impact of the NNLO corrections available at $Q \gg m_c$ for the FFNS calculation, approximate NNLO predictions are obtained using the \abmp NNLO PDF set~\cite{Alekhin:2017kpj}. The results for the cross sections as a function of $Q^2$ for difference values of \xbj are shown in Fig.~\ref{fig:thpred-q2-nnlo}, where they are compared to the NLO FFNS predictions from Fig.~\ref{fig:thpred-q2}. The NNLO corrections do not exceed $10\%$ and thus do not cover the differences between the \ffns and \fonll theoretical predictions. Similar results are observed for cross sections as functions of other kinematic variables.
 
