@@ -128,18 +128,63 @@ This paper organized as follow, in the Sec. ....
 \section{Theoretical predictions for charm CC production at LHeC}
 \label{sec:thpred}
 
-Theoretical predictions are calculated for charm CC production in $ep$ collisions at the LHeC at centre-of-mass energy $\sqrt{s} = 1.3$ TeV. The predictions are provided for unpolarised beams in the kinematic range $100 < Q^2 < 100000$~GeV$^2$, $0.0001 < \xbj < 0.25$. They are calculated as reduced cross sections at different $Q^2$, \xbj and $y$ points.
+Theoretical predictions are calculated for charm CC production in $ep$ collisions at the LHeC at centre-of-mass energy $\sqrt{s} = 1.3$ TeV, using a variety 
+of heavy flavour schemss. The predictions are provided for unpolarised beams in the kinematic range $100 < Q^2 < 100000$~GeV$^2$, $0.0001 < \xbj < 0.25$. They are calculated as reduced cross sections at different $Q^2$, \xbj and $y$ points.
 
-The charm CC process is defined in terms of the CKM matrix, namely the contributions with $V_{cd}$ and $V_{cs}$ are included. 
-The values of the CKM matrix elements $V_{cd} = 0.2252$ and $V_{cs} = 0.9734$ are used.
-Two heavy-flavour schemes are employed:
+The charm CC process directly depends on the CKM matrix. Here, the CKM matrix 
+elements $V_{cd}$ and $V_{cs}$ are of particular interest. The values used are 
+$V_{cd} = 0.2252$ and $V_{cs} = 0.9734$.
+Three different heavy-flavour schemes are employed, all including a full 
+treatment of charm mass effects up to NLO\footnote{The $O(\alpha_s^2)$ 
+corrections quoted earlier are not yet avaialble in the context of the xFitter 
+setup.}, i.e. $O(\alpha_s)$, and described here for the particular application 
+to charged current electron-proton reactions. 
+The standard fixed flavour number scheme (FFNS A) 
+uses three light flavours in both PDFs and $\alpha_s$ evolution, while heavy 
+flavours (here: charm) are produced exclusively in the matrix element part of 
+the calculation. This scheme has been used e.g. for the PDF determinations 
+and cross-section predictions of the ABM(P) group [cite], as well as in the 
+FF3A variant of HERAPDF [cite]. The ``B'' variant of the 
+fixed-order-next-to-leading-log scheme (FONLL B) combines the NLO 
+$(O \alpha_s)$ massive matrix elements of the fixed flavour scheme with the 
+NLO $(O \alpha_s)$ massless treatment of the zero-mass variable flavour number 
+scheme (ZM-VFNS), allowing the number of active flavours (3, 4, or 5) to vary 
+with scale, and all-order next-to-leading log resummation of (massless) terms 
+beyond NLO. 
+It thus explicitly includes charm and beauty both in the PDFs and in the 
+evolution of the strong coupling constant.
+Whenever terms would be double-counted in the merger of the two schemes
+the massless terms are eliminated in favour of retaining the massive terms.  
+The FONLL is heavily used by the NNPDF group [cite] and implemented in 
+xFitter through the APFEL package [cite]. 
+Finally a variant of the fixed flavour number scheme known as the 'mixed' 
+scheme [cite] or FFNS B [cite charm review] is used. In this scheme, the 
+number of active flavours is still fixed (here: to 3) in the PDFs, relying 
+exclusively on $O(\alpha_s)$ fully massive matrix elements for charm 
+production, while the number of flavours is allowed to vary in the virtual 
+corrections of the alphas evolution. 
+Corrections to this evolution involving heavy flavour loops are thus
+included and resummed to all orders, as in the VFNS schemes, while no 
+resummation is applied to other higher order corrections. This procedure 
+will catch a large fraction of the ``large logs'' which might spoil the 
+fixed-flavour scheme convergence at very high scales, and is possible since the 
+masses of the charm and beauty quarks provide natural cutoffs for infrared 
+and collinear divergences. This scheme was used in the HERAPDF FF3B variant
+[cite] and in applications of the HVQDIS program [HVQDIS, charm review]. 
+In general the transition from the FFNS A to the
+FFNS B scheme requires a readjustement of the treatment of matrix elements 
+involving heavy flavour loops, but in the specific case of charged current 
+no such loops occur up to NLO (at NNLO they will), such that the same 
+matrix elements can be used for both schemes, and here the only difference is 
+the alphas evolution.      
+  
+In summary, the schemes used are
 \begin{itemize}
   \item \ffns with $n_f = 3$ at NLO and \abmp~\cite{Alekhin:2018pai} or \ffthreea~\cite{Abramowicz:2015mha} NLO PDF set,
   \item \ffnsb with $n_f = 3$ at NLO and \abmp~\cite{Alekhin:2018pai} or \ffthreeb~\cite{Abramowicz:2015mha} NLO PDF set,
   \item FONLL-B with $n_f = 3$ and \nnpdf NLO PDF set~\cite{Ball:2017nwa}.
 \end{itemize}
 All calculations are interfaced in \xfitter and available in the scheme using the running $\overline{MS}$ charm mass, $m_c(m_c)$.
-{\bf [TODO: Achim, could you please describe here the differences between the \ffns and \ffnsb NLO calculations?]}
 The $\overline{MS}$ charm mass is set to $m_c(m_c) = 1.27$ GeV~\cite{pdg}, and $\alpha_s$ is set to the value used for the corresponding PDF extraction ($\alpha_s(M_Z) = 0.1191$ for \abmp, and $\alpha_s(M_Z) = 0.118$ for \nnpdf).
 The renormalisation and factorisation scales are chosen to be $\mu_\mathrm{r} = \mu_\mathrm{f} = Q^2$.
 
