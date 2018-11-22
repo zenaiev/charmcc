@@ -143,8 +143,9 @@ The standard fixed flavour number scheme (FFNS A)
 uses three light flavours in both PDFs and $\alpha_s$ evolution, while heavy 
 flavours (here: charm) are produced exclusively in the matrix element part of 
 the calculation. This scheme has been used e.g. for the PDF determinations 
-and cross-section predictions of the ABM(P) group [cite], as well as in the 
-FF3A variant of HERAPDF [cite]. The ``B'' variant of the 
+and cross-section predictions of the ABM(P) group~\cite{Alekhin:2017kpj,Alekhin:2018pai}, as well as in the 
+FF3A variant of HERAPDF~\cite{Abramowicz:2015mha}, and implemented in 
+xFitter through the OPENQCDRAD package~\cite{openqcdrad}. The ``B'' variant of the 
 fixed-order-next-to-leading-log scheme (FONLL B) combines the NLO 
 $(O \alpha_s)$ massive matrix elements of the fixed flavour scheme with the 
 NLO $(O \alpha_s)$ massless treatment of the zero-mass variable flavour number 
@@ -153,12 +154,12 @@ with scale, and all-order next-to-leading log resummation of (massless) terms
 beyond NLO. 
 It thus explicitly includes charm and beauty both in the PDFs and in the 
 evolution of the strong coupling constant.
-Whenever terms would be double-counted in the merger of the two schemes
+Whenever terms would be double-counted in the merger of the two schemes 
 the massless terms are eliminated in favour of retaining the massive terms.  
-The FONLL is heavily used by the NNPDF group [cite] and implemented in 
-xFitter through the APFEL package [cite]. 
-Finally a variant of the fixed flavour number scheme known as the 'mixed' 
-scheme [cite] or FFNS B [cite charm review] is used. In this scheme, the 
+The FONLL is heavily used by the NNPDF group [Ball:2017nwa] and implemented in 
+xFitter through the APFEL package~\cite{Bertone:2013vaa}. 
+Finally a variant of the fixed flavour number scheme known as the `mixed' 
+scheme or \ffnsb~\cite{Behnke:2015qja} is used. In this scheme, the 
 number of active flavours is still fixed (here: to 3) in the PDFs, relying 
 exclusively on $O(\alpha_s)$ fully massive matrix elements for charm 
 production, while the number of flavours is allowed to vary in the virtual 
@@ -169,14 +170,13 @@ resummation is applied to other higher order corrections. This procedure
 will catch a large fraction of the ``large logs'' which might spoil the 
 fixed-flavour scheme convergence at very high scales, and is possible since the 
 masses of the charm and beauty quarks provide natural cutoffs for infrared 
-and collinear divergences. This scheme was used in the HERAPDF FF3B variant
-[cite] and in applications of the HVQDIS program [HVQDIS, charm review]. 
+and collinear divergences. This scheme was used in the HERAPDF FF3B variant~\cite{Abramowicz:2015mha} and in applications of the HVQDIS program~\cite{,Behnke:2015qja}. 
 In general the transition from the FFNS A to the
 FFNS B scheme requires a readjustement of the treatment of matrix elements 
 involving heavy flavour loops, but in the specific case of charged current 
 no such loops occur up to NLO (at NNLO they will), such that the same 
 matrix elements can be used for both schemes, and here the only difference is 
-the alphas evolution.      
+the alphas evolution.
   
 In summary, the schemes used are
 \begin{itemize}
