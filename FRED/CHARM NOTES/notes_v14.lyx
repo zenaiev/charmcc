@@ -1,0 +1,1920 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass revtex4-1
+\options nofootinbib
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 2
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+\start_of_appendix
+Defining 
+\begin_inset Formula $F_{2}^{charm}$
+\end_inset
+
+ Beyond Lead Order
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement t
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename ../../pics/fred/cancellation.pdf
+	width 45text%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\color blue
+ We may switch to charm; I took from our heavy flavor paper.
+
+\color inherit
+ The LO contributions correspond to the heavy quark (
+\begin_inset Formula $Q$
+\end_inset
+
+) initiated 
+\begin_inset Formula $f_{Q}$
+\end_inset
+
+, and the SUB to 
+\begin_inset Formula $\tilde{f}_{Q}$
+\end_inset
+
+.
+ The cancellation (LO-SUB) is quite precise.
+ If we were to remove LO or SUB, our TOT result would have anomalous contributio
+ns (and correspondingly anomalous 
+\begin_inset Formula $\mu$
+\end_inset
+
+-dependence) in the region 
+\begin_inset Formula $\mu\sim m_{Q}$
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:LoSub"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename ../../pics/fred/acot_fig.pdf
+	lyxscale 200
+	width 45text%
+	clip
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Calculation of 
+\begin_inset Formula $F_{2}^{c}$
+\end_inset
+
+ in the VFNS illustrating the cancellation of the LO (
+\begin_inset Formula $\bar{c}W^{+}\to\bar{s}$
+\end_inset
+
+) and the SUB (
+\begin_inset Formula $g\to\bar{c}\otimes\bar{c}W^{+}\to\bar{s}$
+\end_inset
+
+) contributions in the region 
+\begin_inset Formula $\mu\sim m_{c}$
+\end_inset
+
+.
+ 
+\shape italic
+[Placeholder figure] 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:acot"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement t
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename ../../pics/fred/feyngraph.pdf
+	width 45text%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\color blue
+draft in progress: 
+\color inherit
+ A higher order Feynman graph illustrating the difficulty in defining an
+ 
+\begin_inset Quotes eld
+\end_inset
+
+inclusive
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $F_{2}^{charm}$
+\end_inset
+
+.
+ If we have a light quark (
+\begin_inset Formula $q$
+\end_inset
+
+) scattering from a vector boson (
+\begin_inset Formula $V$
+\end_inset
+
+), at higher orders we could have a charm–anti-charm loop.
+ If we cut the amplitude with cut 
+\begin_inset Quotes eld
+\end_inset
+
+A
+\begin_inset Quotes erd
+\end_inset
+
+ we have charm in the final state and this must be included in 
+\begin_inset Formula $F_{2}^{charm}$
+\end_inset
+
+.
+ If we cut the amplitude with cut 
+\begin_inset Quotes eld
+\end_inset
+
+B
+\begin_inset Quotes erd
+\end_inset
+
+ there is no charm in the final state, but this process is required to satisfy
+ IR divergences as governed by the Kinoshita-Lee-Nauenberg (KLN) theorem.
+ Also note, since this diagram contributes to the beta function, this highlights
+ the difficulty of using an 
+\begin_inset Formula $\alpha_{S}$
+\end_inset
+
+ and hard scattering 
+\begin_inset Formula $\hat{\sigma}$
+\end_inset
+
+ with differing 
+\begin_inset Formula $N_{eff}$
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:bubble"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide true
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename ../../pics/fred/tchannel.pdf
+	width 80text%
+	clip
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gluon NLO 
+\begin_inset Formula $t$
+\end_inset
+
+-channel processes 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:tchannel"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide true
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename ../../pics/fred/uchannel.pdf
+	width 80text%
+	clip
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gluon NLO 
+\begin_inset Formula $u$
+\end_inset
+
+-channel processes 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:uchannel"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The charged current DIS charm production process involves some interesting
+ issues that we will explore here in detail.
+ Because it is a flavor-changing process, two quark masses are involved
+ 
+\begin_inset Formula $\{m_{s},m_{c}\}$
+\end_inset
+
+; thus, we can examine the mass singularities of the 
+\begin_inset Formula $t$
+\end_inset
+
+-channel and 
+\begin_inset Formula $u$
+\end_inset
+
+-channel separately.
+ This separation is particularly useful to understand how the individual
+ mass singularities are addressed, and how FFNS and VFNS organize the contributi
+ons to the total structure function.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+
+\color blue
+[FRED: REVISED AFTER DISCUSSION]
+\end_layout
+
+\begin_layout Standard
+To be specific, we will consider charged-current DIS production of a charm
+ quark.
+ We first compute this in a 3-flavor (FFNS) scheme where {u,d,s} are light
+ 
+\begin_inset Quotes eld
+\end_inset
+
+active
+\begin_inset Quotes erd
+\end_inset
+
+ partons in the proton, and charm is considered an external 
+\begin_inset Quotes eld
+\end_inset
+
+heavy
+\begin_inset Quotes erd
+\end_inset
+
+ particle.
+ This can be implemented in the ACOT scheme for example by using a CWZ renormali
+zation where the light 
+\begin_inset Quotes eld
+\end_inset
+
+active
+\begin_inset Quotes erd
+\end_inset
+
+ partons are renormalized with normal 
+\begin_inset Formula $\overline{MS}$
+\end_inset
+
+, and the 
+\begin_inset Quotes eld
+\end_inset
+
+heavy
+\begin_inset Quotes erd
+\end_inset
+
+ quarks use a zero-momentum subtraction.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+
+\color blue
+[FFNS 3-FLAVORS]
+\end_layout
+
+\begin_layout Standard
+In this scheme, the LO process is 
+\begin_inset Formula $sW^{+}\to c$
+\end_inset
+
+ as illustrated in Fig.***.
+ 
+\end_layout
+
+\begin_layout Standard
+At NLO, we then include 
+\begin_inset Formula $gW^{+}\to c\bar{s}$
+\end_inset
+
+ which has both t-channel and u-channel contributions.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Note, there are also corresponding quark-initiated processes; we will focus
+ on the gluon-initiated processes as this is sufficient to illustrate our
+ points.
+ 
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+
+\color blue
+[t-channel]
+\end_layout
+
+\begin_layout Standard
+The t-channel process has an intermediate 
+\begin_inset Formula $s$
+\end_inset
+
+-quark exchanged, and if we use the strange quark mass 
+\begin_inset Formula $m_{s}$
+\end_inset
+
+ to regulate the singularities, this will yield a contribution proportional
+ to 
+\begin_inset Formula $\ln(\mu/m_{s})$
+\end_inset
+
+.
+ This mass singularity arises from the region of phase space where the exchanged
+ 
+\begin_inset Formula $s$
+\end_inset
+
+-quark becomes collinear and close to the mass-shell; that is, when the
+ phase space of the 
+\begin_inset Formula $gW^{+}\to c\bar{s}$
+\end_inset
+
+ process begins to overlap with that of the 
+\begin_inset Formula $sW^{+}\to c$
+\end_inset
+
+ process.
+ This 
+\begin_inset Quotes eld
+\end_inset
+
+double counting
+\begin_inset Quotes erd
+\end_inset
+
+ is resolved by a subtraction (SUB) counter-term (which is formally part
+ of the NLO contribution) given by 
+\begin_inset Formula $f_{g}\otimes{\cal P}{}_{g\to s}\otimes\sigma_{sW^{+}\to c}$
+\end_inset
+
+, and this ensures that the NLO calculation is well-defined for 
+\begin_inset Formula $(\mu/m_{s})\to\infty$
+\end_inset
+
+.
+ Here, 
+\begin_inset Formula ${\cal P}{}_{g\to s}$
+\end_inset
+
+ is the perturbative splitting of the gluon into an 
+\begin_inset Formula $s\bar{s}$
+\end_inset
+
+ pair; the leading term is proportional to 
+\begin_inset Formula $\frac{\alpha_{S}}{2\pi}P_{g\to q}^{(1)}\ln(\mu^{2}/m_{c}^{2})$
+\end_inset
+
+ where 
+\begin_inset Formula $P_{g\to q}^{(1)}$
+\end_inset
+
+ is the 
+\begin_inset Formula $\alpha_{S}$
+\end_inset
+
+ DGLAP splitting kernel for 
+\begin_inset Formula $g\to q$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+
+\color blue
+[u-channel]
+\end_layout
+
+\begin_layout Standard
+We next examine the u-channel contribution to the 
+\begin_inset Formula $gW^{+}\to c\bar{s}$
+\end_inset
+
+ process.
+ This has an intermediate 
+\begin_inset Formula $c$
+\end_inset
+
+-quark exchanged, and is proportional to 
+\begin_inset Formula $\ln(\mu/m_{c})$
+\end_inset
+
+.
+ In the FFNS where the charm is a 
+\begin_inset Quotes eld
+\end_inset
+
+heavy
+\begin_inset Quotes erd
+\end_inset
+
+ non-parton, there is no counter-term for this graph, and the resulting
+ observables will retain the 
+\begin_inset Formula $\ln(\mu/m_{c})$
+\end_inset
+
+ dependence.
+ In principle, this means when we go to large 
+\begin_inset Formula $\mu$
+\end_inset
+
+-scales, these terms will begin to degrade the convergence of our perturbation
+ series.
+ In practice, while this degradation only grows logarithmically, at large
+ scales (such as at the LHC) we do find it convenient to treat the charm
+ on an equal-footing as the {u,d,s} partons.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+
+\color blue
+[VFNS 4-FLAVORS]
+\end_layout
+
+\begin_layout Standard
+We now turn to the 4-flavor (VFNS) scheme where we include the charm quark
+ as an 
+\begin_inset Quotes eld
+\end_inset
+
+active
+\begin_inset Quotes erd
+\end_inset
+
+ parton.
+ 
+\end_layout
+
+\begin_layout Standard
+In this case there is a u-channel counter-term given by 
+\begin_inset Formula $f_{g}\otimes{\cal P}{}_{g\to\bar{c}}\otimes\sigma_{\bar{c}W^{+}\to\bar{s}}$
+\end_inset
+
+ which will cancel the 
+\begin_inset Formula $\ln(\mu/m_{c})$
+\end_inset
+
+ dependence and ensures that the NLO calculation is well-defined for 
+\begin_inset Formula $(\mu/m_{c})\to\infty$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+What is less obvious is that we also must include the LO process 
+\begin_inset Formula $\bar{c}W^{+}\to\bar{s}$
+\end_inset
+
+.
+ There are two ways we can understand why this is necessary.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+
+\color blue
+[EXPLANATION #1: LO-SUB MATCHING AT THRESHOLD]
+\end_layout
+
+\begin_layout Standard
+Recall that in the t-channel case, the subtraction term removed the double
+ counting between the LO 
+\begin_inset Formula $sW^{+}\to c$
+\end_inset
+
+ and NLO 
+\begin_inset Formula $gW^{+}\to c\bar{s}$
+\end_inset
+
+ processes.
+ 
+\end_layout
+
+\begin_layout Standard
+The u-channel case is analogous in that this subtraction term removes the
+ double counting between the LO 
+\begin_inset Formula $\bar{c}W^{+}\to\bar{s}$
+\end_inset
+
+ and NLO 
+\begin_inset Formula $gW^{+}\to c\bar{s}$
+\end_inset
+
+ processes; both contributions are required to ensure the resulting cross
+ section is insensitive to the 
+\begin_inset Formula $\mu$
+\end_inset
+
+-scale.
+ 
+\end_layout
+
+\begin_layout Standard
+This is apparent in Fig.*** where we plot the individual terms versus the
+ 
+\begin_inset Formula $\mu$
+\end_inset
+
+ scale.
+ In the region of 
+\begin_inset Formula $\mu\sim m_{c}$
+\end_inset
+
+, the charm PDF 
+\begin_inset Formula $f_{c}$
+\end_inset
+
+ (and hence, the LO contribution) rises very quickly as it is driven by
+ the very large gluon, and coupled with a large 
+\begin_inset Formula $\alpha_{S}(\mu)$
+\end_inset
+
+.
+ The SUB subtraction also rises quickly as this is driven by the logarithmic
+ term 
+\begin_inset Formula $\ln(\mu^{2}/m_{c}^{2})$
+\end_inset
+
+.
+ The difference 
+\begin_inset Formula $(LO-SUB)$
+\end_inset
+
+ is the physical contribution to the total 
+\begin_inset Formula $(TOT=LO+NLO-SUB)$
+\end_inset
+
+, and it is this combination which is smooth across the 
+\begin_inset Quotes eld
+\end_inset
+
+turn on
+\begin_inset Quotes erd
+\end_inset
+
+ of the charm PDF.
+ We now see that if we neglect the LO (
+\begin_inset Formula $\bar{c}W^{+}\to\bar{s}$
+\end_inset
+
+) we loose the cancellation between LO and SUB in the region 
+\begin_inset Formula $\mu\sim m_{c}$
+\end_inset
+
+, and our structure function (or cross section) would have an anomalous
+ shift at the arbitrarily location where we turn on the charm PDF.
+ 
+\end_layout
+
+\begin_layout Standard
+As we vary the unphysical renormalization scale 
+\begin_inset Formula $\mu$
+\end_inset
+
+, we are simply shifting contribution between the various terms.
+ While the individual 
+\begin_inset Formula $\{LO,NLO,SUB\}$
+\end_inset
+
+ terms exhibit a large 
+\begin_inset Formula $\mu$
+\end_inset
+
+-dependence, the combination 
+\begin_inset Formula $(TOT)$
+\end_inset
+
+ which represents the physical observable is relatively insensitive to 
+\begin_inset Formula $\mu$
+\end_inset
+
+ (up to higher orders).
+\end_layout
+
+\begin_layout Subsubsection*
+
+\color blue
+[EXPLANATION #2: THERE REALLY IS CHARM IN THE FINAL STATE]
+\end_layout
+
+\begin_layout Standard
+A second way to understand why the LO process 
+\begin_inset Formula $\bar{c}W^{+}\to\bar{s}$
+\end_inset
+
+ is required is to consider the regions of phase space covered by each of
+ the sub-processes.
+ The singularity of the u-channel NLO 
+\begin_inset Formula $gW^{+}\to c\bar{s}$
+\end_inset
+
+ processes arises the phase space region when the intermediate 
+\begin_inset Formula $\bar{c}$
+\end_inset
+
+ quark becomes collinear and close to the mass-shell.
+ This is precisely the phase space region of the LO process 
+\begin_inset Formula $\bar{c}W^{+}\to\bar{s}$
+\end_inset
+
+ where the partonic 
+\begin_inset Formula $\bar{c}$
+\end_inset
+
+-quark is collinear to the hadron.
+ The SUB term then removes the 
+\begin_inset Quotes eld
+\end_inset
+
+double counting
+\begin_inset Quotes erd
+\end_inset
+
+ between the LO and NLO contributions; hence, all three contributions 
+\begin_inset Formula $\{LO,NLO,SUB\}$
+\end_inset
+
+ are necessary to cover the full phase space.
+ 
+\end_layout
+
+\begin_layout Standard
+x
+\end_layout
+
+\begin_layout Standard
+Note the combination of the LO and SUB terms ensure a minimal 
+\begin_inset Formula $\mu$
+\end_inset
+
+-variation at low 
+\begin_inset Formula $\mu$
+\end_inset
+
+ scales, and the combination of SUB and NLO ensure the mass singularities
+ are canceled at high 
+\begin_inset Formula $\mu$
+\end_inset
+
+ scales.
+\end_layout
+
+\begin_layout Standard
+x
+\end_layout
+
+\begin_layout Standard
+Furthermore, note that for both the LO and SUB contributions, the charm
+ quark is collinear with the incoming hadron, and thus exits in the hadron
+ remnants.
+ While this may be experimentally unobservable, because we are asking for
+ an 
+\begin_inset Quotes eld
+\end_inset
+
+inclusive
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $F_{2}^{c}$
+\end_inset
+
+, these contributions cannot be simply ignored.
+ We'll now discuss in further detail.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+
+\color blue
+[PROBLEMS DEFINING AN 
+\begin_inset Quotes eld
+\end_inset
+
+INCLUSIVE
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $F_{2}^{c}$
+\end_inset
+
+]
+\end_layout
+
+\begin_layout Standard
+The u-channel LO 
+\begin_inset Formula $\bar{c}W^{+}\to\bar{s}$
+\end_inset
+
+ process foreshadows difficulties we encounter if we try and extend the
+ concept of a truly 
+\begin_inset Quotes eld
+\end_inset
+
+inclusive
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $F_{2}^{c}$
+\end_inset
+
+ to higher orders.
+ We note that in Ref.***, Collins extended the proof of factorization to
+ include heavy quarks such as charm and bottom
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Additionally, he specifically addressed (in Sec.***) the case of multiple
+ heavy quarks which can allow for both charm and bottom in a unified framework;
+ in contrast to some of the literature, there is no difficulty including
+ multiple heavy quarks.
+ 
+\end_layout
+
+\end_inset
+
+ for an inclusive structure function 
+\begin_inset Formula $F_{2}$
+\end_inset
+
+; there is no proof for an 
+\begin_inset Quotes eld
+\end_inset
+
+inclusive
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $F_{2}^{c}$
+\end_inset
+
+ as this is ill-defined.
+ What is measured experimentally is a differential cross section for producing
+ a charm quark in the final state in a fiducial region; as we go to higher
+ orders, we must be careful how we define this quantity so that it is singularit
+y-free and 
+\begin_inset Formula $\mu$
+\end_inset
+
+-independent.
+ 
+\end_layout
+
+\begin_layout Standard
+x
+\end_layout
+
+\begin_layout Standard
+To characterize the problems in constructing an 
+\begin_inset Formula $F_{2}^{c}$
+\end_inset
+
+, we can imagine starting from the (well defined) inclusive 
+\begin_inset Formula $F_{2}$
+\end_inset
+
+, and then dividing the contributions into two sets: one for 
+\begin_inset Formula $F_{2}^{c}$
+\end_inset
+
+ for the 
+\begin_inset Quotes eld
+\end_inset
+
+heavy
+\begin_inset Quotes erd
+\end_inset
+
+ charm quark, and the rest into 
+\begin_inset Formula $F_{2}^{u,d,s}$
+\end_inset
+
+ for the 
+\begin_inset Quotes eld
+\end_inset
+
+light
+\begin_inset Quotes erd
+\end_inset
+
+ quarks.
+ We will show this division cannot be performed unambiguously.
+ 
+\end_layout
+
+\begin_layout Standard
+x
+\end_layout
+
+\begin_layout Standard
+The u-channel LO 
+\begin_inset Formula $\bar{c}W^{+}\to\bar{s}$
+\end_inset
+
+ process does not have any 
+\begin_inset Quotes eld
+\end_inset
+
+apparent
+\begin_inset Quotes erd
+\end_inset
+
+ charm quark in the final state, but this contribution is essential to balance
+ with the SUB process 
+\begin_inset Formula $f_{g}\otimes{\cal P}{}_{g\to\bar{c}}\otimes\sigma_{\bar{c}W^{+}\to\bar{s}}$
+\end_inset
+
+.
+ Note that for the SUB process, the charm quark arises from a gluon splitting
+ into a collinear 
+\begin_inset Formula $c\bar{c}$
+\end_inset
+
+ pair which is then part of the hadron remnants.
+ For the LO process, presumably our 
+\begin_inset Formula $\bar{c}$
+\end_inset
+
+ quark also came from a gluon splitting into a collinear 
+\begin_inset Formula $c\bar{c}$
+\end_inset
+
+ pair.
+ Thus, if we want to define an 
+\begin_inset Quotes eld
+\end_inset
+
+inclusive
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $F_{2}^{c}$
+\end_inset
+
+, it seems we must include those cases where the charm in contained in the
+ hadron remnants.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\color blue
+[THE BUBBLE DIAGRAM AND AN 
+\begin_inset Quotes eld
+\end_inset
+
+INCLUSIVE
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $F_{2}^{c}$
+\end_inset
+
+]
+\end_layout
+
+\begin_layout Standard
+Such difficulties are not unique to the VFNS, and also are encountered in
+ the FFNS (cite Smith & van Neerven).
+ This is succinctly illustrated in Fig.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:bubble"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ which shows a higher-order DIS process with a quark–anti-quark loop.
+ Let us compute this diagram in a 3-flavor FFNS where the internal loop
+ is a 
+\begin_inset Formula $c\bar{c}$
+\end_inset
+
+-pair, and the external quark is a light 
+\begin_inset Formula $\{u,d,s\}$
+\end_inset
+
+.
+ If the final-state is represented by Cut-A, then we have charm quarks in
+ the final state, and this should be included in 
+\begin_inset Formula $F_{2}^{c}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+However, if we instead use Cut-B as the final state, there is no charm in
+ the final state, so this should not be included in 
+\begin_inset Formula $F_{2}^{c}$
+\end_inset
+
+.
+ [More precisely, when we renormalize the charm loop with zero-momentum
+ subtraction, this contribution effectively decouples.] Thus, the contribution
+ from Cut-A will be included in 
+\begin_inset Formula $F_{2}^{c}$
+\end_inset
+
+, but the contribution from Cut-B will not.
+ 
+\end_layout
+
+\begin_layout Standard
+If we had included both Cut-A and Cut-B, the Kinoshita-Lee-Nauenberg (KLN)
+ theorem would ensure that the combination was free of IR divergences; but,
+ since these are not uniformly included, KLN does not apply and we will
+ have uncanceled singularities.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+
+\color blue
+[THE PROBLEM WITH FFNS AND 
+\begin_inset Formula $N_{eff}=4$
+\end_inset
+
+ 
+\begin_inset Formula $\alpha_{S}$
+\end_inset
+
+ running ]
+\end_layout
+
+\begin_layout Standard
+The bubble diagram of Fig.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:bubble"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ also highlights the difficult of using a 
+\begin_inset Formula $N_{eff}=3$
+\end_inset
+
+ FFNS with an 
+\begin_inset Formula $N_{eff}=4$
+\end_inset
+
+ flavor running 
+\begin_inset Formula $\alpha_{S}$
+\end_inset
+
+.
+ In a 
+\begin_inset Formula $N_{eff}=3$
+\end_inset
+
+ FFNS, internal 
+\begin_inset Formula $c\bar{c}$
+\end_inset
+
+ loops decouple from the theory and are not included in the calculation;
+ however, the 
+\begin_inset Formula $N_{eff}=4$
+\end_inset
+
+ 
+\begin_inset Formula $\beta$
+\end_inset
+
+-function requires precisely these 
+\begin_inset Formula $c\bar{c}$
+\end_inset
+
+ loop contributions.
+ [Note; this deficiency can be patched order-by-order by expanding the 
+\begin_inset Formula $\beta$
+\end_inset
+
+-function and inserting the required terms at each order.
+ Cite: [ask Valerio*** for ref.
+ does this generate other problems???]]
+\end_layout
+
+\begin_layout Subsection
+The bottom line: 
+\end_layout
+
+\begin_layout Standard
+A truly 
+\begin_inset Quotes eld
+\end_inset
+
+inclusive
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $F_{2}^{charm}$
+\end_inset
+
+ is ill-defined; instead, what is measured experimentally is a differential
+ cross section for producing a charm quark in the final state in a fiducial
+ region; as we go to higher orders, we must be careful how we define this
+ quantity so that it is singularity-free and 
+\begin_inset Formula $\mu$
+\end_inset
+
+-independent.
+ This is an issue for both the FFNS and VFNS.
+ 
+\end_layout
+
+\begin_layout Standard
+We can compute in the FFNS, but in the large energy limit, we encounter
+ 
+\begin_inset Formula $\ln(\mu^{2}/m_{c}^{2})$
+\end_inset
+
+ divergences and this, in part, gives rise to the observed differences at
+ large 
+\begin_inset Formula $Q$
+\end_inset
+
+ scales.
+ 
+\end_layout
+
+\begin_layout Standard
+The VFNS includes the charm quark as an active parton for 
+\begin_inset Formula $\mu$
+\end_inset
+
+ scales above a threshold value, and this is calculation is free of 
+\begin_inset Formula $\ln(\mu^{2}/m_{c}^{2})$
+\end_inset
+
+ divergences.
+ In the region 
+\begin_inset Formula $\mu\sim m_{c}$
+\end_inset
+
+, there is a cancellation between the LO and SUB contributions.
+ As this can be delicate to implement numerically, we have the option of
+ displacing the threshold to a larger 
+\begin_inset Formula $\mu$
+\end_inset
+
+ scale where the cancellation is more stable as was demonstrated in Ref.***.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Impact of the heavy quark matching scales in PDF fits The xFitter Developers
+ Team (V.
+ Bertone (Vrije U., Amsterdam & NIKHEF, Amsterdam) et al.).
+ Jul 17, 2017.
+ 18 pp.
+ Published in Eur.Phys.J.
+ C77 (2017) no.12, 837 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+x
+\end_layout
+
+\begin_layout Standard
+Comment: the same holds for bottom.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{document}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+LEFTOVERS: NOT NEEDED
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+color{blue}
+\end_layout
+
+\end_inset
+
+[FRED: THIS INTRO IS STILL ROUGH] Suppose we attempt to compute the 
+\begin_inset Quotes eld
+\end_inset
+
+inclusive
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $F_{2}^{charm}$
+\end_inset
+
+ for Charged Current (CC) charm production at NLO in the VFNS.
+ The obvious LO diagram is 
+\begin_inset Formula $(sW^{+}\to c).$
+\end_inset
+
+ What is not so obvious is we also will need (
+\begin_inset Formula $\bar{c}W^{+}\to\bar{s}$
+\end_inset
+
+).
+ This is because the 
+\begin_inset Formula $\bar{c}$
+\end_inset
+
+ comes from a gluon splitting to 
+\begin_inset Formula $c\bar{c}$
+\end_inset
+
+, and the 
+\begin_inset Formula $c$
+\end_inset
+
+ goes down the beam pipe along with the hadron remnants.
+ All three 
+\begin_inset Formula $u$
+\end_inset
+
+-channel terms displayed in Fig.
+\begin_inset space ~
+\end_inset
+
+*** are required for the result to be both i) insensitivity to the 
+\begin_inset Formula $\mu$
+\end_inset
+
+-scale, and ii) be free of mass singularities at large 
+\begin_inset Formula $Q^{2}$
+\end_inset
+
+ scales; but this requires measuring charm quarks in an experimentally unaccessi
+ble region—the hadron remnants.
+ This is why a truly 
+\begin_inset Quotes eld
+\end_inset
+
+inclusive
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $F_{2}^{charm}$
+\end_inset
+
+ is ill-defined; it is experimentally unobservable.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The proof of factorization for heavy quarks by Collins cite**** addressed
+ a fully inclusive 
+\begin_inset Formula $F_{2}$
+\end_inset
+
+; it specifically avoided the ill-defined 
+\begin_inset Formula $F_{2}^{charm}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+What is actually measured experimentally is a differential charm production
+ process which must include a resolution scale (or regulator) to make a
+ cut on charm quarks in the beam fragments; this 
+\begin_inset Quotes eld
+\end_inset
+
+non-inclusive
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $F_{2}^{charm}$
+\end_inset
+
+ (or 
+\begin_inset Quotes eld
+\end_inset
+
+exclusive
+\begin_inset Quotes erd
+\end_inset
+
+) measurement can be well defined.
+\end_layout
+
+\begin_layout Standard
+For this discussion we will focus on the NLO gluon initiated graphs; there
+ are a parallel set of NLO quark initiated processes, but the principles
+ are fully illustrated by the gluon processes.
+ 
+\end_layout
+
+\begin_layout Standard
+Additionally, we note that an 
+\begin_inset Quotes eld
+\end_inset
+
+inclusive
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $F_{2}^{charm}$
+\end_inset
+
+ in the FFNS is also ill-defined; at higher orders we have 
+\begin_inset Formula $g\to c\bar{c}$
+\end_inset
+
+ processes which make it impossible to separate out a 
+\begin_inset Quotes eld
+\end_inset
+
+charm only
+\begin_inset Quotes erd
+\end_inset
+
+ contribution from the total 
+\begin_inset Formula $F_{2}$
+\end_inset
+
+.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+See for example.
+ Ref.
+ Smith and van Neerven cite*** At 
+\begin_inset Formula ${\cal O}(\alpha_{S}^{3})$
+\end_inset
+
+ we can have internal 
+\begin_inset Formula $g\to c\bar{c}$
+\end_inset
+
+ processes which make a 
+\begin_inset Formula $F_{2}^{charm}$
+\end_inset
+
+ definition ambiguous.
+ This issues is particularly problematic in beta-function which sums over
+ internal quark loops and determines the running of 
+\begin_inset Formula $\alpha_{S}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+t-channel at NLO
+\end_layout
+
+\begin_layout Standard
+The t-channel contributions at NLO are straightforward.
+ We start with a leading-order (LO) 
+\begin_inset Formula $sW^{+}\to c$
+\end_inset
+
+ process.
+ We then add the next-to-leading-order (NLO) 
+\begin_inset Formula $gW^{+}\to c\bar{s}$
+\end_inset
+
+ diagram; this exchanges an 
+\begin_inset Formula $s$
+\end_inset
+
+ quark in the t-channel, and thus will have a 
+\begin_inset Formula $\ln(m_{s}^{2}/Q^{2})$
+\end_inset
+
+ divergence for large 
+\begin_inset Formula $Q$
+\end_inset
+
+.
+ This is resolved by the subtraction (SUB) term 
+\begin_inset Formula $f_{g}\otimes{\cal P}_{g\to s}\otimes\sigma_{sW^{+}\to c}$
+\end_inset
+
+ where the 
+\begin_inset Formula ${\cal P}_{g\to s}$
+\end_inset
+
+ represents a perturbative splitting of 
+\begin_inset Formula $g\to s$
+\end_inset
+
+; the SUB term is proportional to 
+\begin_inset Formula ${\cal P}_{g\to s}\sim\frac{\alpha_{S}}{2\pi}\:P_{g\to s}^{(1)}\:\ln(m_{s}^{2}/Q^{2})$
+\end_inset
+
+, and will cancel the double counting between the LO and NLO graphs in the
+ limit where the exchanged 
+\begin_inset Formula $s$
+\end_inset
+
+ quark becomes collinear.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Here we use 
+\begin_inset Formula ${\cal P}_{g\to s}$
+\end_inset
+
+ to represent the perturbative splitting contribution which at NLO is given
+ by 
+\begin_inset Formula $\frac{\alpha_{S}}{2\pi}\:P_{g\to s}^{(1)}\:\ln(m_{s}^{2}/Q^{2})$
+\end_inset
+
+, where 
+\begin_inset Formula $P_{g\to s}^{(1)}$
+\end_inset
+
+ is the usual DGLAP splitting kernel.
+\end_layout
+
+\end_inset
+
+ The logarithmic divergence (mass singularity) will cancel between the NLO
+ and SUB terms as 
+\begin_inset Formula $Q^{2}\to\infty$
+\end_inset
+
+, resulting in a finite result for the NLO t-channel contribution.
+\end_layout
+
+\begin_layout Subsection
+u-channel at NLO
+\end_layout
+
+\begin_layout Standard
+The u-channel at NLO is more subtle.
+ We definitely need the NLO 
+\begin_inset Formula $gW^{+}\to c\bar{s}$
+\end_inset
+
+ diagram with a 
+\begin_inset Formula $\bar{c}$
+\end_inset
+
+ quark exchanged in the u-channel, and thus will have a 
+\begin_inset Formula $\ln(m_{c}^{2}/Q^{2})$
+\end_inset
+
+ divergence for large 
+\begin_inset Formula $Q$
+\end_inset
+
+.
+ This is resolved by the subtraction term 
+\begin_inset Formula $f_{g}\otimes{\cal P}_{g\to\bar{c}}\otimes\sigma_{\bar{c}W^{+}\to\bar{s}}$
+\end_inset
+
+ where the 
+\begin_inset Formula ${\cal P}_{g\to\bar{c}}$
+\end_inset
+
+ represents a perturbative splitting of 
+\begin_inset Formula $g\to\bar{c}$
+\end_inset
+
+ and will cancel the double counting between the LO and NLO graphs in the
+ limit where the exchanged 
+\begin_inset Formula $\bar{c}$
+\end_inset
+
+ quark becomes collinear.
+ Here, the SUB term is proportional to 
+\begin_inset Formula ${\cal P}_{g\to\bar{c}}\sim\frac{\alpha_{S}}{2\pi}\:P_{g\to\bar{c}}^{(1)}\:\ln(m_{c}^{2}/Q^{2})$
+\end_inset
+
+.
+ The logarithmic divergence will cancel between the NLO and SUB terms as
+ 
+\begin_inset Formula $Q^{2}\to\infty$
+\end_inset
+
+, resulting in a finite result for the NLO u-channel contribution.
+\end_layout
+
+\begin_layout Subsection
+Why do we need the LO (
+\begin_inset Formula $\bar{c}W^{+}\to\bar{s}$
+\end_inset
+
+)?
+\end_layout
+
+\begin_layout Standard
+What is not so obvious is that we need the LO 
+\begin_inset Formula $u$
+\end_inset
+
+-channel process 
+\begin_inset Formula $\bar{c}W^{+}\to\bar{s}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Recall that it is essential we include the subtraction SUB term 
+\begin_inset Formula $f_{g}\otimes{\cal P}_{g\to\bar{c}}\otimes\sigma_{\bar{c}W^{+}\to\bar{s}}$
+\end_inset
+
+ so that we get a finite answer at large energies 
+\begin_inset Formula $Q^{2}\to\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+At energy scales 
+\begin_inset Formula $Q\sim m_{c}$
+\end_inset
+
+, the LO and SUB terms remove the double counting between the LO and NLO
+ processes.
+ This is most apparent when you plot the individual terms versus the 
+\begin_inset Formula $Q$
+\end_inset
+
+ scale (or more properly, it is the 
+\begin_inset Formula $\mu$
+\end_inset
+
+ scale).
+ [See Figure] In the region of 
+\begin_inset Formula $Q\sim m_{c}$
+\end_inset
+
+, the charm PDF 
+\begin_inset Formula $f_{c}$
+\end_inset
+
+ (and hence, the LO contribution) rises very quickly as it is driven by
+ the very large gluon, and coupled with a large 
+\begin_inset Formula $\alpha_{S}(m_{c})$
+\end_inset
+
+.
+ The SUB subtraction also rises quickly as this is driven by the logarithmic
+ term 
+\begin_inset Formula $\ln(m_{c}^{2}/Q^{2})$
+\end_inset
+
+.
+ The difference LO-SUB is the physical contribution to the total (TOT=LO+NLO-SUB
+), and it is this combination which is smooth across the 
+\begin_inset Quotes eld
+\end_inset
+
+turn on
+\begin_inset Quotes erd
+\end_inset
+
+ of the charm PDF.
+ We now see that if we neglect the LO (
+\begin_inset Formula $\bar{c}W^{+}\to\bar{s}$
+\end_inset
+
+) we loose the cancellation between LO and SUB in the 
+\begin_inset Formula $Q\sim m_{c}$
+\end_inset
+
+ and our structure function (or cross section) would have an anomalous shift
+ at the location where we arbitrarily turn on the charm PDF.
+\end_layout
+
+\begin_layout Standard
+So to recap, the combination of the LO and SUB terms ensure a minimal 
+\begin_inset Formula $\mu$
+\end_inset
+
+-variation at low 
+\begin_inset Formula $\mu$
+\end_inset
+
+ scales, and the combination of SUB and NLO ensure the mass singularities
+ are canceled at high 
+\begin_inset Formula $\mu$
+\end_inset
+
+ scales.
+\end_layout
+
+\begin_layout Subsection
+FFNS: u-channel for 
+\begin_inset Formula $N_{F}=3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let us clarify the case where we work in a FFNS with 3 flavors 
+\begin_inset Formula $\{u,d,s\}$
+\end_inset
+
+ but no charm PDF.
+ In this case there is no LO (
+\begin_inset Formula $\bar{c}W^{+}\to\bar{s}$
+\end_inset
+
+) process as 
+\begin_inset Formula $f_{c}=0$
+\end_inset
+
+, and there is no u-channel subtraction 
+\begin_inset Formula $f_{g}\otimes{\cal P}_{g\to\bar{c}}\otimes\sigma_{\bar{c}W^{+}\to\bar{s}}$
+\end_inset
+
+.
+ This is all perfectly consistent.
+ However, the NLO u-channel process (
+\begin_inset Formula $gW^{+}\to c\bar{s}$
+\end_inset
+
+) will have a potentially divergent 
+\begin_inset Formula $\ln(m_{c}^{2}/Q^{2})$
+\end_inset
+
+ contribution from the exchanged charm quark; this is fine so long as we
+ don't go to large 
+\begin_inset Formula $Q$
+\end_inset
+
+.
+ If we do want large 
+\begin_inset Formula $Q$
+\end_inset
+
+, then we will need to resum the 
+\begin_inset Formula $\ln(m_{c}^{2}/Q^{2})$
+\end_inset
+
+ logs using the charm PDF.
+\end_layout
+
+\begin_layout Standard
+We expect this FFNS to diverge from the VFNS result by contributions proportiona
+l to 
+\begin_inset Formula $\sim\frac{\alpha_{S}}{2\pi}\:\ln(m_{c}^{2}/Q^{2})$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document
