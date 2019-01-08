@@ -22,193 +22,455 @@
 %  \begin{document}
 %  
 \clearpage
+\newcommand{\xsec}[1]{\vskip 6pt \noindent {\bf #1} \quad }
 
-\appendix 
-\section{Defining $F_{2}^{charm}$ Beyond Lead Order}
+\appendix
 
-\begin{figure}[t]
-\centering
-\includegraphics[width=0.45\textwidth]{./pics/fred/cancellation}
-\caption{\textcolor{blue}{
-We may switch to charm; I took from our heavy flavor paper.} 
-The LO contributions correspond to the heavy quark ($Q$) initiated $f_{Q}$,
-and the SUB to $\tilde{f}_{Q}$. The cancellation (LO-SUB) is quite
-precise. If we were to remove LO or SUB, our TOT result would have
-anomalous contributions (and correspondingly anomalous $\mu$-dependence)
-in the region $\mu\sim m_Q$.}
+{\small
+\textbf{\textcolor{blue}{TO DO LIST:}}
+\textcolor{blue}{{*} Follow up on John Collins' list {[}MOSTLY DONE{]} }
+\textcolor{blue}{{*} Add brief mention at end that this applies also
+to bottom quark {[}at end{]}}
+\textcolor{blue}{{*} refs from Sasha: LHC W+c measurements:
+  \cite{Chatrchyan:2013uja,Aad:2014xca,Sirunyan:2018hde}}
+  }
+
+\section{$F_{2}^{charm}$ Beyond Leading-Order}
+
+\begin{figure}
+\centering \includegraphics[clip,width=0.45\textwidth]{pics/fred/acot_fig}
+\caption{Calculation of $F_{2}^{c}$ vs.\ $\mu$ in the VFNS illustrating the
+cancellation of the LO ($\bar{c}W^{+}\to\bar{s}$) and the SUB \hbox{$(g\to \bar{c})$}$\otimes$\hbox{$(\bar{c}W^+ \to \bar{s})$}
+contributions in the region $\mu\sim m_{c}$. The $Q$ scale is fixed
+at $10\,$GeV and the charm PDF is matched at $\mu_{c}=m_{c}$ such
+that $f_{c}(x,\mu=m_{c})=0$. \label{fig:acot}}
 \end{figure}
-
-
-\begin{figure}[t]
-\centering
-\includegraphics[width=0.45\textwidth]{./pics/fred/feyngraph}
-\caption{\textcolor{blue}{draft in progress: } 
-%
-A higher order Feynman graph illustrating the difficulty in defining
-an ``inclusive'' $F_2^{charm}$. 
-If we have a light quark ($q$) scattering from a vector boson ($V$),
-at higher orders we could have a charm--anti-charm loop. 
-If we cut the amplitude with cut ``A'' we have charm in the final state
-and this must be included in  $F_2^{charm}$. 
-If we cut the amplitude with cut ``B'' there is no charm in the final state,
-but this process is required to satisfy IR  divergences as governed by the Kinoshita-Lee-Nauenberg (KLN) theorem.
-Also note, since this diagram contributes to the beta function, 
-this highlights the difficulty of using an $\alpha_S$ and hard scattering $\hat{\sigma}$ with differing $N_{eff}$.
-}
-\end{figure}
-
-
 
 \begin{figure*}
-\centering
-\includegraphics[clip,width=0.80\textwidth]{./pics/fred/tchannel}
-\caption{Gluon NLO $t$-channel processes}
+\centering \includegraphics[clip,width=0.8\textwidth]{pics/fred/tchannel}
+\caption{Gluon $t$-channel processes up to ${\cal  O}(\alpha_S^1)$.  \label{fig:tchannel}}
 \end{figure*}
-%
+
 \begin{figure*}
-\centering
-\includegraphics[clip,width=0.80\textwidth]{./pics/fred/uchannel}
-\caption{Gluon NLO $u$-channel processes}
+\centering \includegraphics[clip,width=0.8\textwidth]{pics/fred/uchannel}
+\caption{Gluon NLO $u$-channel processes  up to ${\cal  O}(\alpha_S^1)$. \label{fig:uchannel}}
 \end{figure*}
 
 
+
+
+\xsec{The Multi-Scale Problem:}
+%
 The charged current DIS charm production process involves some interesting
-issues. Because two quark masses are involved $\{m_{s},m_{c}\}$,
-we can separately examine the mass singularities of the $t$-channel
-and $u$-channel separately; this separation is particularly useful
-to understand how the FFNS and VFNS divide up the contributions to
-the total structure function. Additionally, the DIS charm production
-allows us to identify the deficiencies we encounter due to the fact
-that a truly ``inclusive'' $F_{2}^{charm}$is not a theoretically
-well-defined observable.
+issues that we will explore here in detail. In particular, there are
+multiple mass and energy scales which span a wide kinematic range,
+and it becomes an intricate puzzle to treat them all properly. 
 
-x
+For this current illustration, we will focus on the contribution to
+the DIS $F_{2}^{c}$ structure function from the process involving
+the strange and charm quark; other quark combinations can be addressed
+in a similar manner. In particular, we will show that as we go to
+higher-orders the $F_{2}^{c}$ structure function must be defined
+carefully so that i) theoretically it is free of divergences and independent
+of the renormalization scales, and ii) experimentally it matches what
+is measured by the detector.
 
-\textcolor{blue}{{[}FRED: THIS INTRO IS STILL ROUGH{]} Suppose we
-attempt to compute the ``inclusive'' $F_{2}^{charm}$ for Charged
-Current (CC) charm production at NLO in the VFNS. The obvious LO diagram
-is $(sW^{+}\to c).$ What is not so obvious is we also will need ($\bar{c}W^{+}\to\bar{s}$).
-This is because the $\bar{c}$ comes from a gluon splitting to $c\bar{c}$,
-and the $c$ goes down the beam pipe along with the hadron remnants.
-All three $u$-channel terms displayed in Fig.~{*}{*}{*} are required
-for the result to be both i) insensitivity to the $\mu$-scale, and
-ii) be free of mass singularities at large $Q^{2}$ scales; but this
-requires measuring charm quarks in an experimentally unaccessible
-region---the hadron remnants. This is why a truly ``inclusive''
-$F_{2}^{charm}$ is ill-defined; it is experimentally unobservable.}\footnote{\textcolor{blue}{The proof of factorization for heavy quarks by Collins
-cite{*}{*}{*}{*} addressed a fully inclusive $F_{2}$; it specifically
-avoided the ill-defined $F_{2}^{charm}$. }}
+\xsec{Overview:}
+%
 
-\textcolor{blue}{What is actually measured experimentally is a differential
-charm production process which must include a resolution scale (or
-regulator) to make a cut on charm quarks in the beam fragments; this
-``non-inclusive'' $F_{2}^{charm}$ (or ``exclusive'') measurement
-can be well defined.}
+\textcolor{blue}{... to be filled in ... (what other detailed are needed???)}
 
-\textcolor{blue}{For this discussion we will focus on the NLO gluon
-initiated graphs; there are a parallel set of NLO quark initiated
-processes, but the principles are fully illustrated by the gluon processes. }
+\xsec{The Mass Scales:}
+%
+There are four mass scales that enter this process: $\{Q,\mu,m_{s},m_{c}\}$;
+additionally, in the case of the VFNS we have the matching scale,
+$\mu_{c}$.
 
-\textcolor{blue}{Additionally, we note that an ``inclusive'' $F_{2}^{charm}$
-in the FFNS is also ill-defined; at higher orders we have $g\to c\bar{c}$
-processes which make it impossible to separate out a ``charm only''
-contribution from the total $F_{2}$.}\footnote{\textcolor{blue}{See for example. Ref. Smith and van Neerven cite{*}{*}{*}
-At ${\cal O}(\alpha_{S}^{3})$ we can have internal $g\to c\bar{c}$
-processes which make a $F_{2}^{charm}$ definition ambiguous. This
-issues is particularly problematic in beta-function which sums over
-internal quark loops and determines the running of $\alpha_{S}$. }}
+The $Q$ scale is the invariant mass of the virtual boson probe ($W^{+}$
+in this case), and can be related to the energy and angle of lepton;
+this is a physically measurable kinematic variable. 
 
-\subsection{t-channel at NLO}
+In contrast, the renormalization scale $\mu$ is an unphysical scale
+used to factorize the PDF and the hard scattering cross section; thus,
+the physics should be insensitive to a variation of $\mu$. As our
+calculations typically involve the dimensionless combination $\ln(\mu^{2}/Q^{2})$,
+we generally choose $\mu\sim Q$ avoid large logarithms. 
 
-The t-channel contributions at NLO are straightforward. We start with
-a leading-order (LO) $sW^{+}\to c$ process. We then add the next-to-leading-order
-(NLO) $gW^{+}\to c\bar{s}$ diagram; this exchanges an $s$ quark
-in the t-channel, and thus will have a $\ln(m_{s}^{2}/Q^{2})$ divergence
-for large $Q$. This is resolved by the subtraction (SUB) term $f_{g}\otimes{\cal P}_{g\to s}\otimes\sigma_{sW^{+}\to c}$
-where the ${\cal P}_{g\to s}$ represents a perturbative splitting
-of $g\to s$; the SUB term is proportional to ${\cal P}_{g\to s}\sim\frac{\alpha_{S}}{2\pi}\:P_{g\to s}^{(1)}\:\ln(m_{s}^{2}/Q^{2})$,
-and will cancel the double counting between the LO and NLO graphs
-in the limit where the exchanged $s$ quark becomes collinear.\footnote{Here we use ${\cal P}_{g\to s}$ to represent the perturbative splitting
-contribution which at NLO is given by $\frac{\alpha_{S}}{2\pi}\:P_{g\to s}^{(1)}\:\ln(m_{s}^{2}/Q^{2})$,
-where $P_{g\to s}^{(1)}$ is the usual DGLAP splitting kernel.} The logarithmic divergence (mass singularity) will cancel between
-the NLO and SUB terms as $Q^{2}\to\infty$, resulting in a finite
-result for the NLO t-channel contribution. 
+The strange quark is a ``light'' active parton with an associated
+PDF $s(x)$ and mass $m_{s}$. The strange quark mass is comparable
+or less than other hadronic scales which are neglected; as such, it
+serves only as a regulator and plays no physical role, and we can
+take $m_{s}\to0$ if we choose. 
 
-\subsection{u-channel at NLO}
+The charm quark is a ``heavy'' object; its associated mass $m_{c}$
+does play a physical role and cannot be neglected. There may or may
+not be a PDF associated with the charm. In a 3-flavor FFNS scheme,
+there is no charm PDF. In a 4-flavor VFNS there is a charm PDF only
+when the $\mu$ scale is above the scale where the charm PDF is activated;
+we call this the matching scale, $\mu_{c}$. It is common\footnote{The choice of matching scale $\mu_{c}=m_{c}$ is common because at
+NLO the $\overline{MS}$ matching conditions on the PDFs are proportional
+to the DGLAP kernel times $\ln(\mu/m_{c})$, as explicit calculation
+shows the constant term vanishes; thus we have the simple boundary
+condition $f_{c}(x,\mu=m_{c})=0$. At NNLO, the constant term is non-zero
+and this yields $f_{c}(x,\mu=m_{c})\not=0$. See \cite{Stavreva:2012bs}
+and references therein.} to set $\mu_{c}=m_{c}$, but this is not required.\footnote{By displacing the matching scale to larger values $\mu_{c}\gg m_{c}$,
+can have the advantage of avoiding delicate cancellations in the region
+$\mu\sim m_{c}$; this flexibility was explored in Refs.~\cite{Bertone:2017ehk,Bertone:2018ids}
+.} In this study we will fix the matching scale to this common choice:
+$\mu_{c}=m_{c}$.
 
-The u-channel at NLO is more subtle. We definitely need the NLO $gW^{+}\to c\bar{s}$
-diagram with a $\bar{c}$ quark exchanged in the u-channel, and thus
-will have a $\ln(m_{c}^{2}/Q^{2})$ divergence for large $Q$. This
-is resolved by the subtraction term $f_{g}\otimes{\cal P}_{g\to\bar{c}}\otimes\sigma_{\bar{c}W^{+}\to\bar{s}}$
-where the ${\cal P}_{g\to\bar{c}}$ represents a perturbative splitting
-of $g\to\bar{c}$ and will cancel the double counting between the
-LO and NLO graphs in the limit where the exchanged $\bar{c}$ quark
-becomes collinear. Here, the SUB term is proportional to ${\cal P}_{g\to\bar{c}}\sim\frac{\alpha_{S}}{2\pi}\:P_{g\to\bar{c}}^{(1)}\:\ln(m_{c}^{2}/Q^{2})$.
-The logarithmic divergence will cancel between the NLO and SUB terms
-as $Q^{2}\to\infty$, resulting in a finite result for the NLO u-channel
-contribution. 
 
-\subsection{Why do we need the LO ($\bar{c}W^{+}\to\bar{s}$)?}
 
-What is not so obvious is that we need the LO $u$-channel process
-$\bar{c}W^{+}\to\bar{s}$.
+What makes this process complex is there is no fixed hierarchy for
+the mass scales, and we will need to compute both in the low $Q$
+region where $Q\lesssim m_{c}$ as well as the high $Q$ region $Q\gg m_{c}$. 
 
-Recall that it is essential we include the subtraction SUB term $f_{g}\otimes{\cal P}_{g\to\bar{c}}\otimes\sigma_{\bar{c}W^{+}\to\bar{s}}$
-so that we get a finite answer at large energies $Q^{2}\to\infty$. 
 
-At energy scales $Q\sim m_{c}$, the LO and SUB terms remove the double
-counting between the LO and NLO processes. This is most apparent when
-you plot the individual terms versus the $Q$ scale (or more properly,
-it is the $\mu$ scale). {[}See Figure{]} In the region of $Q\sim m_{c}$,
-the charm PDF $f_{c}$ (and hence, the LO contribution) rises very
-quickly as it is driven by the very large gluon, and coupled with
-a large $\alpha_{S}(m_{c})$. The SUB subtraction also rises quickly
-as this is driven by the logarithmic term $\ln(m_{c}^{2}/Q^{2})$.
-The difference LO-SUB is the physical contribution to the total (TOT=LO+NLO-SUB),
-and it is this combination which is smooth across the ``turn on''
-of the charm PDF. We now see that if we neglect the LO ($\bar{c}W^{+}\to\bar{s}$)
-we loose the cancellation between LO and SUB in the $Q\sim m_{c}$
+
+Because there are two different quark masses $\{m_{s},m_{c}\}$ involved
+in the charged current DIS flavor-changing process,  we can examine
+the mass singularities of the $t$-channel and $u$-channel separately.
+This separation is particularly useful to understand how the individual
+mass singularities are addressed, and how FFNS and VFNS organize the
+contributions to the total structure function. 
+
+\xsec{3-Flavor FFNS:}
+%
+To be specific, we will consider charged-current DIS production of
+a charm quark. We first compute this in a 3-flavor (FFNS) scheme where
+$\{u,d,s\}$ are light ``active'' partons in the proton, and charm
+$\{c\}$ is considered an external ``heavy'' particle. This can
+be implemented in the ACOT scheme\cite{Aivazis:1993pi} for example
+by using a CWZ renormalization\cite{Collins:1978wz} where the light
+``active'' partons are renormalized with normal $\overline{MS}$,
+and the ``heavy'' quarks use a zero-momentum subtraction. In this
+scheme, the \textbf{leading-order} (LO) process is \mbox{$sW^{+}\to c$}
+as illustrated in Fig.\,\ref{fig:acot}. At \textbf{next-to-leading-order}
+(NLO), we then include \mbox{$gW^{+}\to c\bar{s}$} which has both $t$-channel
+and $u$-channel contributions.\footnote{Note, there are also corresponding quark-initiated processes; we will
+focus on the gluon-initiated processes as this is sufficient to illustrate
+our points. Both the gluon- and quark-initiated contributions are
+included in our calculations. }
+
+\xsec{$t$-Channel:}
+%
+The $t$-channel process has an intermediate $s$-quark exchanged, and
+if we use the strange quark mass $m_{s}$ to regulate the singularities,
+this will yield a contribution proportional to $\ln(Q/m_{s})$. This
+mass singularity arises from the region of phase space where the exchanged
+$s$-quark becomes collinear and close to the mass-shell; that is,
+when the phase space of the \mbox{$gW^{+}\to c\bar{s}$} process begins to
+overlap with that of the \mbox{$sW^{+}\to c$} process. This ``double counting''
+is resolved by a \textbf{subtraction} (SUB) counter-term
+%(which is formally part of the NLO contribution)
+given by:
+\[
+(SUB)\sim f_{g}\otimes\widetilde{f}{}_{g\to s}\otimes\sigma_{sW^{+}\to c}\quad.
+\]
+Here, $\widetilde{f}{}_{g\to s}$ is the perturbative splitting of
+the gluon into an $s\bar{s}$ pair; the leading term is proportional
+to:\footnote{The scale of the SUB term is $\mu$ as the relevant scale here is
+the renormalization scale of the PDF:$f(x,\mu)\otimes\hat{\sigma}(x,Q,\mu)$. }
+\[
+\widetilde{f}_{g\to s}(x,\mu)\sim\frac{\alpha_{S}(\mu)}{2\pi}P_{g\to s}^{(1)}(x)\:\ln\left(\frac{\mu^{2}}{m_{s}^{2}}\right)+\text{{\cal O}}(\alpha_{s}^{2})
+\]
+ where $P_{g\to s}^{(1)}(x)$ is the $\alpha_{S}^{1}$ DGLAP splitting
+kernel for \hbox{$g\to s$}.
+
+The complete contribution to the structure function is given by:
+\[
+F_{2}^{c}\sim TOT=LO+(NLO-SUB)
+\]
+The complete ${\cal O}(\alpha_{s}^{1})$ contribution is the combination
+$(NLO-SUB)$; our separation into $NLO$ and $SUB$ is simply to illustrate
+the interplay of these components. Both the NLO and SUB terms have
+$\ln(m_{s})$ divergences, but these precisely cancel and yield a
+well defined result even as we take the $m_{s}\to0$ limit.\footnote{In fact, we could have taken $m_{s}=0$ initially and used dimensional
+regularization to compute the contributions.}
+
+\xsec{$u$-Channel:}
+%
+We next examine the $u$-channel NLO contribution to the \mbox{$gW^{+}\to c\bar{s}$}
+process. This has an intermediate $c$-quark exchanged, and is proportional
+to $\ln(Q/m_{c})$. In the FFNS where the charm is a ``heavy'' non-parton,
+there is no counter-term for this graph, and the resulting observables
+will retain the $\ln(Q/m_{c})$ dependence. In principle, this means
+when we go to large $Q$-scales, these terms will begin to degrade
+the convergence of our perturbation series. In practice, while this
+degradation only grows logarithmically, at large scales (such as at
+the LHC) we do find it convenient to treat the charm on an equal-footing
+as the ${u,d,s}$ partons. 
+
+\xsec{4-Flavor VFNS:}
+%
+We now turn to the 4-flavor (VFNS) scheme where we include the charm
+quark as an ``active'' parton and compute its associated PDF.
+
+In this case, there is a $u$-channel counter-term (SUB) given by $f_{g}\otimes\widetilde{f}{}_{g\to\bar{c}}\otimes\sigma_{\bar{c}W^{+}\to\bar{s}}$
+which is proportional to $\ln(\mu/m_{c})$. The NLO $u$-channel contribution
+will have a $\ln(Q/m_{c})$ contribution, so the combination $(NLO-SUB)$
+is also free of mass singularities.\footnote{Specifically, the combination $(NLO-SUB)$ is free of mass singularities
+and finite in the limit $m_{c}\to0$. Note, the VFNS fully retains
+the charm quark mass $m_{c}$ and (in contrast to some claims in the
+literature) the factorization holds up to ${\cal O}(\Lambda^{2}/Q^{2})$
+corrections; all terms of order $(m_{c}^{2}/Q^{2})$ are fully included.\cite{Collins:1998rz}}
+
+What is less obvious is that we also must include the LO process \mbox{$\bar{c}W^{+}\to\bar{s}$}.
+There are two ways we can understand why this is necessary. 
+
+\xsec{Explanation \#1: Matching of LO and SUB:}
+%
+Recall that in the $t$-channel case, the subtraction term SUB removed
+the double counting between the LO \mbox{$sW^{+}\to c$} and NLO \mbox{$gW^{+}\to c\bar{s}$}
+processes. 
+
+The $u$-channel case is analogous in that this subtraction term removes
+the double counting between the LO \mbox{$\bar{c}W^{+}\to\bar{s}$} and NLO
+\mbox{$gW^{+}\to c\bar{s}$} processes; both contributions are required to
+ensure the resulting cross section is insensitive to the $\mu$-scale. 
+
+This is apparent in Fig.~\ref{fig:acot} where we plot the individual
+terms versus the $\mu$ scale for a fixed $x$ and $Q$. In the region
+of $\mu\sim m_{c}$, the charm PDF $f_{c}(x,\mu)$ (and hence, the
+LO contribution) rises very quickly as the DGLAP evolution is driven
+by the very large gluon via $g\to c\bar{c}$ splitting, and combined
+with a large $\alpha_{S}(\mu)$. The SUB subtraction also rises quickly
+as this is driven by the logarithmic term $\ln(\mu^{2}/m_{c}^{2})$.
+The difference \mbox{$(LO-SUB)$} is the physical contribution to the total
+\mbox{$[TOT=LO+NLO-SUB]$}, and it is this combination which is smooth across
+the ``turn on'' of the charm PDF at the matching scale $\mu_{c}=m_{c}$.
+We now see that if we neglect the LO \mbox{($\bar{c}W^{+}\to\bar{s}$)} contribution,
+we lose the cancellation between LO and SUB in the region $\mu\sim m_{c}$,
 and our structure function (or cross section) would have an anomalous
-shift at the location where we arbitrarily turn on the charm PDF. 
+shift at the arbitrarily location $(\mu_{c})$ where we turn on the
+charm PDF. 
 
-So to recap, the combination of the LO and SUB terms ensure a minimal
-$\mu$-variation at low $\mu$ scales, and the combination of SUB
-and NLO ensure the mass singularities are canceled at high $\mu$
-scales. 
+As we vary the unphysical renormalization scale $\mu$, we are simply
+shifting contributions between the separate \mbox{$\{LO,NLO,SUB\}$} terms
+which individually exhibit a large $\mu$-dependence. However, the
+total combination $(TOT)$ which represents the physical observable
+is relatively insensitive to $\mu$ (up to higher orders), and this
+property is evident in Fig.~\ref{fig:acot}.
 
-\subsection{FFNS: u-channel for $N_{F}=3$}
+\xsec{Explanation \#2: Removing ``Double Counting:''}
+%
+A second way to understand why we require the LO process \mbox{$\bar{c}W^{+}\to\bar{s}$}
+is to consider the regions of phase space covered by each of the sub-processes.
+The singularity of the $u$-channel NLO \mbox{$gW^{+}\to c\bar{s}$} processes
+arises the phase space region when the intermediate $\bar{c}$ quark
+becomes collinear and close to the mass-shell.\footnote{Specifically, the charm quark is off-shell by the order of its mass
+$m_{c}$; this is independent of the scale $Q$ and \textbf{\textit{does
+not}} assume any $Q\gg m_{c}$ limit. } This is precisely the phase space region of the LO process \mbox{$\bar{c}W^{+}\to\bar{s}$}
+where the partonic $\bar{c}$-quark is collinear to the hadron. The
+SUB term then removes the ``double counting'' between the LO and
+NLO contributions; hence, all three contributions \mbox{$\{LO,NLO,SUB\}$}
+are necessary to cover the full phase space.
 
-Let us clarify the case where we work in a FFNS with 3 flavors $\{u,d,s\}$
-but no charm PDF. In this case there is no LO ($\bar{c}W^{+}\to\bar{s}$)
-process as $f_{c}=0$, and there is no u-channel subtraction $f_{g}\otimes{\cal P}_{g\to\bar{c}}\otimes\sigma_{\bar{c}W^{+}\to\bar{s}}$.
-This is all perfectly consistent. However, the NLO u-channel process
-($gW^{+}\to c\bar{s}$) will have a potentially divergent $\ln(m_{c}^{2}/Q^{2})$
-contribution from the exchanged charm quark; this is fine so long
-as we don't go to large $Q$. If we do want large $Q$, then we will
-need to resum the $\ln(m_{c}^{2}/Q^{2})$ logs using the charm PDF. 
+This is also apparent if we consider the transverse momentum $(p_{T})$
+of the final-state charm in the Breit frame. For the LO \mbox{$\bar{c}W^{+}\to\bar{s}$}
+process in the Breit frame, the incoming $W^{+}$ and $\bar{c}$ are
+collinear, and the produced $\bar{s}$ must have zero $p_{T}$ in
+this frame.
 
-We expect this FFNS to diverge from the VFNS result by contributions
-proportional to $\sim\frac{\alpha_{S}}{2\pi}\:\ln(m_{c}^{2}/Q^{2})$.
+For the NLO $gW^{+}\to c\bar{s}$ process, we integrate over the complete
+phase space for the exchanged $\bar{c}$ quark, and this will include
+the region where the $\bar{c}$ quark is emitted nearly collinear
+to the gluon and nearly on-shell; in this region the $\bar{c}$ quark
+will have $p_{T}\sim0$ and we encounter a singularity from the internal
+$\bar{c}$ propagator. The $p_{T}\sim0$ region is precisely that
+subtracted by the SUB counter term,\footnote{Specifically, the incoming $W^{+}$ and $g$ are collinear, and the
+gluon then emits a collinear $c\bar{c}$ pair so the final $\bar{s}$
+has zero $p_{T}$.} and this ensure that the combination $(NLO-SUB)$ is free of divergences.
 
-\subsection{The bottom line: }
 
-A truly ``inclusive'' $F_{2}^{charm}$ is ill-defined. Instead,
-we necessarily must an ``experimentally'' defined $F_{2}^{charm}$
-where we specify conditions so that the final state charm is isolated
-from the hadron remnants. 
 
-We can talk about a fully inclusive $F_{2}$ where we include all
-flavors; this was the subject of Collins' proof. 
+\xsec{Recap:}
+%
+To recap, i) the combination of the LO and SUB terms ensure a minimal
+$\mu$-variation at low $\mu$ scales, and ii) the combination of
+SUB and NLO ensure the mass singularities are canceled at high $\mu$
+scales.
 
-If we compute a ``pseudo-inclusive'' $F_{2}^{charm}$ in the Variable
-Flavor Number Scheme, we do need to include the LO ($\bar{c}W^{+}\to\bar{s}$)
-and the associated SUB ($gW^{+}\to c\bar{s}$).
+This interplay of the terms illustrates some of the intricacies of
+QCD, especially since this exchange is across different orders of
+$\alpha_{s}$.
 
-We can compute in the Fixed Flavor Number Scheme, but in the large
-energy limit, we encounter $\ln(m_{c}^{2}/Q^{2})$ divergences. In
-practice, our $Q$ scales are not large enough to generate infinities,
-but they are large enough where we see the resummed logs included
-in the VFNS charm PDF become important. Regardless, the FFNS is also
-unable to define a truly ``inclusive'' $F_{2}^{charm}$.
+
+Furthermore, note that in the $u$-channel for both the LO and SUB contributions,
+the charm quark is collinear with the incoming hadron, and thus exits
+in the hadron remnants. While this may be experimentally unobservable,
+because we are asking for a \textit{``fully inclusive''} $F_{2}^{c}$,
+these contributions cannot be simply ignored. We will discuss this
+further in the following section. 
+
+\xsec{Defining $F_{2}^{c}$:}
+%
+The $u$-channel LO \mbox{$\bar{c}W^{+}\to\bar{s}$} process foreshadows difficulties
+we encounter if we try and extend the concept of a ``fully inclusive''
+$F_{2}^{c}$ to higher orders. We note that in Ref.~\cite{Collins:1998rz}
+Collins extended the proof of factorization to include heavy quarks
+such as charm and bottom for an inclusive structure function $F_{2}$;
+there is no corresponding proof for an \textit{``fully inclusive''}
+$F_{2}^{c}$ because a well defined $F_{2}^{c}$ that is free of singularities
+will depend on experimental cuts or theoretical regulators. The simplistic
+definition that $F_{2}^{c}$ is the contribution to $F_{2}$ from
+states with charm in the final state is not appropriate. 
+
+
+
+The $F_{2}^{c}$ that is measured experimentally is a differential
+cross section for producing a charm quark in the final state in a
+fiducial region; as we go to higher orders, we must be careful how
+we define this quantity so that it is singularity-free and $\mu$-independent. 
+
+
+
+To characterize the problems in constructing a \textit{``fully inclusive''}
+$F_{2}^{c}$, we can imagine starting from the (well defined) inclusive
+$F_{2}$, and then dividing the contributions into two sets: one for
+$F_{2}^{c}$ for the ``heavy'' charm quark, and the rest into $F_{2}^{u,d,s}$
+for the ``light'' quarks. We will show this division cannot be performed
+unambiguously.
+
+
+
+The $u$-channel LO $\bar{c}W^{+}\to\bar{s}$ process does not have any
+``apparent'' charm quark in the final state, but this contribution
+is essential to balance with the SUB process
+\mbox{$f_{g}\otimes\widetilde{f}{}_{g\to\bar{c}}\otimes\sigma_{\bar{c}W^{+}\to\bar{s}}$.}
+Note that for the SUB process, the charm quark arises from a gluon
+splitting into a collinear $c\bar{c}$ pair which is then part of
+the hadron remnants. For the LO process, presumably our $\bar{c}$
+quark also came from a gluon splitting into a collinear $c\bar{c}$
+pair. Thus, if we want to define a\textit{ ``fully inclusive''}
+$F_{2}^{c}$, it seems we must include those cases where the charm
+in contained in the hadron remnants.
+
+This issues touches on the fact that because the charm parton is not
+observable, ultimately we must produce a charm meson (typically a
+$D^{*}$) via a fragmentation process. This requires the introduction
+of a set of fragmentation functions (FFs) which are scale-dependent
+and will factorize final-state singularities in a similar manner as
+the PDFs factor the initial-state singularities.\footnote{Also note, for the NLO quark-initiated contributions (not shown) we
+will have final state singularities from processes such as $c\to cg$
+which will be factorized into the fragmentation functions.} The attempt to define a \textit{``fully inclusive''} $F_{2}^{c}$
+is further complicated by the fact that the FFs can produce a D{*}
+from the fragmentation of a gluon or a light hadron.
+
+
+
+
+\xsec{The Bubble  Diagram:}
+%
+\begin{figure}[t]
+\centering \includegraphics[width=0.45\textwidth]{pics/fred/feyngraph}
+\caption{A higher order Feynman graph illustrating the difficulty in defining
+  a ``fully inclusive'' $F_{2}^{charm}$.
+ A light quark ($q$)
+ scatters from a vector boson ($V$) with 
+ a $c\bar{c}$ in the internal loop.
+ If we cut the amplitude at  ``A''
+we have charm in the final state and this must be included in $F_{2}^{charm}$.
+If we cut the amplitude with cut ``B'' there is no charm in the
+final state, but this process is required to cancel the divergences.
+Additionally, since this diagram contributes to the beta function,
+this highlights the complications of using an $\alpha_{S}$ and hard
+scattering $\hat{\sigma}$ with differing $N_{\rm eff}$. \label{fig:bubble}}
+\end{figure}
+
+Such difficulties of defining a \textit{``fully inclusive''} $F_{2}^{c}$
+are not unique to the VFNS, and also are encountered in the FFNS.
+This is succinctly illustrated in Fig.~\ref{fig:bubble} which shows
+a higher-order DIS process with a quark--anti-quark loop. Let us
+compute this diagram in a 3-flavor FFNS where the internal loop is
+a $c\bar{c}$-pair, and the external quark is a light \mbox{$\{u,d,s\}$}.
+If the final-state is represented by Cut-A, then we have charm quarks
+in the final state, and this should be included in $F_{2}^{c}$. 
+
+However, if we instead use Cut-B as the final state, there is no charm
+in the final state, so this should not be included in $F_{2}^{c}$.
+{[}More precisely, when we renormalize the charm loop with zero-momentum
+subtraction, this contribution effectively decouples.{]} Thus, the
+contribution from Cut-A will be included in $F_{2}^{c}$, but the
+contribution from Cut-B will not. 
+
+
+If we had included the contributions for both Cut-A and Cut-B, the
+total would be free of divergences. The QED analog of this is the
+well known Block-Nordsieck theorem,\cite{Bloch:1937pw} and the QCD
+extensions were performed by Libby and Sterman.\cite{Libby:1978bx,Libby:1978nr}
+For example, the bubble diagram of Fig.~\ref{fig:bubble} is encountered
+in the $F_{2}^{c}$ heavy quark calculations of Refs.~\cite{Chuvakin:1999nx,Chuvakin:2000jm};
+here, an additional scale $\Delta$ must be introduced to cut on the
+invariant mass of the internal quark--anti-quark pair and regulate
+the singularities. 
+
+
+
+\xsec{The running $\alpha_{S}$ in the FFNS:}
+%
+The bubble diagram of Fig.~\ref{fig:bubble} also highlights the
+difficulty of using a $N_{\rm eff}=3$ FFNS with an $N_{\rm eff}=4$ flavor
+running $\alpha_{S}(\mu)$. In a $N_{\rm eff}=3$ FFNS, internal $c\bar{c}$
+loops decouple from the theory and are not included in the calculation;
+however, the $N_{\rm eff}=4$ $\beta$-function requires precisely these
+$c\bar{c}$ loop contributions.\footnote{Note; this deficiency can in principle be patched order-by-order by
+expanding the $\beta$-function and inserting the required terms at
+each order~\cite{Napoletano:2014thesis,Bierenbaum:2009zt,Cascioli:2013era}. } Once again, we cannot unambiguously divide the inclusive $F_{2}$
+into separate ``light'' and ``heavy'' quantities. 
+
+
+
+\xsec{Extensions to bottom and top:}
+%
+While we have used the charm quark to illustrate these features, the
+same properties can, in principle, be applied to both the bottom and
+top quark.\footnote{Additionally, Collins specifically addressed the case of multiple
+heavy quarks which can allow for both charm and bottom in a unified
+framework; in contrast to some incorrect claims in the literature,
+there is no difficulty including multiple heavy quarks. (C.f, Ref.~\cite{Collins:1998rz},
+Sec.~IX.)} For the case of the bottom quark, the larger mass $m_{b}$ yields
+a smaller $\alpha_{s}(\mu)$ for $\mu\sim m_{b}$ and the evolution
+of $f_{b}(x,\mu)$ is thus reduced; nevertheless, for large scale
+processes (such as the LHC) we often find it convenient to make use
+of $f_{b}(x,\mu)$ and treat the 5-flavors on an equal footing. 
+%
+For the case of the top quark, the very large
+mass $m_{t}$ yields a much smaller $\alpha_{s}(\mu)$  for $\mu\sim m_{t}$  and the evolution
+of $f_{t}(x,\mu)$ is comparatively reduced.
+
+
+
+
+\subsection*{Summary }
+
+To properly define an $F_{2}^{c}$ at all orders, we must be careful
+to match the theoretical quantity to what is actually measured experimentally.
+This is more complex than simply asking for the portion of $F_{2}$
+which has charm in the final state, and is an issue for both the FFNS
+and VFNS. The experimental $F_{2}^{c}$ is a differential cross section
+for producing a charm meson in a fiducial region; this physical observable
+is singularity-free and $\mu$-independent. 
+
+We can compute in the FFNS, but in the large energy limit, we encounter
+$\ln(Q^{2}/m_{c}^{2})$ divergences and this, in part, contributes
+to the observed differences at large $Q$ scales. 
+
+The VFNS includes the charm quark as an active parton for $\mu$ scales
+above a matching scale $\mu_{c}$. For large $Q$ scales, the mass
+singularities of NLO and SUB will cancel to yield a result free of
+divergences. For scales $\mu\sim m_{c}$, cancellation between the
+LO and SUB contributions ensures minimal $\mu$ dependence; however,
+as this can be delicate to implement numerically, we have the option
+of displacing the matching scale $\mu_{c}$ to a larger scale where
+the cancellation is more stable.\cite{Bertone:2017ehk,Bertone:2018ids}
+
+
+%\subsection*{Acknowledgements}
+%Thanks to:
+%John Collins, Ted Rogers, George Sterman, Ingo Schienbein, Aleksander Kusina
+
+%\bibliographystyle{unsrt}
+%\bibliography{fred}
 
 %\end{document}
