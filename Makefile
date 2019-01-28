@@ -1,8 +1,11 @@
+#!/bin/bash
+filename= "c_c-paper"
+
 default:
-	pdflatex c_c-paper
-	bibtex   c_c-paper
-	pdflatex c_c-paper
-	pdflatex c_c-paper
+	pdflatex ${filename}
+	bibtex   ${filename}
+	pdflatex ${filename}
+	pdflatex ${filename}
 
 clean:
-	rm -rf *~ *.out *.toc *.log c_c-paper.pdf *.aux *.blg *.bbl
+	rm -rf *~ *.out *.toc *.log ${filename}.pdf *.aux *.blg *.bbl
