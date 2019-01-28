@@ -69,11 +69,20 @@ and it becomes an intricate puzzle to treat them all properly.
 For this current illustration, we will focus on the contribution to
 the DIS $F_{2}^{c}$ structure function from the process involving
 the strange and charm quark; other quark combinations can be addressed
-in a similar manner. In particular, we will show that as we go to
+in a similar manner.
+%
+The  fully inclusive $F_2(x,Q^2)$ can be studied using the energy and angle of the
+outgoing lepton; in contrast, $F_{2}^{c}$ also requires information about
+the final hadronic state, and this introduces some subtleties.
+%
+In particular, we will show that as we go to
 higher-orders the $F_{2}^{c}$ structure function must be defined
 carefully so that i) theoretically it is free of divergences and independent
 of the renormalization scales, and ii) experimentally it matches what
 is measured by the detector.
+%
+
+
 
 \xsec{Overview:}
 %
@@ -82,54 +91,62 @@ is measured by the detector.
 
 \xsec{The Mass Scales:}
 %
-There are four mass scales that enter this process: $\{Q,\mu,m_{s},m_{c}\}$;
-additionally, in the case of the VFNS we have the matching scale,
-$\mu_{c}$.
+What makes this process complex is
+that we encounter a number of different mass scales.
+Furthermore, 
+there is no fixed hierarchy for
+the mass scales, and we will need to compute both in the low $Q$
+region where $Q\lesssim m_{c}$ as well as the high $Q$ region $Q\gg m_{c}$. 
 
 The $Q$ scale is the invariant mass of the virtual boson probe ($W^{+}$
 in this case), and can be related to the energy and angle of lepton;
 this is a physically measurable kinematic variable. 
 
 In contrast, the renormalization scale $\mu$ is an unphysical scale
-used to factorize the PDF and the hard scattering cross section; thus,
+which implements the separation between the PDF and the hard scattering cross section; thus,
 the physics should be insensitive to a variation of $\mu$. As our
 calculations typically involve the dimensionless combination $\ln(\mu^{2}/Q^{2})$,
 we generally choose $\mu\sim Q$ avoid large logarithms. 
 
 The strange quark is a ``light'' active parton with an associated
-PDF $s(x)$ and mass $m_{s}$. The strange quark mass is comparable
+PDF $s(x)$ and mass $m_{s} < \Lambda_{QCD}$. The strange quark mass is comparable
 or less than other hadronic scales which are neglected; as such, it
 serves only as a regulator and plays no physical role, and we can
-take $m_{s}\to0$ if we choose. 
+take $m_{s}\to0$ if we choose.
+%
+We treat the up and down quarks masses  $m_{u,d}$ in a similar manner.
 
-The charm quark is a ``heavy'' object; its associated mass $m_{c}$
+The charm quark is a ``heavy'' object; its associated mass $m_{c}> \Lambda_{QCD}$
 does play a physical role and cannot be neglected. There may or may
 not be a PDF associated with the charm. In a 3-flavor FFNS scheme,
-there is no charm PDF. In a 4-flavor VFNS there is a charm PDF only
+we will assume the charm PDF to be zero.\footnote{It is possible to extend this to  incorporate an intrinsic charm PDF.}
+In a 4-flavor VFNS there is a charm PDF only
 when the $\mu$ scale is above the scale where the charm PDF is activated;
-we call this the matching scale, $\mu_{c}$. It is common\footnote{The choice of matching scale $\mu_{c}=m_{c}$ is common because at
+we call this the matching scale, $\mu_{c}$.
+It is common\footnote{%
+The choice of matching scale $\mu_{c}=m_{c}$ is common because at
 NLO the $\overline{MS}$ matching conditions on the PDFs are proportional
 to the DGLAP kernel times $\ln(\mu/m_{c})$, as explicit calculation
 shows the constant term vanishes; thus we have the simple boundary
 condition $f_{c}(x,\mu=m_{c})=0$. At NNLO, the constant term is non-zero
 and this yields $f_{c}(x,\mu=m_{c})\not=0$. See \cite{Stavreva:2012bs}
-and references therein.} to set $\mu_{c}=m_{c}$, but this is not required.\footnote{By displacing the matching scale to larger values $\mu_{c}\gg m_{c}$,
+and references therein.}
+%5
+to set $\mu_{c}=m_{c}$, but this is not
+required.\footnote{%
+By displacing the matching scale to larger values $\mu_{c}\gg m_{c}$,
 can have the advantage of avoiding delicate cancellations in the region
 $\mu\sim m_{c}$; this flexibility was explored in Refs.~\cite{Bertone:2017ehk,Bertone:2018ids}
-.} In this study we will fix the matching scale to this common choice:
+.}
+%
+In this study we will fix the matching scale to this common choice:
 $\mu_{c}=m_{c}$.
-
-
-
-What makes this process complex is there is no fixed hierarchy for
-the mass scales, and we will need to compute both in the low $Q$
-region where $Q\lesssim m_{c}$ as well as the high $Q$ region $Q\gg m_{c}$. 
-
 
 
 Because there are two different quark masses $\{m_{s},m_{c}\}$ involved
 in the charged current DIS flavor-changing process,  we can examine
 the mass singularities of the $t$-channel and $u$-channel separately.
+%
 This separation is particularly useful to understand how the individual
 mass singularities are addressed, and how FFNS and VFNS organize the
 contributions to the total structure function. 
@@ -298,7 +315,7 @@ $\alpha_{s}$.
 
 Furthermore, note that in the $u$-channel for both the LO and SUB contributions,
 the charm quark is collinear with the incoming hadron, and thus exits
-in the hadron remnants. While this may be experimentally unobservable,
+in the hadron remnants. While this may be experimentally difficult to observe,
 because we are asking for a \textit{``fully inclusive''} $F_{2}^{c}$,
 these contributions cannot be simply ignored. We will discuss this
 further in the following section. 
@@ -311,28 +328,21 @@ $F_{2}^{c}$ to higher orders. We note that in Ref.~\cite{Collins:1998rz}
 Collins extended the proof of factorization to include heavy quarks
 such as charm and bottom for an inclusive structure function $F_{2}$;
 there is no corresponding proof for an \textit{``fully inclusive''}
-$F_{2}^{c}$ because a well defined $F_{2}^{c}$ that is free of singularities
-will depend on experimental cuts or theoretical regulators. The simplistic
-definition that $F_{2}^{c}$ is the contribution to $F_{2}$ from
-states with charm in the final state is not appropriate. 
+$F_{2}^{c}$.
+%
+Whereas $F_2(x,Q^2)$ only requires measurement  of the outgoing lepton
+energy and angle,  $F_2^c(x,Q^2)$ also requires information of
+the final state.
+At the parton-level this introduces complications
+including when the charm is in the hadronic remnants, and brings in
+both fragmentation functions and fracture functions.
 
-
-
-The $F_{2}^{c}$ that is measured experimentally is a differential
-cross section for producing a charm quark in the final state in a
-fiducial region; as we go to higher orders, we must be careful how
-we define this quantity so that it is singularity-free and $\mu$-independent. 
-
-
-
-To characterize the problems in constructing a \textit{``fully inclusive''}
+To characterize the theoretical issues involved in constructing 
 $F_{2}^{c}$, we can imagine starting from the (well defined) inclusive
 $F_{2}$, and then dividing the contributions into two sets: one for
 $F_{2}^{c}$ for the ``heavy'' charm quark, and the rest into $F_{2}^{u,d,s}$
-for the ``light'' quarks. We will show this division cannot be performed
-unambiguously.
-
-
+for the ``light'' quarks. We will show this theoretical procedure
+encounters ambiguities.
 
 The $u$-channel LO $\bar{c}W^{+}\to\bar{s}$ process does not have any
 ``apparent'' charm quark in the final state, but this contribution
@@ -342,29 +352,26 @@ Note that for the SUB process, the charm quark arises from a gluon
 splitting into a collinear $c\bar{c}$ pair which is then part of
 the hadron remnants. For the LO process, presumably our $\bar{c}$
 quark also came from a gluon splitting into a collinear $c\bar{c}$
-pair. Thus, if we want to define a\textit{ ``fully inclusive''}
-$F_{2}^{c}$, it seems we must include those cases where the charm
+pair. Thus, our $F_{2}^{c}$ must include those cases where the charm
 in contained in the hadron remnants.
 
-This issues touches on the fact that because the charm parton is not
-observable, ultimately we must produce a charm meson (typically a
-$D^{*}$) via a fragmentation process. This requires the introduction
+This issues touches on the fact that because the charm parton
+ultimately fragments into a  charm meson (typically a
+$D^{*}$) via a fragmentation process we must  introduction
 of a set of fragmentation functions (FFs) which are scale-dependent
 and will factorize final-state singularities in a similar manner as
 the PDFs factor the initial-state singularities.\footnote{Also note, for the NLO quark-initiated contributions (not shown) we
 will have final state singularities from processes such as $c\to cg$
-which will be factorized into the fragmentation functions.} The attempt to define a \textit{``fully inclusive''} $F_{2}^{c}$
-is further complicated by the fact that the FFs can produce a D{*}
-from the fragmentation of a gluon or a light hadron.
-
-
+which will be factorized into the fragmentation functions.}
+Note we also must allow for the possibility that a gluon or light quark
+can also produce a charm meson. 
 
 
 \xsec{The Bubble  Diagram:}
 %
 \begin{figure}[t]
 \centering \includegraphics[width=0.45\textwidth]{pics/fred/feyngraph}
-\caption{A higher order Feynman graph illustrating the difficulty in defining
+\caption{A higher order Feynman graph illustrating the complications in defining
   a ``fully inclusive'' $F_{2}^{charm}$.
  A light quark ($q$)
  scatters from a vector boson ($V$) with 
@@ -372,16 +379,17 @@ from the fragmentation of a gluon or a light hadron.
  If we cut the amplitude at  ``A''
 we have charm in the final state and this must be included in $F_{2}^{charm}$.
 If we cut the amplitude with cut ``B'' there is no charm in the
-final state, but this process is required to cancel the divergences.
+final state.
 Additionally, since this diagram contributes to the beta function,
 this highlights the complications of using an $\alpha_{S}$ and hard
 scattering $\hat{\sigma}$ with differing $N_{\rm eff}$. \label{fig:bubble}}
 \end{figure}
 
-Such difficulties of defining a \textit{``fully inclusive''} $F_{2}^{c}$
-are not unique to the VFNS, and also are encountered in the FFNS.
-This is succinctly illustrated in Fig.~\ref{fig:bubble} which shows
-a higher-order DIS process with a quark--anti-quark loop. Let us
+Some of the theoretical intricacies of  defining a \textit{``fully inclusive''} $F_{2}^{c}$
+are illustrated in Fig.~\ref{fig:bubble} which shows
+a higher-order DIS process with a quark--anti-quark loop.
+
+Let us
 compute this diagram in a 3-flavor FFNS where the internal loop is
 a $c\bar{c}$-pair, and the external quark is a light \mbox{$\{u,d,s\}$}.
 If the final-state is represented by Cut-A, then we have charm quarks
@@ -389,21 +397,22 @@ in the final state, and this should be included in $F_{2}^{c}$.
 
 However, if we instead use Cut-B as the final state, there is no charm
 in the final state, so this should not be included in $F_{2}^{c}$.
-{[}More precisely, when we renormalize the charm loop with zero-momentum
-subtraction, this contribution effectively decouples.{]} Thus, the
+[More precisely, when we renormalize the charm loop with zero-momentum
+subtraction, this contribution effectively decouples.] Thus, the
 contribution from Cut-A will be included in $F_{2}^{c}$, but the
-contribution from Cut-B will not. 
+contribution from Cut-B will not.
 
-
-If we had included the contributions for both Cut-A and Cut-B, the
-total would be free of divergences. The QED analog of this is the
-well known Block-Nordsieck theorem,\cite{Bloch:1937pw} and the QCD
-extensions were performed by Libby and Sterman.\cite{Libby:1978bx,Libby:1978nr}
+This diagram generates additional complications  in that multiple quark
+favors are involved.
+For example, the bubble diagram involves quarks of both $q$ and $c$ flavors,
+so this contribution cannot be uniquely assigned to  $F_{2}^{q}$ or  $F_{2}^{c}$.
+We can introduce theoretical definitions to make the choice, but
+then we have to be careful about double-counting contributions and introducing
+uncancelled singularities. 
+%
 For example, the bubble diagram of Fig.~\ref{fig:bubble} is encountered
 in the $F_{2}^{c}$ heavy quark calculations of Refs.~\cite{Chuvakin:1999nx,Chuvakin:2000jm};
-here, an additional scale $\Delta$ must be introduced to cut on the
-invariant mass of the internal quark--anti-quark pair and regulate
-the singularities. 
+here, an additional scale $\Delta$ is introduced to subdivide the contributions. 
 
 
 
@@ -412,11 +421,17 @@ the singularities.
 The bubble diagram of Fig.~\ref{fig:bubble} also highlights the
 difficulty of using a $N_{\rm eff}=3$ FFNS with an $N_{\rm eff}=4$ flavor
 running $\alpha_{S}(\mu)$. In a $N_{\rm eff}=3$ FFNS, internal $c\bar{c}$
-loops decouple from the theory and are not included in the calculation;
+loops decouple from the theory and are not included in the calculation;\footnote{%
+More precisely, the heavy quarks are renormalized with zero-mass-subtraction
+and their contributions decouple; this is why we can neglect loops from the the top quark
+and any other heavy particle.
+}
+%
 however, the $N_{\rm eff}=4$ $\beta$-function requires precisely these
 $c\bar{c}$ loop contributions.\footnote{Note; this deficiency can in principle be patched order-by-order by
 expanding the $\beta$-function and inserting the required terms at
-each order~\cite{Napoletano:2014thesis,Bierenbaum:2009zt,Cascioli:2013era}. } Once again, we cannot unambiguously divide the inclusive $F_{2}$
+each order~\cite{Napoletano:2014thesis,Bierenbaum:2009zt,Cascioli:2013era}. }
+Once again, we cannot unambiguously divide the inclusive $F_{2}$
 into separate ``light'' and ``heavy'' quantities. 
 
 
@@ -444,13 +459,15 @@ of $f_{t}(x,\mu)$ is comparatively reduced.
 
 \subsection*{Summary }
 
-To properly define an $F_{2}^{c}$ at all orders, we must be careful
-to match the theoretical quantity to what is actually measured experimentally.
-This is more complex than simply asking for the portion of $F_{2}$
+To properly define an $F_{2}^{c}$ at higher-orders, we encounter the theoretical issues
+discussed in the above; as fragment the charm quark to the charm meson and,
+and  we must be careful to ensure the  theoretical quantity to what is actually measured experimentally.
+*** NOT UPDATED YET HERE ***
+{\it This is more complex than simply asking for the portion of $F_{2}$
 which has charm in the final state, and is an issue for both the FFNS
 and VFNS. The experimental $F_{2}^{c}$ is a differential cross section
 for producing a charm meson in a fiducial region; this physical observable
-is singularity-free and $\mu$-independent. 
+is singularity-free and $\mu$-independent. }
 
 We can compute in the FFNS, but in the large energy limit, we encounter
 $\ln(Q^{2}/m_{c}^{2})$ divergences and this, in part, contributes
