@@ -1,6 +1,9 @@
 \documentclass[pdftex,twocolumn,epjc3]{svjour3}          % twocolumn
+\hyphenpenalty=1000
 \pdfoutput=1
 \RequirePackage[T1]{fontenc}
+%\usepackage[toc]{appendix}
+\usepackage{tocloft}
 
 \RequirePackage{graphicx}
 \RequirePackage{mathptmx}      % use Times fonts if available on your TeX system
@@ -32,10 +35,10 @@
 \newcommand{\lhapdf} {{\textsc{lhapdf}}\xspace}
 \newcommand{\xbj}{\ensuremath{x_{\text{Bj}}}\xspace}
 \newcommand{\fonll} {{FONLL-B}\xspace}
-\newcommand{\ffns} {{FFNS A}\xspace}
-\newcommand{\ffnsb} {{FFNS B}\xspace}
-\newcommand{\ffthreea} {{HERAPDF2.0 FF3A}\xspace}
-\newcommand{\ffthreeb} {{HERAPDF2.0 FF3B}\xspace}
+\newcommand{\ffns} {{FFNS~A}\xspace}
+\newcommand{\ffnsb} {{FFNS~B}\xspace}
+\newcommand{\ffthreea} {{\hbox{HERAPDF2.0} FF3A}\xspace}
+\newcommand{\ffthreeb} {{\hbox{HERAPDF2.0} FF3B}\xspace}
 
 % Hyperref needs to be loaded last
 \RequirePackage[colorlinks,citecolor=blue,urlcolor=blue,linkcolor=blue]{hyperref}
@@ -112,8 +115,10 @@
 
 \linenumbers
 
+\setcounter{tocdepth}{4}
+\tableofcontents
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Introduction}
+\section{Introduction} \label{sec:intro}
 
 The Deep-inelastic-scattering (DIS) experiments traditionally have
 provided important tests of pQCD and are essential to precisely
@@ -207,53 +212,82 @@ it is often set to a fixed value at the initial $Q^2$ scale~\cite{Kretzer:2003it
 Using inclusive leptonic decays of $W^\pm$ and $Z$ bosons, ATLAS has  measured  $r_s$
 at the scale $Q_0 = 1.9$~GeV$^2$ and $x= 0.023$, and obtain a value of~1.19~\cite{Aaboud:2016btc}.
 
-*** THIS PART NOT DONE *******
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\color{red}
+*** THIS PART NOT DONE ******* \\
 The LHC tried to provide a more precise
 measurement and CMS and ATLAS collaboration performed ... By
 eliminated the isoscalar between strange and anti-strange
 distribution, the CTEQ \cite{Lai:2007dq} and MSTW \cite{Martin:2009iq}
 extracted the strange and anti-strange distribution at NLO.
 
+ALSO NEED SOME LHeC INTRO STUFF 
 
-This paper organized as follow, in the Sec. ....
+\color{black}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+This paper organized as follows.
+%
+In  Sec.~\ref{sec:thpred} we outline the theoretical details
+of the different heavy flavor schemes, show comparisons across
+the kinematic range, and examine the individual partonic contributions. 
+%
+In  Sec.~\ref{sec:PDF} we study the impact of the LHeC pseudodata
+on the PDFs using a profiling technique. 
+%
+In  Sec.~\ref{sec:discuss} provide some discussion and summarize the results. 
+%
+Finally, in \ref{sec:appendix} we discuss some of the more subtle theoretical
+issues we encounter at higher orders. 
+
+
 
 
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Theoretical predictions for charm CC production at LHeC}
-\label{sec:thpred}
+\section{Theoretical predictions for CC charm production at the LHeC} \label{sec:thpred}
 
-Theoretical predictions are calculated for electroweak charm CC production in $ep$ collisions at the LHeC at centre-of-mass energy $\sqrt{s} = 1.3$ TeV, using a variety 
-of heavy flavour schemss. The predictions are provided for unpolarised beams in the kinematic range $100 < Q^2 < 100000$~GeV$^2$, $0.0001 < \xbj < 0.25$. They are calculated as reduced cross sections at different $Q^2$, \xbj and $y$ points.
+\textcolor{red}{Need an intro to the LHeC at some point.}
+
+Theoretical predictions are calculated for electroweak CC charm  production in $ep$ collisions at the LHeC at centre-of-mass energy $\sqrt{s} = 1.3$ TeV, using a variety 
+of heavy flavour schemes. The predictions are provided for unpolarised beams in the kinematic range $100 < Q^2 < 100000$~GeV$^2$, $0.0001 < \xbj < 0.25$. They are calculated as reduced cross sections at different $Q^2$, \xbj and $y$ points.
 
 {\color{blue}
 Experimentally, however, not charm quarks but charmed hadrons (or rather their decay products) are registered in the detectors. 
 Therefore, extrapolation to the inclusive charm production cross section has to be carried out in a model dependent way.
-Furthermore, in CC charm quarks in the final state can be produced via both electroweak and QCD production processes.
+Furthermore, CC production of charm quarks in the final state can be  via both electroweak and QCD  processes.
 The former leads to an odd number of charm quarks in the final state with the W boson having the same electric charge as the sum electric charges of final-state charm quarks, while the latter creates an even number of charm quarks with total electric charge equal to zero.
 If the electric charge of the tagged charm quark can be accessed experimentally (e.g.\ when reconstructing D mesons), the QCD contribution can be excluded by taking the difference of the yields in the events with odd and even numbers of charm quarks, otherwise the QCD contribution can be subtracted only in a model dependent way.
 }
 
-The charm CC process directly depends on the CKM matrix. Here, the CKM matrix 
+The CC charm process directly depends on the CKM matrix. Here, the CKM matrix 
 elements $V_{cd}$ and $V_{cs}$ are of particular interest. The values used are 
 $V_{cd} = 0.2252$ and $V_{cs} = 0.9734$.
 Three different heavy-flavour schemes are employed, all including a full 
 treatment of charm mass effects up to NLO\footnote{The $O(\alpha_s^2)$ 
-corrections quoted earlier are not yet avaialble in the context of the xFitter 
+corrections quoted earlier are not yet available in the context of the xFitter 
 setup.}, i.e. $O(\alpha_s)$, and described here for the particular application 
-to charged current electron-proton reactions. 
-The standard fixed flavour number scheme (FFNS A) 
+to charged current electron-proton reactions.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{The Heavy Flavor Schemes} \label{sec:schemes}
+
+
+The standard fixed flavour number scheme ({\bf FFNS~A}) 
 uses three light flavours in both PDFs and $\alpha_s$ evolution, while heavy 
 flavours (here: charm) are produced exclusively in the matrix element part of 
 the calculation. This scheme has been used e.g. for the PDF determinations 
 and cross-section predictions of the ABM(P) group~\cite{Alekhin:2017kpj,Alekhin:2018pai}, as well as in the 
 FF3A variant of HERAPDF~\cite{Abramowicz:2015mha}, and implemented in 
-xFitter through the OPENQCDRAD package~\cite{openqcdrad}. The ``B'' variant of the 
-fixed-order-next-to-leading-log scheme (FONLL B) combines the NLO 
-$(O \alpha_s)$ massive matrix elements of the fixed flavour scheme with the 
-NLO $(O \alpha_s)$ massless treatment of the zero-mass variable flavour number 
+xFitter through the OPENQCDRAD package~\cite{openqcdrad}.
+
+The ``B'' variant of the 
+fixed-order-next-to-leading-log scheme ({\bf FONLL~B}) combines the NLO 
+${\cal O}(\alpha_s)$ massive matrix elements of the fixed flavour scheme with the 
+NLO ${\cal O}(\alpha_s)$ massless treatment of the zero-mass variable flavour number 
 scheme (ZM-VFNS), allowing the number of active flavours (3, 4, or 5) to vary 
 with scale, and all-order next-to-leading log resummation of (massless) terms 
 beyond NLO. 
@@ -262,13 +296,15 @@ evolution of the strong coupling constant.
 Whenever terms would be double-counted in the merger of the two schemes 
 the massless terms are eliminated in favour of retaining the massive terms.  
 The FONLL is heavily used by the NNPDF group [Ball:2017nwa] and implemented in 
-xFitter through the APFEL package~\cite{Bertone:2013vaa}. 
+xFitter through the APFEL package~\cite{Bertone:2013vaa}.
+
+
 Finally a variant of the fixed flavour number scheme known as the `mixed' 
-scheme or \ffnsb~\cite{Behnke:2015qja} is used. In this scheme, the 
+scheme or {\bf \ffnsb}~\cite{Behnke:2015qja} is used. In this scheme, the 
 number of active flavours is still fixed (here: to 3) in the PDFs, relying 
-exclusively on $O(\alpha_s)$ fully massive matrix elements for charm 
+exclusively on ${\cal  O}(\alpha_s)$ fully massive matrix elements for charm 
 production, while the number of flavours is allowed to vary in the virtual 
-corrections of the alphas evolution. 
+corrections of the $\alpha_s$ evolution. 
 Corrections to this evolution involving heavy flavour loops are thus
 included and resummed to all orders, as in the VFNS schemes, while no 
 resummation is applied to other higher order corrections. This procedure 
@@ -276,8 +312,10 @@ will catch a large fraction of the ``large logs'' which might spoil the
 fixed-flavour scheme convergence at very high scales, and is possible since the 
 masses of the charm and beauty quarks provide natural cutoffs for infrared 
 and collinear divergences. This scheme was used in the HERAPDF FF3B variant~\cite{Abramowicz:2015mha} and in applications of the HVQDIS program~\cite{,Behnke:2015qja}. 
-In general the transition from the FFNS A to the
-FFNS B scheme requires a readjustement of the treatment of matrix elements 
+
+
+In general the transition from the FFNS~A to the
+FFNS B scheme requires a readjustment of the treatment of matrix elements 
 involving heavy flavour loops, but in the specific case of charged current 
 no such loops occur up to NLO (at NNLO they will), such that the same 
 matrix elements can be used for both schemes, and here the only difference is 
@@ -290,13 +328,15 @@ In summary, the schemes used are
   \item FONLL-B with $n_f = 3$ and \nnpdf NLO PDF set~\cite{Ball:2017nwa}.
 \end{itemize}
 All calculations are interfaced in \xfitter and available in the scheme using the running $\overline{MS}$ charm mass, $m_c(m_c)$.
-The $\overline{MS}$ charm mass is set to $m_c(m_c) = 1.27$ GeV~\cite{pdg}, and $\alpha_s$ is set to the value used for the corresponding PDF extraction ($\alpha_s(M_Z) = 0.1191$ for \abmp, and $\alpha_s(M_Z) = 0.118$ for \nnpdf).
+The $\overline{MS}$ charm mass is set to $m_c(m_c) = 1.27$ GeV~\cite{pdg}, and $\alpha_s$ is set to the value used for the corresponding PDF extraction:
+$\alpha_s(M_Z) = 0.1191$ for \abmp, and $\alpha_s(M_Z) = 0.118$ for \nnpdf.
 The renormalisation and factorisation scales are chosen to be $\mu_\mathrm{r} = \mu_\mathrm{f} = Q^2$.
 
 To estimate theoretical uncertainties, the two scales are simultaneously varied up and down by factor $2$. In the case of the \fonll calculations, also the independent $\mu_r$ and $\mu_f$ variations are checked. Furthermore, the PDF uncertainties are propagated to the calculated theoretical predictions, while the uncertainties arising from varying the charm mass $m_c(m_c) = 1.27 \pm 0.03$ GeV are smaller than $1\%$ and therefore neglected. In the \fonll scheme, as a cross check, the calculation was performed with the pole charm mass $m_c^{\text{pole}} = 1.51$ GeV which is consistent with the conditions of the \nnpdf extraction~\cite{Ball:2017nwa}. The obtained theoretical predictions differ from the ones calculated with $m_c(m_c) = 1.27$ GeV by less than $1\%$.
 The total theoretical uncertainties are obtained by adding in quadrature the scale and PDF uncertainties.
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Comparison of theoretical predictions in the \ffns and \fonll schemes}
 \label{sec:thpred-comparison}
 
@@ -342,24 +382,40 @@ In Fig.~\ref{fig:thpred-q2-unc} the PDF and scale uncertainties of charm CC cros
     \label{fig:thpred-q2-varmu}
 \end{figure*}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\color{green}
+\textcolor{red}{\it THE GREEN IS A OLD  DUPLICATE OF THE FOLLOWING 2 RED PARAGRAPHS; TO BE CUT.}
+
 To explore whether the differences between the two sets of theoretical predictions appear due to the different treatment of heavy quarks or due to different PDF sets, theoretical calculations in the \ffns and \fonll schemes are repeated with PDF sets extracted from the fit to the HERA DIS data~\cite{Abramowicz:2015mha}. The fit settings follow the HERAPDF2.0 analysis~\cite{Abramowicz:2015mha}. 
 In this study, consistent conditions of the PDF extraction eliminate possible differences between the predictions for the LHeC arising from the dissimilarities of the \abmp and \nnpdf analysis. The obtained results are displayed in Figs.~\ref{fig:thpred-fit-y}--\ref{fig:thpred-fit-x}. The differences between the \ffns and \fonll schemes in these predictions are similar to the ones displayed in Figs.~\ref{fig:thpred-x}--\ref{fig:thpred-y} and prove that these differences arise due to the different treatment of heavy quarks in the two schemes.
 
 Furthermore, the predictions in the \ffns and \ffnsb schemes calculated using the \ffthreea and \ffthreeb PDF sets are displayed in Figs.~\ref{fig:thpred-fit-y}--\ref{fig:thpred-fit-x}. Because of the similarities of the two HERAPDF2.0 PDF sets, the differences between the two sets of the predictions arise mainly due to the different treatment of heavy quarks in the two schemes. Remarkably, the differences between \ffns and \fonll predictions are similar to the ones between \ffns and \ffnsb, i.e.\ a larger part of these differences arise due to the different treatment of heavy quarks in $\alpha_s(\mu)$ running.
 %{\bf [TODO: Achim, could you please comment more here?]}
+\color{black}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-{\color{red}
-To explore whether the differences between the two sets of theoretical predictions appear due to the different treatment of heavy quarks or due to different PDF sets, theoretical calculations in the \ffns and \fonll schemes are repeated with the HERAPDF2.0 sets extracted from the same HERA DIS data using coherent settings~\cite{Abramowicz:2015mha}. Furthermore, the predictions in the \ffnsb scheme are produced using the \ffthreeb PDF set and the \ffns matrix elements, which are equaivalent to the \ffnsb matrix elemenets at NLO for charm CC production. The obtained results are displayed in Fig.~\ref{fig:thpred-ff3abfonll}. The differences between the \ffns and \fonll schemes in these predictions are similar to the ones displayed in Figs.~\ref{fig:thpred-x}--\ref{fig:thpred-y} and prove that these differences arise due to the different treatment of heavy quarks in the two schemes. The \ffnsb predictions are between the \ffns and \fonll predictions, indicating that a large part of these differences arise due to the different treatment of heavy quarks in $\alpha_s(\mu)$ running.
+\color{red}
+{\it THIS IS AN UPDATE OF ABOVE IN GREEN }
+
+To explore whether the differences between the two sets of theoretical predictions appear due to the different treatment of heavy quarks or due to different PDF sets, theoretical calculations in the \ffns and \fonll schemes are repeated with the HERAPDF2.0 sets extracted from the same HERA DIS data using coherent settings~\cite{Abramowicz:2015mha}. Furthermore, the predictions in the \ffnsb scheme are produced using the \ffthreeb PDF set and the \ffns matrix elements, which are equivalent to the \ffnsb matrix elements at NLO for CC charm production. The obtained results are displayed in Fig.~\ref{fig:thpred-ff3abfonll}. The differences between the \ffns and \fonll schemes in these predictions are similar to the ones displayed in Figs.~\ref{fig:thpred-x}--\ref{fig:thpred-y} and prove that these differences arise due to the different treatment of heavy quarks in the two schemes. The \ffnsb predictions are between the \ffns and \fonll predictions, indicating that a large part of these differences arise due to the different treatment of heavy quarks in $\alpha_s(\mu)$ running.
+
+
+Furthermore, to investigate the impact of the NNLO corrections available at $Q \gg m_c$ for the FFNS calculation, approximate NNLO predictions are obtained using the \abmp NNLO PDF set~\cite{Alekhin:2017kpj}. The results for the cross sections as a function of $Q^2$ for difference values of \xbj are shown in Fig.~\ref{fig:thpred-q2-nnlo}, where they are compared to the NLO FFNS predictions from Fig.~\ref{fig:thpred-q2}. The NNLO corrections do not exceed $10\%$ and thus do not cover the differences between the \ffns and \fonll theoretical predictions. Similar results are observed for cross sections as functions of other kinematic variables.
+
+\color{black}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \begin{figure*}
     \centering
     \centering{{\includegraphics[width=0.49\textwidth]{pics/plots-11122018/plot-FF3ABFONLL-q2-em.pdf}}}
     \centering{{\includegraphics[width=0.49\textwidth]{pics/plots-11122018/plot-FF3ABFONLL-x-em.pdf}}}
     \centering{{\includegraphics[width=0.49\textwidth]{pics/plots-11122018/plot-FF3ABFONLL-y-em.pdf}}}
-    \caption{The theoretical predictions for charm CC production at the LHeC as a function of $Q^2$ ($\xbj$, $y$) for different values of $\xbj$ ($\xbj$, $Q^2$) obtained using the HERAPDF2.0 PDF sets in the \ffns, \ffnsb and \fonll schemes. The bottom panel display the theoretical predictions normalised to the nominal values of the \ffns predictions.}
+    \caption{The theoretical predictions for CC charm production at the LHeC as a function of $Q^2$ ($\xbj$, $y$) for different values of $\xbj$ ($\xbj$, $Q^2$) obtained using the HERAPDF2.0 PDF sets in the \ffns, \ffnsb and \fonll schemes. The bottom panel display the theoretical predictions normalised to the nominal values of the \ffns predictions.}
     \label{fig:thpred-ff3abfonll}
 \end{figure*}
-}
+
 
 %\begin{figure*}
 %    \centering
@@ -386,17 +442,15 @@ To explore whether the differences between the two sets of theoretical predictio
 %    \label{fig:thpred-fit-y}
 %\end{figure*}
 
-Furthermore, to investigate the impact of the NNLO corrections available at $Q \gg m_c$ for the FFNS calculation, approximate NNLO predictions are obtained using the \abmp NNLO PDF set~\cite{Alekhin:2017kpj}. The results for the cross sections as a function of $Q^2$ for difference values of \xbj are shown in Fig.~\ref{fig:thpred-q2-nnlo}, where they are compared to the NLO FFNS predictions from Fig.~\ref{fig:thpred-q2}. The NNLO corrections do not exceed $10\%$ and thus do not cover the differences between the \ffns and \fonll theoretical predictions. Similar results are observed for cross sections as functions of other kinematic variables.
-
 \begin{figure}
     \centering
     \centering{{\includegraphics[width=0.50\textwidth]{pics/plots-11122018/plot-FFABMnnlo-q2-em.pdf}}}
-    \caption{The theoretical predictions with their total uncertainties for charm CC production at the LHeC as a function of $Q^2$ for different values of \xbj calculated in the \ffns scheme at NLO and approximate NNLO. The bottom panel display the theoretical predictions normalised to the nominal values of the \ffns NLO predictions.}
+    \caption{The theoretical predictions with their total uncertainties for CC charm production at the LHeC as a function of $Q^2$ for different values of \xbj calculated in the \ffns scheme at NLO and approximate NNLO. The bottom panel display the theoretical predictions normalised to the nominal values of the \ffns NLO predictions.}
     \label{fig:thpred-q2-nnlo}
 \end{figure}
 
 
-\color{blue} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\color{blue} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 To better understand the differences between the FFNS  and VFNS calculations, 
 Fig.2*** which displays the cross section vs. $Q^2$ is particularly instructive. 
 We see at low scales the FFNS and  VFNS results coincide. 
@@ -419,15 +473,15 @@ in the VFNS yielded a larger cross section than the FFNS (the specific magnitude
 exceeded the differences due to (estimated) higher order contributions~\cite{Kusina:2013slm}. 
 
 
-\color{black} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\color{black} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Contributions from different partonic subprocesses}
 \label{sec:thpred-partonic}
 
 {\bf [perhaps this text would be more appropriate in an earlier theory section]}
-The reduced charm CC production cross sections can be expressed as a linear combinations of the structure functions:
+The reduced CC charm production cross sections can be expressed as a linear combinations of the structure functions:
 \begin{equation}
 \begin{split}
     \sigma^{\pm}_{\text{charm,CC}} &= 0.5(Y_{+}F_2^{\pm} \mp Y_{-}xF_3^{\pm} - y^2F_L^{\pm}),\\
@@ -465,8 +519,10 @@ In the phase space corners $y \to 0$ and $y \to 1$, the following asymptotics ta
 \end{equation}
 Thus the contribution from the strange quark PDF is suppressed at high $y$.
 
-Figures~\ref{fig:partonic-x}, \ref{fig:partonic-q2} and \ref{fig:partonic-y} show contributions from different partonic subprocesses for charm CC production cross sections in the \ffns and \fonll schemes as a function of \xbj for different values of $Q^2$, as a function of $Q^2$ for different values of \xbj, and as a function of $y$ for different values of $Q^2$, respectively.
-In both scheme, the strange quark PDF contributes only about $50\%$ to total charm CC production. In particular, at high $y$ its contribution drops to zero in favor of the gluon or charm quark PDF (see Fig.~\ref{fig:partonic-y} and Eq.~\ref{eq:y01}). Similar phenomena (although less pronounced) is observed at low \xbj and/or high $Q^2$. In these phase space regions, the dominant contributions to the cross sections are the gluon PDF (in the FFNS) or the charm quark PDF (in the VFNS). Remarkably, these contributions as functions of $Q^2$, \xbj and $y$ behave qualitatively very similar in the FFNS and VFNS.
+\textcolor{red}{NEED TO COMMENT ABOUT THE GLUON AT NLO}
+
+Figures~\ref{fig:partonic-x}, \ref{fig:partonic-q2} and \ref{fig:partonic-y} show contributions from different partonic subprocesses for CC charm production cross sections in the \ffns and \fonll schemes as a function of \xbj for different values of $Q^2$, as a function of $Q^2$ for different values of \xbj, and as a function of $y$ for different values of $Q^2$, respectively.
+In both scheme, the strange quark PDF contributes only about $50\%$ to total charm CC production. In particular, at high $y$ its contribution drops to zero in favor of the gluon or charm quark PDF (see Fig.~\ref{fig:partonic-y} and Eq.~\ref{eq:y01}). Similar phenomena (although less pronounced) are observed at low \xbj and/or high $Q^2$. In these phase space regions, the dominant contributions to the cross sections are the gluon PDF (in the FFNS) or the charm quark PDF (in the VFNS). Remarkably, these contributions as functions of $Q^2$, \xbj and $y$ behave qualitatively very similar in the FFNS and VFNS.
 
 \begin{figure*}
     \centering
@@ -495,10 +551,11 @@ In both scheme, the strange quark PDF contributes only about $50\%$ to total cha
 
 \color{blue} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Figures 7,8,9*** display a particularly interesting pattern; 
+Figures~\ref{fig:partonic-x}, \ref{fig:partonic-q2} and \ref{fig:partonic-y}
+display a particularly interesting pattern; 
 the gluon contribution for the FFNS  is strikingly similar to the charm contribution 
 in the VFNS. 
-
+%
 In the FFNS, the charm is produced  predominantly from the explicit process $g \gamma\to c\bar{c}$. 
 In contrast, for the VFNS the  $g\to c\bar{c}$ splitting is implicit (internal to the proton and evolved 
 with the DGLAP evolution equations); the charm parton then emerges from the proton
@@ -517,13 +574,18 @@ matches the LO $c \gamma \to c$ process, but this ${\cal O}(\alpha \, \alpha_S)$
 \color{black} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{PDF constraints from charm CC pseudodata}
 \label{sec:PDF}
 
-The impact of charm CC cross section measurements at the LHeC on the PDFs is quantitatively estimated using a profiling technique~\cite{Paukkunen:2014zia}. This technique is based on minimizing \chisq between data and theoretical predictions taken into account both experimental and theoretical uncertainties arising from PDF variations. Two NLO PDF sets were chosen for this study: 
+The impact of charm CC cross section measurements at the LHeC on the PDFs is quantitatively estimated using a profiling technique~\cite{Paukkunen:2014zia}. This technique is based on minimizing \chisq between data and theoretical predictions taking into account both experimental and theoretical uncertainties arising from PDF variations. Two NLO PDF sets were chosen for this study: 
 \abmp~\cite{Alekhin:2018pai} and \nnpdf~\cite{Ball:2017nwa} available via the \lhapdf interface (version 6.1.5)~\cite{Buckley:2014ana}. 
 All PDF sets are provided with uncertainties in the format of eigenvectors. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{The CC  Charm Pseudodata}
+\label{sec:pseudodata}
 
 For this study, pseudodata representing measurements of charm CC production cross sections as a function of $Q^2$ and $x$ are used. {\bf [TODO: describe how pseudodata were produced]}
 The study is performed using the \xfitter program (version 2.0.0)~\cite{Alekhin:2014irh}, an open-source QCD fit framework for PDF determination. The theoretical predictions are calculated at NLO QCD in the FFNS with the number of active flavours $n_f = 3$ and FONLL-B with $n_f = 5$. The running charm mass is set to $m_c(m_c) = 1.27$ GeV and $\alpha_s$ is set to the value used for the corresponding PDF extraction.
@@ -534,7 +596,7 @@ The \chisq value is calculated as follows:
 \chisq = \mathbf{R}^{T}_{} \mathbf{Cov}^{-1}_{} \mathbf{R}_{} + \sum_{\beta} b_{\beta,\rm th}^2,~~~\mathbf{R} = \mathbf{D} - \mathbf{T} - \sum_{\beta} \Gamma^{}_{\beta,\rm th} b_{\beta,\rm th},
 \label{eq:chisq}
 \end{equation}
-
+%
 where $\mathbf{D}$ and $\mathbf{T}$ are the column vectors of the measured and predicted values, respectively, 
 and the correlated theoretical PDF uncertainties are included using the nuisance parameter vector $\boldsymbol{b_{\rm th}}$ with their influence on the theory predictions described by $\Gamma^{}_{\beta,\rm th}$, where index $\beta$ runs over all PDF eigenvectors. 
 For each nuisance parameter a penalty term is added to the \chisq, representing the prior knowledge of the parameter. 
@@ -549,6 +611,11 @@ where $\Gamma^{}_{\beta, \rm th} = 0.5(\Gamma^{+}_{\beta, \rm th} - \Gamma^{-}_{
 + \Gamma^{-}_{\beta, \rm th})$ are determined from the shifts of predictions corresponding to up ($\Gamma^{+}_{\beta, \rm th}$) and down ($ \Gamma^{-}_{\beta, \rm th}$) PDF uncertainty eigenvectors.
 
 The values of the nuisance parameters at the minimum, $b^{\rm min}_{\beta,\rm th}$ are interpreted as optimised, or profiled, PDFs, while their uncertainties determined using the tolerance criterion of $\Delta\chi^2 = 1$ correspond to the new PDF uncertainties. The profiling approach assumes that the new data are compatible with theoretical predictions using the existing PDFs, such that no modification of the PDF fitting procedure is needed. Under this assumption, the central values of the measured cross sections are set to the central values of the theoretical predictions. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{The Profiled PDFs}
+\label{sec:profile}
 
 The original and profiled \abmp and \nnpdf PDF uncertainties are shown in Figs.~\ref{fig:pdf-abmp}--\ref{fig:pdf-nnpdf-100000}. 
 The uncertainties of the PDFs are presented at the scales $\mu_\mathrm{f}^2=100$ GeV$^2$ and $\mu_\mathrm{f}^2=100000$ GeV$^2$.
@@ -602,8 +669,11 @@ Also the gluon PDF uncertainties are decreased. Furthermore, in the case of the 
     \label{fig:pdf-nnpdf-100000}
 \end{figure}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
 \section{Discussion and summary}
+\label{sec:disuss}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 \begin{acknowledgements}
 
 We would like to thank

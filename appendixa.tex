@@ -25,17 +25,21 @@
 \newcommand{\xsec}[1]{\vskip 6pt \noindent {\bf #1} \quad }
 
 \appendix
+% Need to adjust TOC column widths to allow for ``Appendix''
+% Needds: \usepackage{tocloft}
+\addtocontents{toc}{\setlength{\cftsecnumwidth}{14ex}}
 
-{\small
-\textbf{\textcolor{blue}{TO DO LIST:}}
-\textcolor{blue}{{*} Follow up on John Collins' list {[}MOSTLY DONE{]} }
-\textcolor{blue}{{*} Add brief mention at end that this applies also
-to bottom quark {[}at end{]}}
-\textcolor{blue}{{*} refs from Sasha: LHC W+c measurements:
-  \cite{Chatrchyan:2013uja,Aad:2014xca,Sirunyan:2018hde}}
-  }
+%  {\small
+%  \textbf{\textcolor{blue}{TO DO LIST:}}
+%  \textcolor{blue}{{*} Follow up on John Collins' list {[}MOSTLY DONE{]} }
+%  \textcolor{blue}{{*} Add brief mention at end that this applies also
+%  to bottom quark {[}at end{]}}
+%  \textcolor{blue}{{*} refs from Sasha: LHC W+c measurements:
+%    \cite{Chatrchyan:2013uja,Aad:2014xca,Sirunyan:2018hde}}
+%    }
 
-\section{$F_{2}^{charm}$ Beyond Leading-Order}
+\section{$F_{2}^{charm}$ Beyond Leading-Order}\label{sec:appendix}
+%\addcontentsline{toc}{section}{A:\quad $F_{2}^{charm}$ Beyond Leading-Order}
 
 \begin{figure}
 \centering \includegraphics[clip,width=0.45\textwidth]{pics/fred/acot_fig}
@@ -356,15 +360,15 @@ pair. Thus, our $F_{2}^{c}$ must include those cases where the charm
 in contained in the hadron remnants.
 
 This issues touches on the fact that because the charm parton
-ultimately fragments into a  charm meson (typically a
-$D^{*}$) via a fragmentation process we must  introduction
+ultimately fragments into a  charm hadron (typically a
+$D$ meson) via a fragmentation process we must  introduction
 of a set of fragmentation functions (FFs) which are scale-dependent
 and will factorize final-state singularities in a similar manner as
 the PDFs factor the initial-state singularities.\footnote{Also note, for the NLO quark-initiated contributions (not shown) we
 will have final state singularities from processes such as $c\to cg$
 which will be factorized into the fragmentation functions.}
-Note we also must allow for the possibility that a gluon or light quark
-can also produce a charm meson. 
+Note we also may allow for the possibility that a gluon or light quark
+can also produce a charm hadron  pair. 
 
 
 \xsec{The Bubble  Diagram:}
@@ -462,13 +466,11 @@ of $f_{t}(x,\mu)$ is comparatively reduced.
 To properly define an $F_{2}^{c}$ at higher-orders, we encounter the theoretical issues
 discussed in the above; as fragment the charm quark to the charm meson and,
 and  we must be careful to ensure the  theoretical quantity to what is actually measured experimentally.
-*** NOT UPDATED YET HERE ***
-{\it This is more complex than simply asking for the portion of $F_{2}$
+%
+This is more complex than simply asking for the portion of $F_{2}$
 which has charm in the final state, and is an issue for both the FFNS
-and VFNS. The experimental $F_{2}^{c}$ is a differential cross section
-for producing a charm meson in a fiducial region; this physical observable
-is singularity-free and $\mu$-independent. }
-
+and VFNS as we move to higher orders. 
+%
 We can compute in the FFNS, but in the large energy limit, we encounter
 $\ln(Q^{2}/m_{c}^{2})$ divergences and this, in part, contributes
 to the observed differences at large $Q$ scales. 
