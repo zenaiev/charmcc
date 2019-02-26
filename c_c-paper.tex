@@ -100,7 +100,7 @@
 We study the the charged current DIS  production of charm using the
 xFitter program.  Recent results from the LHC have focused renewed
 attention on the determination of the strange quark PDF, and the DIS
-charm process provides important constraints on this quantity.  We examine the current
+charm process provides important complementary constraints on this quantity.  We examine the current
 PDF uncertainty, and use LHeC pseudodata to compute the potential
 improvement from this proposed facility.  As xFitter implements both
 Fixed Flavor Number Schemes and a Variable Flavor Number Schemes, we
@@ -291,7 +291,7 @@ issues we encounter at higher orders.
 
 
 The proposed Large Hadron Electron Collider (LHeC) would collide a newly built electron beam
-with the LHC hadron beam with a center of mass energy of  $\sqrt{s} = 4 E_e E_p$;
+with the LHC hadron beam with a center of mass energy of  $s = 4 E_e E_p$;
 thus, the 7~TeV proton beam on a 60~GeV electron beam  provide $\sqrt{s}\sim 1.3$~TeV.
 %
 Compared to  HERA, the LHeC extends the covered kinematic range by an order of magnitude in $\{x,Q^2 \}$
@@ -358,10 +358,10 @@ number of active flavours is still fixed (here, to 3) in the PDFs, relying
 exclusively on ${\cal  O}(\alpha_s)$ fully massive matrix elements for charm 
 production, while the number of flavours is allowed to vary in the virtual 
 corrections of the $\alpha_s$ evolution. 
-Corrections to this evolution involving heavy flavour loops are thus
+Corrections to the  $\alpha_s$ evolution involving heavy flavour loops are thus
 included and resummed to all orders, as in the VFNS schemes, while no 
 resummation is applied to other higher order corrections. This procedure 
-will catch a large fraction of the ``large logs'' which might spoil the 
+will catch a  fraction of the ``large logs'' which might spoil the 
 fixed-flavour scheme convergence at very high scales, and is possible since the 
 masses of the charm and beauty quarks provide natural cutoffs for infrared 
 and collinear divergences.
@@ -416,14 +416,14 @@ In summary, the schemes used are:
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{The Reduced Cross Section}
+\subsection{The Reduced Cross Section}\label{sec-redsigma}
 
 The reduced CC charm production cross sections can be expressed as a
 linear combinations of the structure functions:
 \begin{equation}
 \begin{split}
     \sigma^{\pm}_{\text{charm,CC}} &= 0.5(Y_{+}F_2^{\pm} \mp Y_{-}xF_3^{\pm} - y^2F_L^{\pm}) \quad ,\\[10pt]
-    Y_{\pm} &= 1 \pm (1-y)^2.
+    Y_{\pm} &= 1 \pm (1-y)^2 \ .
 \end{split}
 \end{equation}
 In the simplified Quark Parton Model (QPM), where we neglect the  gluons, the structure functions become:
@@ -550,12 +550,12 @@ two schemes.
 
 
 Comparing the two schemes, the larger variation of the  \fonll scheme
-reflects the larger PDF uncertainty of the different PDF sets used;
+reflects the larger PDF uncertainty of the underlying PDF sets used;
 ABMP16 for the  \ffns scheme, and NNPDF3.1 for the  \fonll.
 %
 This difference is most evident in  Fig.~\ref{fig:thpred-q2-unc} which
 specifically separates out the PDF uncertainty, and  reflects
-the independent inputs and conditions used in the different  PDF extractions. 
+the independent inputs and assumptions used in the different  PDF extractions. 
 
 Examining the results of Fig.~\ref{fig:thpred-q2-unc}, we also see
 some other interesting features.
@@ -564,9 +564,9 @@ For both the calculations, the
 PDF uncertainties are relatively stable as a function of $Q^2$, but
 tend to increase at larger $x$ values.
 %
-
 The QCD calculation is a perturbative expansion in $\alpha_s(\mu_r)$;
-hence, the  $\mu$ variation (or more specifically, the $\mu_r$ variation)
+hence, the  $\mu$ variation
+% (or more specifically, the $\mu_r$ variation)
 is indicative of the convergence of the series. 
 %
 We observe 
@@ -620,7 +620,7 @@ due to different PDF sets, theoretical calculations in the \ffns and
 \fonll schemes are repeated with the HERAPDF2.0 PDF sets extracted from
 the  HERA DIS data~\cite{Abramowicz:2015mha}.
 %
-Additionally, the predictions in
+The predictions in
 the \ffnsb scheme are produced using the \ffthreeb PDF set and the
 \ffns matrix elements, which are equivalent to the \ffnsb matrix
 elements at NLO for CC charm production. The obtained results are
@@ -765,7 +765,7 @@ subprocesses for CC charm production cross sections in the \ffns and
 
 
  
-\color{blue} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\color{blue} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 In these figures 
 we observe the  particularly interesting result that  
@@ -784,12 +784,10 @@ $f \otimes \hat{\sigma}$,
 different.\footnote{Note 
 there is a ``subtraction'' term  which closely 
 matches the LO  process, but this ${\cal O}(\alpha \, \alpha_S)$  process is contained in the NLO gluon-initiated contribution.
-For details, see Appendix~\ref{sec:appendix}
+For details, see~\ref{sec:appendix}
 }
 
-
-
-\color{black} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\color{black} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Next, turning our attention to the strange PDF contribution,
 it is notable that the FFNS and VFNS behave qualitatively very similar
@@ -968,6 +966,85 @@ Also the gluon PDF uncertainties are decreased. Furthermore, in the case of the 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
 \section{Discussion and summary}
 \label{sec:discuss}
+
+
+
+
+
+The recent performance of the LHC has exceeded expectations and
+produced an unprecedented number of precision measurements to be
+analyzed; thus,  it is essential to improve the theoretical calculations to
+match.
+%
+The uncertainty for many of these precision measurements stems
+primarily from the Parton Distribution Functions (PDFs).
+%
+Hence, our ability to fully characterize the Higgs boson and constrain
+Beyond the Standard Model (BSM) signatures ultimately comes down to
+how accurately we determine the underlying PDFs; this is the focus of
+this study.
+
+
+
+We are especially interested in the strange quark distribution which,
+at the LHC, can have a significant impact on the $W/Z$ cross section
+which is one of the ``standard candle'' measurements.
+%
+If we can reduce the uncertainty for these predictions, we can set
+stringent limits on any admixture of the physics at higher scales.
+%
+Unfortunately, the strange PDF has a comparably large uncertainty as
+measurements from the LHC, as well as older fixed target experiments,
+do not seem to provide a definitive result for this flavor component.
+
+This quandary prompted us to examine the CC DIS charm production at the LHeC
+to determine the impact of this data set on the PDF uncertainty.
+%
+We consider the LHeC facility as this is the single high-energy $ep/A$ facility that could potentially run
+in parallel with the LHC and provide insights on these issues in advance of a FCC program. 
+
+In fact we find that the LHeC can provide strong constraints on the strange quark PDF,
+especially in the previously unexplored small \xbj region.\footnote{%
+  In this study we have focused exclusively on the LHeC result for CC DIS charm production;
+  however, the LHeC has a broad multi-faceted program which is described in Refs.~\cite{AbelleiraFernandez:2012ty,Klein:2018rhq}.
+  }
+%
+As noted above, a reduction of the strange PDF uncertainties influences
+the $W/Z$ production, and thus the Higgs production; hence, the
+LHeC CC DIS charm production data  represents a valuable addition for the  global PDF fits.
+%
+
+
+
+This case  study of the CC DIS charm production at the LHeC
+provides a practical illustration of the many features of xFitter.
+%
+As the xFitter program is designed to be a versatile  open-source
+software framework for the determination of PDFs and the analysis of
+QCD physics, we can readily adapt this tool to address the impact and influence of
+new data sets.
+%
+Furthermore, as both FFNS and VFNS calculations are implemented,
+we can use xFitter as a theoretical ``laboratory'' to study the 
+resummation of large logs and multi-scale issues.
+%
+We have outlined some of these issues in the Appendix. 
+%
+In particular, the CC DIS charm production involves a flavor-changing $W^\pm$ boson,
+multiple quark masses enter the calculation, and this introduces some subtle theoretical
+issues to properly address the disparate mass and energy scales.
+%
+
+
+In conclusion, we find that charged current DIS charm production at the LHeC can 
+provide strong constraints on the strange PDF which are complementary to the current  data sets.
+%
+As the PDF uncertainty is the dominant factor for many precision analyses,
+a reduction of these uncertainties will allow for more accurate predictions
+which can be used to constrain both SM and BSM physics processes. 
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 \begin{acknowledgements}
