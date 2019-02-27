@@ -45,7 +45,7 @@
 \begin{document}
 \sloppy
 
-\title{Charge-current paper}
+\title{Probing strange content of the proton with charm production in charged current at LHeC}
 
 % authors
 
@@ -97,17 +97,17 @@
 \begin{abstract}
 
 
-We study the the charged current DIS  production of charm using the
+We study the charged current DIS  production of charm using the
 xFitter program.  Recent results from the LHC have focused renewed
 attention on the determination of the strange quark PDF, and the DIS
 charm process provides important complementary constraints on this quantity.  We examine the current
-PDF uncertainty, and use LHeC pseudodata to compute the potential
+PDF uncertainty, and use LHeC pseudodata to estimate the potential
 improvement from this proposed facility.  As xFitter implements both
 Fixed Flavor Number Schemes and a Variable Flavor Number Schemes, we
 can compare the impact of these different theoretical choices; this
 highlights some interesting aspects of multi-scale calculations.
 We find the large kinematic range and high statistics from an LHeC
-could substantially improve the $s(x)$ PDF uncertainties. 
+could substantially improve the strange PDF uncertainties. 
 
 
   
@@ -163,7 +163,7 @@ included in the DIS coefficients~\cite{Laenen:1992zk,Laenen:1992xs}.
 The heavy quark mass
 effects in the CC process have been  calculated up to
 ${\mathcal{O}}(\alpha_s^2)$ in
-Refs.~\cite{Gottschalk:1980rv,Gluck:1997sj,Blumlein:2011zu,Alekhin:2014sya}, 
+Refs.~\cite{Gottschalk:1980rv,Gluck:1997sj,Blumlein:2011zu,Buza:1997mg,Blumlein:2014fqa}, 
 and the recently completed work of Ref.~\cite{Berger:2016inr} provides results 
 up to ${\mathcal{O}}(\alpha_s^2)$ at large $Q^2$ for the
 $xF_3$ structure function \cite{Behring:2015roa}.
@@ -221,13 +221,13 @@ but these results were  limited by low statistics.
 In lieu of  significant experiential constraints,
 many global QCD analyses tie the strange distribution 
 to the light sea quarks 
-via the relation $s= \bar{s}=r_s[\bar{u}+\bar{d}]/2$;
+via the relation $s= \bar{s}=R_s[\bar{u}+\bar{d}]/2$;
 %
 here, the ratio $r_s$ depends on both $x$ and $Q^2$, but
 it is often set to a fixed value at the initial $Q^2$ scale~\cite{Kretzer:2003it, Martin:2004ir}.
 
-Using inclusive leptonic decays of $W^\pm$ and $Z$ bosons, ATLAS has  measured  $r_s$
-at the scale $Q_0 = 1.9$~GeV$^2$ and $x= 0.023$, and obtain a value of $r_s$~1.19~\cite{Aaboud:2016btc}.
+Using inclusive leptonic decays of $W^\pm$ and $Z$ bosons, ATLAS has  measured  $R_s$
+at the scale $Q_0 = 1.9$~GeV$^2$ and $x= 0.023$, and obtain a value of $R_s$~1.19~\cite{Aaboud:2016btc}.
 %
 Additionally, using the cross section ratio for $W^\pm +c$ final states they also find
 a comparably large value for the strange quark distribution~\cite{Aad:2014xca}.
@@ -248,7 +248,7 @@ of electrons on both protons and nuclei
 across a broad kinematic range to address many of these outstanding questions.
 %
 In this investigations, we make use of the
-xFitter tools to study the present $s(x)$ constraints, and then use LHeC
+xFitter tools~\cite{Alekhin:2014irh} to study the present $s(x)$ constraints, and then use LHeC
 pseudodata to infer how these might improve. Furthermore, as xFitter
 implements both Fixed Flavor and Variable Flavor number schemes, we
 can examine the impact of these different theoretical choices.
@@ -290,14 +290,14 @@ issues we encounter at higher orders.
 \section{Theoretical predictions for CC charm production at the LHeC} \label{sec:thpred}
 
 
-The proposed Large Hadron Electron Collider (LHeC) would collide a newly built electron beam
+The proposed Large Hadron Electron Collider (LHeC)~\cite{AbelleiraFernandez:2012cc} would collide a newly built electron beam
 with the LHC hadron beam with a center of mass energy of  $s = 4 E_e E_p$;
 thus, the 7~TeV proton beam on a 60~GeV electron beam  provide $\sqrt{s}\sim 1.3$~TeV.
 %
 Compared to  HERA, the LHeC extends the covered kinematic range by an order of magnitude in $\{x,Q^2 \}$
 with a nominal design luminosity of $10^{33} cm^{-2} s^{-1}$.
 
-\textcolor{red}{Pseudodata assumes WHAT integrated luminosity???}
+%\textcolor{red}{Pseudodata assumes WHAT integrated luminosity???}
 
 Theoretical predictions are calculated for electroweak CC charm
 production in $ep$ collisions at the LHeC at centre-of-mass energy
@@ -329,10 +329,7 @@ The CC charm process directly depends on the CKM matrix. Here, the CKM matrix
 elements $V_{cd}$ and $V_{cs}$ are of particular interest. The values used are 
 $V_{cd} = 0.2252$ and $V_{cs} = 0.9734$.
 Three different heavy-flavour schemes are employed, all including a full 
-treatment of charm mass effects up to
-NLO\footnote{The $O(\alpha_s^2)$ 
-corrections quoted earlier are not yet available in the context of the xFitter 
-setup.}\llap{,}
+treatment of charm mass effects up to NLO,
 i.e.~$O(\alpha_s)$, and described here for the particular application 
 to charged current electron-proton reactions.
 
@@ -346,9 +343,9 @@ which we identify as {\bf FFNS~A},
 uses three light flavours in both PDFs and $\alpha_s$ evolution for all scales, while heavy 
 flavours (here, charm) are produced exclusively in the matrix element part of 
 the calculation. This scheme has been used  for the PDF determinations 
-and cross-section predictions of the ABM(P) group~\cite{Alekhin:2017kpj,Alekhin:2018pai}, as well as in the 
-FF3A variant of HERAPDF~\cite{Abramowicz:2015mha}, and implemented in 
-xFitter through the OPENQCDRAD package~\cite{openqcdrad}.
+and cross-section predictions of the ABM(P) group~\cite{Alekhin:2012ig,Alekhin:2014sya,Alekhin:2017kpj,Alekhin:2018pai}, 
+as well as in the FF3A variant of HERAPDF~\cite{Abramowicz:2015mha}, 
+and implemented in xFitter through the OPENQCDRAD package~\cite{openqcdrad}.
 
 
 
@@ -366,6 +363,12 @@ fixed-flavour scheme convergence at very high scales, and is possible since the
 masses of the charm and beauty quarks provide natural cutoffs for infrared 
 and collinear divergences.
 This scheme was used in the HERAPDF FF3B variant~\cite{Abramowicz:2015mha} and in applications of the HVQDIS program~\cite{,Behnke:2015qja}. 
+In general the transition from the FFNS~A to the
+FFNS~B scheme requires a readjustment of the treatment of matrix elements 
+involving heavy flavour loops. In the specific case of charged current production, 
+no such loops occur up to NLO (at NNLO they will), so that the same 
+matrix elements can be used for both schemes; thus, the only difference is 
+the alphas evolution.
 
 
 Finally, for the  variable flavour number  scheme (VFNS) we use the
@@ -383,18 +386,6 @@ the massless terms are eliminated in favour of retaining the massive terms.
 The FONLL is commonly used by the NNPDF group [Ball:2017nwa] and implemented in 
 xFitter through the APFEL package~\cite{Bertone:2013vaa}.
 
-
-
-
-
-
-
-In general the transition from the FFNS~A to the
-FFNS~B scheme requires a readjustment of the treatment of matrix elements 
-involving heavy flavour loops. In the specific case of charged current production, 
-no such loops occur up to NLO (at NNLO they will), so that the same 
-matrix elements can be used for both schemes; thus, the only difference is 
-the alphas evolution.
   
 In summary, the schemes used are:
 \begin{itemize}
@@ -405,8 +396,7 @@ In summary, the schemes used are:
   \ffthreea~\cite{Abramowicz:2015mha} NLO PDF sets.
 
 \item[$\bullet$] {\bf \ffnsb :} a NLO FFNS with $n_f = 3$ for the PDFs
-  and $n_f = 3,4,5$ for $\alpha_S$, used with the
-  \abmp~\cite{Alekhin:2018pai} or \ffthreeb~\cite{Abramowicz:2015mha}
+  and $n_f = 3,4,5$ for $\alpha_S$, used with the \ffthreeb~\cite{Abramowicz:2015mha}
   NLO PDF sets.
 
 \item[$\bullet$] {\bf FONLL-B :} a VFNS with $n_f = 3,4,5$ and used
@@ -515,7 +505,7 @@ The \ffns and \fonll results
 agree reasonably well, within uncertainties of moderate size, in the
 bulk of the phase space. However, in phase space corners such as high
 $Q^2 \gtrsim 10000$ GeV$^2$ or low $y \lesssim 0.05$ the predictions
-in the two schemes differ by more than $50\%$ and are beyond the 
+in the two schemes differ by more than $50\%$ which is larger than the 
 theoretical uncertainties.
 
 \begin{figure}
@@ -573,7 +563,7 @@ We observe
 the $\mu$ uncertainties for the  \fonll scheme uniformly decrease with increasing $\mu$.
 %
 For the  \ffns scheme, the $\mu$ uncertainties decrease for small $x$ values,
-can increase with $Q^2$ at intermediate $x$ values.
+but increase with $Q^2$ at intermediate $x$ values.
 %
 Additional detail is shown in  Fig.~\ref{fig:thpred-q2-varmu}
 where we separately vary $\{\mu_\mathrm{r} , \mu_\mathrm{f}\}$
@@ -582,7 +572,7 @@ Here we note that the $\mu_\mathrm{r}$ variation is very small,
 and the bulk  of the uncertainty comes from the  $\mu_\mathrm{f}$ which is tied to the
 PDFs, $f_i(x,\mu_\mathrm{f})$.
 %
-For the  \ffns scheme, it is not possible to  separately vary $\{\mu_\mathrm{r} , \mu_\mathrm{f}\}$
+For the implementation of \ffns scheme in xFitter, it is not possible to  separately vary $\{\mu_\mathrm{r} , \mu_\mathrm{f}\}$
 in the current implementation, so  the separate uncertainties can only be inferred
 by comparison to the \fonll case. 
 
@@ -856,7 +846,7 @@ eigenvectors.
 
 For this study, pseudodata representing measurements of charm CC
 production cross sections as a function of $Q^2$ and $x$ are
-used.
+used, which correspond to an integrated luminosity of $100{\rm fb}^{-1}$~\cite{AbelleiraFernandez:2012cc} and polarisation $P=-0.8$.
 %
 \textcolor{red}{\bf [TODO: describe how pseudodata were produced]}
 %
@@ -994,7 +984,7 @@ If we can reduce the uncertainty for these predictions, we can set
 stringent limits on any admixture of the physics at higher scales.
 %
 Unfortunately, the strange PDF has a comparably large uncertainty as
-measurements from the LHC, as well as older fixed target experiments,
+measurements from the LHC and HERA, as well as older fixed target experiments,
 do not seem to provide a definitive result for this flavor component.
 
 This quandary prompted us to examine the CC DIS charm production at the LHeC
