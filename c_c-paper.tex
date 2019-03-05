@@ -45,7 +45,7 @@
 \begin{document}
 \sloppy
 
-\title{Probing strange content of the proton with charm production in charged current at LHeC}
+\title{Probing the strange content of the proton with charm production in charged current at LHeC}
 
 % authors
 
@@ -151,7 +151,7 @@ The broad kinematic coverage of the HERA charge-current (CC) and
 neutral-current (NC) DIS data in terms of the negative virtuality
 $Q^2$ of the exchanged vector boson and the Bjorken variable \xbj is
 such that these data have significant impact on the determinations of
-the PDFs~\cite{Abdolmaleki:2018jln,Abramowicz:2015mha,Gao:2017yyd}.
+the PDFs~\cite{Abdolmaleki:2018jln,Abramowicz:2015mha,Gao:2017yyd,Alekhin:2017kpj,Ball:2017nwa}.
 
 In the Standard Model (SM), the charm quark plays an important role in
 the investigation of the nucleon
@@ -182,10 +182,8 @@ distribution.
 %
 The strange sea has been extensively investigated in a number of
 experiments including $W$ boson charm-jet final state which (at LO)
-arise from strange--gluon initial states~\cite{Abazov:2014fka,
-  Lai:2007dq};
+arise from strange--gluon initial states~\cite{Aaltonen:2007dm,Abazov:2008qz,Abazov:2014fka,Chatrchyan:2013uja,Aad:2014xca,Sirunyan:2018hde}.
 %
-
 Additionally, charm production in neutrino/antineutrino-nucleon DIS
 has been studied by a number of experiments including:
 %
@@ -198,13 +196,13 @@ NOMAD~\cite{Samoylov:2013xoa}.
 %
 With a sign-selected beam ($\nu/\bar{\nu}$), these experiments can
 separately extract the strange $s(x)$ and antistrange $\bar{s}(x)$
-distributions, separately. While the neutrino DIS experiments provide
+distributions. While the neutrino DIS experiments provide
 detailed information on the shape of the strange distribution, the
 normalization is a challenge as that is tied to the beam flux.
 %
 Separately, the HERMES collaboration used charged-lepton DIS
 production of charged kaons to provide a complementary extraction of
-$s(x)+ \bar{s}(x)$~\cite{Airapetian:2008qf}.
+$s(x)+ \bar{s}(x)$ at LO~\cite{Airapetian:2008qf}.
 
 Additionally, charm production mediated by electroweak gauge boson at
 hadron colliders provide important information on the strange- and
@@ -218,21 +216,21 @@ statistics.
 
 In lieu of significant experiential constraints, many global QCD
 analyses tie the strange distribution to the light-sea quarks via the
-relation $s= \bar{s}=R_s[\bar{u}+\bar{d}]/2$.
+%relation $s= \bar{s}=R_s[\bar{u}+\bar{d}]/2$.
+relation $s= \bar{s}=r_s[\bar{d}]$.
 %
-While in principle $R_s$ depends on both \xbj and $Q^2$, it is often
+While in principle $r_s$ depends on both \xbj and $Q^2$, it is often
 set to a fixed value~\cite{Kretzer:2003it, Martin:2004ir}.
 
 Using inclusive leptonic decays of $W$ and $Z$ bosons, the ATLAS
 experiment has measured $R_s$ at the scale $Q_0 = 1.9$~GeV$^2$ and
-$x= 0.023$, and obtained a value of $R_s=1.19$~\cite{Aaboud:2016btc}.
+$x= 0.023$, and obtained a value of $r_s=1.19 \pm 0.16$~\cite{Aaboud:2016btc}.
 %
 Additionally, using the cross-section ratio for $W^\pm +c$ final
-states they also find a comparably large value for the strange-quark
-distribution~\cite{Aad:2014xca}.
+states they also find a comparably large value for $r_s$~\cite{Aad:2014xca}.
 %
-In contrast, CMS results generally prefer lower $R_s$
-values~\cite{Chatrchyan:2013uja}.  However, a recent analysis using
+In contrast, CMS results generally prefer lower $r_s$
+values~\cite{Chatrchyan:2013uja,Sirunyan:2018hde}.  However, a recent analysis using
 both ATLAS and CMS data suggests that the LHC data support
 unsuppressed strangeness in the proton. While the result is dominated
 by ATLAS, this is not in contradiction with the CMS
@@ -249,7 +247,7 @@ these outstanding questions.
 
 In this investigations, we make use of the \xfitter
 tools~\cite{Alekhin:2014irh} to study the present constraints on the
-strange-quark PDFs, and then use LHeC pseudodata to infer how these
+strange-quark PDFs, and then use LHeC pseudodata~\cite{AbelleiraFernandez:2012cc} to infer how these
 might improve. Furthermore, as \xfitter implements both fixed-flavor-
 and variable-flavor-number schemes, we can examine the impact of these
 different theoretical choices.
@@ -412,7 +410,7 @@ with:
 \begin{equation}
   Y_{\pm} = 1 \pm (1-y)^2 \,.
 \end{equation}
-In the parton model, that is equivalent to the leading-order
+In the quark-parton model, that is equivalent to the leading-order
 approximation of QCD where we neglect the gluons, the structure
 functions become:
 \begin{equation}
@@ -462,7 +460,7 @@ factorization scales are chosen to be
 $\mu_\mathrm{r} = \mu_\mathrm{f} = Q^2$.
 
 To estimate theoretical uncertainties, $\mu_\mathrm{r}$ and
-$\mu_\mathrm{f}$ are simultaneously varied up and down by factor
+$\mu_\mathrm{f}$ are simultaneously varied up and down by a factor of 
 two. In the case of the \fonll calculations, also the independent
 $\mu_r$ and $\mu_f$ variations are checked. Furthermore, the PDF
 uncertainties are propagated to the calculated theoretical
@@ -488,8 +486,9 @@ using their separate input conditions and associated PDF sets.
 \label{sec:compareI}
 
 Figures~\ref{fig:thpred-x}, \ref{fig:thpred-q2} and~\ref{fig:thpred-y}
-show theoretical predictions for the \ffns and \fonll schemes with
-their total uncertainties as functions of: \xbj for different values
+show theoretical predictions for the \ffns and \fonll schemes 
+calculated as described in the previous sections 
+with their total uncertainties as functions of: \xbj for different values
 of $Q^2$, $Q^2$ for different values of \xbj, and $y$ for different
 values of $Q^2$, respectively.
 %
@@ -616,8 +615,8 @@ and \fonll are repeated with the HERAPDF2.0 PDF sets extracted from
 the HERA DIS data~\cite{Abramowicz:2015mha}.
 %
 Predictions in the \ffnsb scheme are also produced using the \ffthreeb
-PDF set and the \ffns matrix elements, which are equivalent to the
-\ffnsb matrix elements at NLO for CC charm production. The results are
+PDF set and the \ffnsb matrix elements, which are equivalent to the
+\ffns matrix elements at NLO for CC charm production. The results are
 displayed in Fig.~\ref{fig:thpred-ff3abfonll}. The differences between
 \ffns and \fonll are similar to those displayed in
 Figs.~\ref{fig:thpred-x}-\ref{fig:thpred-y} and demonstrate that these
@@ -625,7 +624,9 @@ differences arise from the different treatment of the heavy quarks in
 the two schemes. The \ffnsb predictions are between the \ffns and
 \fonll predictions, indicating that a large part of these differences
 is due to the different treatment of heavy quarks in the running of
-$\alpha_s$.
+$\alpha_s$. The \ffnsb scheme catches a large fraction of the 
+difference between \ffns and \fonll at high \xbj or low $y$.
+
 
 Furthermore, to investigate the impact of the NNLO corrections
 available at $Q \gg m_c$ for the FFNS calculation, approximate NNLO
@@ -700,7 +701,8 @@ calculations, Fig.~\ref{fig:thpred-ff3abfonll}-a) is particularly
 instructive.
 %
 We see that at low scales the FFNS (\ffns and \ffnsb) and VFNS
-(\fonll) results agree within uncertainties. When the scale $\mu$ is
+(\fonll) results agree within uncertainties (as demonstrated in 
+Fig.~\ref{fig:thpred-q2}). When the scale $\mu$ is
 below the charm-threshold scale $\mu_c$ (typically taken to be equal
 to $m_c(m_c)$) the charm PDFs vanish and the FFNS and VFNS reduce to
 the same result.\footnote{Note that while the charm-threshold scale
@@ -843,7 +845,7 @@ differential in $Q^2$ and \xbj and corresponding to an integrated
 luminosity of $100{\rm fb}^{-1}$~\cite{AbelleiraFernandez:2012cc} and
 polarization $P=-0.8$ are used.
 %
-\textcolor{red}{\bf [TODO: describe how pseudodata were produced]}
+%\textcolor{red}{\bf [TODO: describe how pseudodata were produced]}
 %
 The study is performed using the \xfitter program (version
 2.0.0)~\cite{Alekhin:2014irh}, an open-source QCD fit framework for
