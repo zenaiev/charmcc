@@ -1,0 +1,66 @@
+Dear authors,
+Thanks a lot for this nice draft and for all the work/results shown in it.
+Below you can find some comments referring to just the main body of the paper (comments on the appendix will follow next week):
+
+    L129: why the accessible range in x is up to 0.25 only? Have you generated the pseudodata by yourself? I’m asking because I used Max Klein’s pseudodata once and I remember they can reach x = 0.3
+    
+    >>> We use pseudodata provided by Max Klein, it is up to x = 0.25:
+    http://hep.ph.liv.ac.uk/~mklein/heavyqdata/str100
+    (it might depend on the final state and tagging method)
+    
+    L130: maybe it would be nice to quote the y coverage as well for these pseudodata (just because you talk about ‘y’ in the following)
+    
+    >>> DONE, sentence added: "The covered $y$ range is $0.0024 < y < 0.76$."
+
+    L132 to L148: is this discussion about even and odd numbers of charm quarks really needed? These experimental considerations about the detections of charmed hadrons looks to me a bit out-of-place
+    
+    >>> ACHIM: Theory should try to predict what experiment can measure, and experiment
+        should try to measure what theory can predict, so I think in a phenomenology paper, especially one focusing on future measurements, it is entirely appropriate and partially even necessary to discuss both and which consequences one has on the other.
+        For the extraction of the strange content, it does matter whether one
+        measures/predicts the electroweak contribution only, or the sum of the
+        electroweak and "QCD" contributions, so I think this is worth discussing. If you have a suggestion how to change the wording or location of this discussion such that it appears less "out of place" that would of course be very welcome.    
+
+    L244: When estimating the theoretical uncertainties, why did you check independent muR and muF variations just for FONLL-B? Can’t you do the same for FFNS A?
+    
+    >>> Unfortunately this is not available in the given implementation of OPENQCDRAD in xFitter (as mentioned in the text)
+    
+    L315 (Fig. 7): It might be nice to show one plot as a function of another kinematic variable, since you state ”Similar results are observed for the cross sections as functions of other kinematic variables"
+    
+    General comment on Fig 8-9-10: do we really need the black solid lines showing the total? Isn’t sufficient just to show the various fractions and quote the total x or Q2?
+    
+    >>> It is worth to keep the total line as reference
+    
+    Then a question (probably just for my ignorance): what does a fraction < 0 mean? See for instance the gluon contribution (green line) in Fig 8-b (NNPDF3.1)
+    
+    >>> FRED: You've touched on a very interesting aspect of the QCD theory.
+
+        In the VFNS, when we include
+        the charm PDF (which comes from g->c c-bar), there is a
+        gluon-initiated subtraction term (g->c * Wc->s)
+        which removes the double counting.
+
+        In Fig 8-9-10 this gets "booked" under the gluon contribution which
+        can drive it negative.  In a sense it is "correcting" for too large a
+        charm contribution in certain kinematic regions.
+
+        The balancing is most apparent in, for example, Fig.9a at lower x
+        values and hi-Q where we see the gluon is going negative just where
+        the charm contribution is rising quickly.
+
+        This is also apparent in Fig.15 in the appendix.  Here we see the
+        LO (cW->s) and the gluon-initated SUB (g->c * cW->s) match
+        at low mu scales. At larger scales, the SUB exceeds the NLO (gW->cs)
+        so that the total gluon initiated contribution [NLO-SUB] can become
+        negative; however the TOT is relatively stable and well defined.
+        The choice of the mu scale really does just "shuffle" contributions
+        around among the separate sub-pieces, but the final result is stable. Neat!
+
+        [Is it worth adding such comments in the text?]
+        >>> Fred, can you add such comments please?    
+
+    L394: a space needed between 100 and fb-1
+    
+    >>> DONE
+
+All the best,
+Fra

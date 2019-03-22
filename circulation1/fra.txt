@@ -1,0 +1,15 @@
+Dear authors,
+Thanks a lot for this nice draft and for all the work/results shown in it.
+Below you can find some comments referring to just the main body of the paper (comments on the appendix will follow next week):
+
+    L129: why the accessible range in x is up to 0.25 only? Have you generated the pseudodata by yourself? I’m asking because I used Max Klein’s pseudodata once and I remember they can reach x = 0.3
+    L130: maybe it would be nice to quote the y coverage as well for these pseudodata (just because you talk about ‘y’ in the following)
+    L132 to L148: is this discussion about even and odd numbers of charm quarks really needed? These experimental considerations about the detections of charmed hadrons looks to me a bit out-of-place
+    L244: When estimating the theoretical uncertainties, why did you check independent muR and muF variations just for FONLL-B? Can’t you do the same for FFNS A?
+    L315 (Fig. 7): It might be nice to show one plot as a function of another kinematic variable, since you state ”Similar results are observed for the cross sections as functions of other kinematic variables"
+    General comment on Fig 8-9-10: do we really need the black solid lines showing the total? Isn’t sufficient just to show the various fractions and quote the total x or Q2?
+    Then a question (probably just for my ignorance): what does a fraction < 0 mean? See for instance the gluon contribution (green line) in Fig 8-b (NNPDF3.1)
+    L394: a space needed between 100 and fb-1
+
+All the best,
+Fra

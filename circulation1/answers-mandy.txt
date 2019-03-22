@@ -1,0 +1,21 @@
+I am certain that the equations for y\to 0 \nd y\to 1 are wrong.
+
+It should be:
+
+ 
+
+y\to 0, sigma+ =F2+ = xD +xUbar
+
+             sigma- =F2-  =xDbar+XU
+
+and this is NOT the way the brackets currently express it—the second bracket is the wrong way round.
+
+ 
+
+y\to1, sigma+=1/2(F2+-xF3+) =xUbar
+
+            sigma-=1/2(F2-+xf3-)=xU
+
+and this has been written the wrong way round  
+
+>>>>>>>>> Fixed

@@ -1,0 +1,9 @@
+Dear All,
+
+Thanks for the first daft,
+I have some cooments.
+1- in line 117 and 118, Two words (with and beam ) are repeated twice continuously. it may be changed: LHeC would collide an electron beam from newly built electron accelerator, with LHC hadron beam at the center of mass energy of ..
+2-line 136 CC production of charm ..., can be confused the regular readers. I think it better to change to the " CC cham production"
+
+Best Hamed
+
