@@ -5,13 +5,34 @@ between LO and SUB in F2.
 Also the gluon gives large FL at NLO, 
 differently from what naive QPM suggests.
 
+>>> In fact, the formulas in Eq. (1)-(5) are not LO, but a quark-parton 
+model approximation where one neglects the gluons. Of course, they are 
+not expected to work in certain phase space regions and/or schemes, 
+such as the fixed flavour number scheme where there are no charm quarks 
+in the proton, or the variable flavour number scheme at low Q^2. 
+Still, they are very illustrative and serve only as the starting point 
+for the discussion.
+
 2. A related question: is the difference at large y between different
 schemes due to FL? 
+
+>>> FL must be different indeed, although we do not look at FL in this paper,
+instead looking at the reduced cross section which is the only directly 
+measured observable.
 
 3. What about the assumption s=sbar? I guess with the large uncertainty
 on the strange PDF up to now such assumption is justified.
 But do we have expectations how large s-sbar could be, and whether
 it could affect precision measurements?
+
+>>> This is a very interesting question, and initially we thought we 
+can look at it by using pseudodata for e^-p and e^+p. However, according to Max Klein 
+positrons are very difficult for the energy recovery linac, the initial 
+source is down by at least a factor of 10 wrt e- and that means you would 
+never run as long as with e- [which is the prime target to produce the Higgs 
+in e-p CC], so only about 1/100 e+ lumi (and unpolarised) seems a reasonable assumption.
+That is not so very bad, but definitely worse than e-, so we decided to 
+concentrate on e- only (where one probes sbar).
 
 4. I find the discussion of the diagram in Fig. 16/17 confusing.
 At NLO there are the t- and u-channel diagrams, but they are
@@ -23,6 +44,8 @@ You also mention Q < m_c, but in this region shouldn't one
 I do not understand how the ``parton model diagrams'' 
 can make sense there, 
  
+>>> FRED?
+ 
 4. What do you mean by ``We consider the LHeC
 facility as this is the single high-energy ep/A facility that
 could potentially run in parallel with the LHC and provide
@@ -30,3 +53,5 @@ insights on these issues in advance of a FCC program.''
 
 Is this comment related to similar x-Q^2 range as at LHC? Or literally
 that two experiments run at the same time? Why is this not true for EIC?
+
+>>> FRED?
