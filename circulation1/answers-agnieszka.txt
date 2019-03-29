@@ -44,7 +44,19 @@ You also mention Q < m_c, but in this region shouldn't one
 I do not understand how the ``parton model diagrams'' 
 can make sense there, 
  
->>> FRED?
+>>> FRED:
+
+4a) I've added some explanation in the captions of Fig. 16 and 17.
+(t+u)^2 will of course generate a (tu) interference contribution,
+but as you note, we're most interested in the log behaviour.
+
+4b) The thresholds are accounted for including th Q<mc region.
+For  us what is most intersting is \mu vs mc,
+and this is detailed in Footnote 6.
+Please have a look and let me know if this
+needs more here. Thanks. 
+
+
  
 4. What do you mean by ``We consider the LHeC
 facility as this is the single high-energy ep/A facility that
@@ -54,4 +66,13 @@ insights on these issues in advance of a FCC program.''
 Is this comment related to similar x-Q^2 range as at LHC? Or literally
 that two experiments run at the same time? Why is this not true for EIC?
 
->>> FRED?
+>>> FRED:
+
+I've modifed the text so it is not so exclusive.
+The EIC can also help here, but this will be in the higher x,
+lower Q kinematic region, so it won't be in the same range
+as the LHC W/Z data. Let me know if this is sufficient. Thanks. 
+
+"We consider the LHeC  as this  high-energy $ep/A$
+facility  could potentially run in parallel with the LHC and
+provide insights on these issues at low-$x$ and hi-$Q$ in advance of a FCC program."

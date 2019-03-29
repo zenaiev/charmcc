@@ -58,6 +58,9 @@ Below you can find some comments referring to just the main body of the paper (c
         [Is it worth adding such comments in the text?]
         >>> Fred, can you add such comments please?    
 
+FRED: YES, I'VE ADDED THESE COMMENTS  
+
+
     L394: a space needed between 100 and fb-1
     
     >>> DONE
