@@ -40,6 +40,8 @@
 \newcommand{\ffthreea} {{\hbox{HERAPDF2.0} FF3A}\xspace}
 \newcommand{\ffthreeb} {{\hbox{HERAPDF2.0} FF3B}\xspace}
 
+\newcommand\new[1]{{\color{blue} #1}}
+
 % Hyperref needs to be loaded last
 \RequirePackage[colorlinks,citecolor=blue,urlcolor=blue,linkcolor=blue]{hyperref}
 \begin{document}
@@ -863,7 +865,7 @@ uncertainties in the format of eigenvectors.
 
 For this study, pseudodata for charm CC production cross section
 differential in $Q^2$ and \xbj and corresponding to an integrated
-luminosity of $100{\rm~fb}^{-1}$~\cite{AbelleiraFernandez:2012cc} and
+luminosity of $100{\rm~fb}^{-1}$~\cite{AbelleiraFernandez:2012cc,Blumlein:1992we} and
 polarization $P=-0.8$ are used.
 %
 %\textcolor{red}{\bf [TODO: describe how pseudodata were produced]}
@@ -934,6 +936,16 @@ predictions.
 \subsection{The profiled PDFs}
 \label{sec:profile}
 
+\new{
+The profiling study is performed using two sets of the LHeC charm CC pseudodata:
+\begin{itemize}
+ \item the full set,
+ \item the restricted set with data points for which the difference between the \ffns and \fonll are smaller than the present PDF uncertainties. 
+ The latter is taken for simplicity as the sum of the \abmp and \nnpdf uncertainties, but for the most data points it is dominated by the \nnpdf uncertainties (see Fig.~\ref{fig:thpred-q2-unc}).
+\end{itemize}
+Given the sizable differnces observed between the \ffns and \fonll predictions, the study with the restricted data set (also referred to as `with cuts') aims to check whether or not model independent constraints on the strange PDF can be extracted using the charm CC reaction at LHeC. The two sets of data points are shown in Fig.~\ref{fig:data} as functions of $Q^2$ and \xbj.
+}
+
 The original and profiled \abmp and \nnpdf PDF uncertainties are shown
 in Figs.~\ref{fig:pdf-abmp}--\ref{fig:pdf-nnpdf-100000}.  The
 uncertainties of the PDFs are presented at the scales
@@ -943,11 +955,34 @@ both PDF sets.  In particular, the uncertainties of the strange PDF
 are strongly reduced once the pseudodata are included in the fit.
 Also the gluon PDF uncertainties are decreased. Furthermore, in the
 case of the NNPDF3.1 set, the charm PDF uncertainties are reduced
-significantly.
+significantly. \new{For all PDF sets, only small differences can be noticed 
+between the PDF constraints obtained using the full or restriced set 
+because the whole \xbj range is covered in both cases (see Fig.~\ref{fig:data}) and 
+despite the fact that the number of data points in the restricted set is 
+twice smaller than the total number of data points.}
 
 \begin{figure}
   \centering
-  {{\includegraphics[width=0.235\textwidth]{pics/pdf-profile-ffabm/q2_100_pdf_s_ratio.pdf}}}
+  {{\includegraphics[width=0.5\textwidth]{pics/pseudodata.pdf}}}
+  \caption{The full ($\Delta_{\rm scheme} < \Delta_{\rm PDF}$, $\Delta_{\rm scheme} > \Delta_{\rm PDF}$) and restricted ($\Delta_{\rm scheme} < \Delta_{\rm PDF}$) sets of data points which are used for PDF profiling.}
+  \label{fig:data}
+\end{figure}
+
+\new{
+Additionally in the case of the NNPDF3.1 set it is possible to check 
+the constraints on the strange quark and antiquark distributions 
+separately, because no assumption $s=\bar{s}$ has been assumed in NNPDF3.1. 
+The LHeC $e^{-}p$ pseudodata provide direct constraints only on $\bar{s}$. 
+Neverhteless due to the apparently strong correlation between $s$ and 
+$\bar{s}$ in the NNPDF3.1 fit, quite strong constraints are put on both 
+the $s$ and $\bar{s}$ distributions once the direct constraints on $\bar{s}$ 
+are provided are profiled by the LHeC pseudodata. However, only mild constraints 
+are put on the ratio $s/\overline{s}$. This indicates that for precise 
+determination of $s/\overline{s}$ both $e^{-}p$ and $e^{+}p$ data will be needed.
+
+\begin{figure}
+  \centering
+  {{\includegraphics[width=0.235\textwidth]{pics/pdf-profile-ffabm/q2_100_pdf_sq_ratio.pdf}}}
   {{\includegraphics[width=0.235\textwidth]{pics/pdf-profile-ffabm/q2_100_pdf_g_ratio.pdf}}}\\
   {{\includegraphics[width=0.235\textwidth]{pics/pdf-profile-ffabm/q2_100_pdf_Sea_ratio.pdf}}}
   {{\includegraphics[width=0.235\textwidth]{pics/pdf-profile-ffabm/q2_100_pdf_uv_ratio.pdf}}}
@@ -961,7 +996,7 @@ significantly.
 
 \begin{figure}
   \centering
-  {{\includegraphics[width=0.235\textwidth]{pics/pdf-profile-ffabm/q2_100000_pdf_s_ratio.pdf}}}
+  {{\includegraphics[width=0.235\textwidth]{pics/pdf-profile-ffabm/q2_100000_pdf_sq_ratio.pdf}}}
   {{\includegraphics[width=0.235\textwidth]{pics/pdf-profile-ffabm/q2_100000_pdf_g_ratio.pdf}}}\\
   {{\includegraphics[width=0.235\textwidth]{pics/pdf-profile-ffabm/q2_100000_pdf_Sea_ratio.pdf}}}
   {{\includegraphics[width=0.235\textwidth]{pics/pdf-profile-ffabm/q2_100000_pdf_uv_ratio.pdf}}}
@@ -975,15 +1010,24 @@ significantly.
 
 \begin{figure}
   \centering
-  {{\includegraphics[width=0.235\textwidth]{pics/pdf-profile-fonll/q2_100_pdf_s_ratio.pdf}}}
-  {{\includegraphics[width=0.235\textwidth]{pics/pdf-profile-fonll/q2_100_pdf_g_ratio.pdf}}}\\
+  {{\includegraphics[width=0.235\textwidth]{pics/pdf-profile-fonll/q2_100_pdf_sq_ratio.pdf}}}
+  \put(-95,95){(a)}
+  {{\includegraphics[width=0.235\textwidth]{pics/pdf-profile-fonll/q2_100_pdf_sbar_ratio.pdf}}}
+  \put(-95,95){(b)}\\
+  {{\includegraphics[width=0.235\textwidth]{pics/pdf-profile-fonll/q2_100_pdf_soversbar_ratio.pdf}}}
+  \put(-95,95){(c)}
+  {{\includegraphics[width=0.235\textwidth]{pics/pdf-profile-fonll/q2_100_pdf_g_ratio.pdf}}}
+  \put(-95,95){(d)}\\
   {{\includegraphics[width=0.235\textwidth]{pics/pdf-profile-fonll/q2_100_pdf_Sea_ratio.pdf}}}
+  \put(-30,95){(e)}
   {{\includegraphics[width=0.235\textwidth]{pics/pdf-profile-fonll/q2_100_pdf_uv_ratio.pdf}}}
+  \put(-95,95){(f)}\\
   {{\includegraphics[width=0.235\textwidth]{pics/pdf-profile-fonll/q2_100_pdf_dv_ratio.pdf}}}
+  \put(-30,95){(g)}
   {{\includegraphics[width=0.235\textwidth]{pics/pdf-profile-fonll/q2_100_pdf_c_ratio.pdf}}}
-  \caption{The relative strange (top left), gluon (top right), sea
-    quark (middle left), u valence quark (middle right), d valence
-    quark (bottom left) and charm quark (bottom right) PDF
+  \put(-95,95){(h)}
+  \caption{The relative strange quark (a), strange antiquark (b), and ratio $s/\overline{s}$ (c), gluon (d), sea
+    quark (e), u valence quark (f), d valence quark (g) and charm quark (h) PDF
     uncertainties at $\mu_\mathrm{f}^2=100$ GeV$^2$ of the original
     and profiled \nnpdf PDF set.}
   \label{fig:pdf-nnpdf}
@@ -991,19 +1035,29 @@ significantly.
 
 \begin{figure}
   \centering
-  {{\includegraphics[width=0.235\textwidth]{pics/pdf-profile-fonll/q2_100000_pdf_s_ratio.pdf}}}
-  {{\includegraphics[width=0.235\textwidth]{pics/pdf-profile-fonll/q2_100000_pdf_g_ratio.pdf}}}\\
+  {{\includegraphics[width=0.235\textwidth]{pics/pdf-profile-fonll/q2_100000_pdf_sq_ratio.pdf}}}
+  \put(-95,95){(a)}
+  {{\includegraphics[width=0.235\textwidth]{pics/pdf-profile-fonll/q2_100000_pdf_sbar_ratio.pdf}}}
+  \put(-95,95){(b)}\\
+  {{\includegraphics[width=0.235\textwidth]{pics/pdf-profile-fonll/q2_100000_pdf_soversbar_ratio.pdf}}}
+  \put(-95,95){(c)}
+  {{\includegraphics[width=0.235\textwidth]{pics/pdf-profile-fonll/q2_100000_pdf_g_ratio.pdf}}}
+  \put(-95,95){(d)}\\
   {{\includegraphics[width=0.235\textwidth]{pics/pdf-profile-fonll/q2_100000_pdf_Sea_ratio.pdf}}}
+  \put(-30,95){(e)}
   {{\includegraphics[width=0.235\textwidth]{pics/pdf-profile-fonll/q2_100000_pdf_uv_ratio.pdf}}}
+  \put(-95,95){(f)}\\
   {{\includegraphics[width=0.235\textwidth]{pics/pdf-profile-fonll/q2_100000_pdf_dv_ratio.pdf}}}
+  \put(-30,95){(g)}
   {{\includegraphics[width=0.235\textwidth]{pics/pdf-profile-fonll/q2_100000_pdf_c_ratio.pdf}}}
-  \caption{The relative strange (top left), gluon (top right), sea
-    quark (middle left), u valence quark (middle right), d valence
-    quark (bottom left) and charm quark (bottom right) PDF
+  \put(-95,95){(h)}
+  \caption{The relative strange quark (a), strange antiquark (b), and ratio $s/\overline{s}$ (c), gluon (d), sea
+    quark (e), u valence quark (f), d valence quark (g) and charm quark (h) PDF
     uncertainties at $\mu_\mathrm{f}^2=100000$ GeV$^2$ of the original
     and profiled \nnpdf PDF set.}
   \label{fig:pdf-nnpdf-100000}
 \end{figure}
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
 \section{Discussion and summary}
@@ -1051,10 +1105,18 @@ region.\footnote{In this study we have focused exclusively on the LHeC
   multi-faceted program which is described in
   Refs.~\cite{AbelleiraFernandez:2012ty,Klein:2018rhq}.}
 %
+\new{A large reduction of uncertainties is observed also when restricting 
+the input data to the kinematic range where the differences between the \ffns and 
+\fonll schemes are not larger than the present PDF uncertainties, indicating 
+that the PDF contraints can be obtained in a rather model independent way.}
 As noted above, a reduction of the strange-PDF uncertainties
 influences the $W/Z$ production, and thus the Higgs production; hence,
 the LHeC CC DIS charm production data represents a valuable addition
-for the global PDF fits.
+for the global PDF fits. 
+\new{However, since charm CC production in $e^{-}p$ 
+collisions probe $\bar{s}$, only mild contraints are put on $s/\overline{s}$ 
+using the NNPDF3.1 PDF set as reference, therefore for precise 
+determination of this ratio both $e^{-}p$ and $e^{+}p$ data will be needed.}
 
 This case study of the CC DIS charm production at the LHeC provides a
 practical illustration of the many features of \xfitter.
@@ -1084,10 +1146,7 @@ analyses, a reduction of these uncertainties will allow for more
 accurate predictions which can be used to constrain both SM and BSM
 physics processes.
 
-*************** NEED TO CITE MAX'S PAPER DESCRIBING PESUDO DATA *******
-use this reference: \cite{Blumlein:1992we}
-
-*************** suggestion from Daniel:
+*************** suggestion from Daniel (to be done after 2nd iteration):
 either increase  size of figs or reduce  number of ratios
 *******************************
 
