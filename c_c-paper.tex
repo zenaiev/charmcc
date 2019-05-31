@@ -175,7 +175,7 @@ The heavy-quark mass effects in the CC process have been calculated to
 ${\cal O}(\alpha_s)$ in
 Refs.~\cite{Gottschalk:1980rv,Gluck:1997sj,Blumlein:2011zu,Buza:1997mg,Blumlein:2014fqa},
 and the recent work of Ref.~\cite{Berger:2016inr} provides results up
-to ${\cal O}(\alpha_s^2)$. The large-$Q^2$ contributions to the
+to ${\cal O}(\alpha_s^2)$. The large-$Q^2$ contributions of heavy flavors to the
 $xF_3$ structure function had already been computed in
 Ref.~\cite{Behring:2015roa}.
 %
@@ -190,8 +190,9 @@ respect as it can provide us direct access to the strange-sea quark
 distribution.
 %
 The strange sea has been extensively investigated in a number of
-experiments including $W$ boson charm-jet final state which (at LO)
-arise from strange--gluon initial states~\cite{Aaltonen:2007dm,Abazov:2008qz,Abazov:2014fka,Chatrchyan:2013uja,Aad:2014xca,Sirunyan:2018hde}.
+experiments including  the associated production of a $W$~boson
+with a charm-jet final state, which (at LO)
+arises from strange--gluon initial states~\cite{Aaltonen:2007dm,Abazov:2008qz,Abazov:2014fka,Chatrchyan:2013uja,Aad:2014xca,Sirunyan:2018hde}.
 %
 Additionally, charm production in neutrino/antineutrino-nucleon DIS
 has been studied by a number of experiments including:
@@ -204,16 +205,16 @@ and
 NOMAD~\cite{Samoylov:2013xoa}.
 %
 With a sign-selected beam ($\nu/\bar{\nu}$), these experiments can
-separately extract the strange $s(x)$ and anti-strange $\bar{s}(x)$
+separately probe the strange $s(x)$ and anti-strange $\bar{s}(x)$
 distributions. While the neutrino DIS experiments provide
 detailed information on the shape of the strange distribution, the
-normalization is a challenge as that is tied to the beam flux.
+normalization is a challenge, as that is tied to the beam flux.
 %
 Separately, the HERMES collaboration used charged-lepton DIS
 production of charged kaons to provide a complementary extraction of
 $s(x)+ \bar{s}(x)$ at LO~\cite{Airapetian:2008qf}.
 %
-Recently charm production in CC DIS was measured for the first time in $e^{\pm}p$ collisions by ZEUS~\cite{Abt:2019ngj}.
+Recently, charm production in CC DIS was measured for the first time in $e^{\pm}p$ collisions by ZEUS~\cite{Abt:2019ngj}.
 
 Additionally, charm production mediated by electroweak gauge boson at
 hadron colliders provide important information on the strange- and
@@ -237,7 +238,7 @@ Using inclusive leptonic decays of $W$ and $Z$ bosons, the ATLAS
 experiment has measured $r_s$ at the scale $Q^2_0 = 1.9$~GeV$^2$ and
 $x= 0.023$, and obtained a value of $r_s=1.19 \pm 0.16$~\cite{Aaboud:2016btc}.
 %
-Additionally, using the cross-section ratio for $W^\pm +c$ final
+Additionally, using the cross section ratio for $W^\pm +c$ final
 states they also find a comparably large value for $r_s$~\cite{Aad:2014xca}.
 %
 In contrast, CMS results generally prefer lower $r_s$
@@ -292,7 +293,7 @@ In Sect.~\ref{sec:discuss} we provide some discussion and summarize the
 results.
 %
 Finally, in \ref{sec:appendix} we discuss some of the more subtle
-theoretical issues we encounter at higher orders.
+theoretical issues that we encounter at higher orders.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Theoretical predictions for CC charm production at the LHeC} \label{sec:thpred}
@@ -335,11 +336,12 @@ with odd and even numbers of charm quarks, otherwise the QCD
 contribution can be subtracted only in a model-dependent way.
 
 The CC charm process directly depends on the CKM matrix. Here, the CKM
-matrix elements $V_{cd}$ and $V_{cs}$ are particularly relevant. The
-values used are $V_{cd} = 0.2252$ and $V_{cs} = 0.9734$. Three
-different heavy-flavor schemes are employed, all including a full
+matrix elements $V_{cd}$ and $V_{cs}$ are particularly relevant
+and we use the values $V_{cd} = 0.2252$ and $V_{cs} = 0.9734$.
+Three different heavy-flavor schemes are employed, all including a full
 treatment of charm-mass effects up to NLO,
-\textit{i.e.}~${\cal O}(\alpha_s)$, and described here for the particular
+\textit{i.e.}~${\cal O}(\alpha_s)$;
+in the following we describe them in detail for the  particular
 application to CC electron-proton reactions.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -350,7 +352,7 @@ which we identify as {\bf FFNS~A}, uses three light flavors in both
 PDFs and $\alpha_s$ evolution for all scales, while heavy flavors
 (here, charm) are produced exclusively in the matrix-element part of
 the calculation. This scheme has been used for the PDF determinations
-and cross-section predictions of the ABM(P)
+and cross section predictions of the ABM(P)
 group~\cite{Alekhin:2012ig,Alekhin:2014sya,Alekhin:2017kpj,Alekhin:2018pai},
 as well as in the FF3A variant of the HERAPDF
 analysis~\cite{Abramowicz:2015mha}, and implemented in \xfitter through
@@ -426,7 +428,7 @@ with:
 In the quark-parton model,
 %, that is equivalent to the leading-order
 %approximation of QCD 
-where we neglect the gluons, the structure
+when we neglect the gluons, the structure
 functions become:
 \begin{equation}
 \begin{split}
@@ -461,8 +463,7 @@ relations:
 \label{eq:y01}
 \end{split}
 \end{equation}
-Thus the contribution from the strange-quark PDF is suppressed at high
-$y$.
+Thus the contribution from the strange-quark PDF is suppressed at high $y$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{\xfitter implementation}
@@ -476,7 +477,7 @@ for the corresponding PDF extraction: $\alpha_s(M_Z) = 0.1191$ for
 factorization scales are chosen to be
 $\mu_\mathrm{r} = \mu_\mathrm{f} = Q^2$.
 
-To estimate theoretical uncertainties, $\mu_\mathrm{r}$ and
+To estimate theoretical scale uncertainties, $\mu_\mathrm{r}$ and
 $\mu_\mathrm{f}$ are simultaneously varied up and down by a factor of 
 two. In the case of the \fonll calculations, also the independent
 $\mu_r$ and $\mu_f$ variations are checked. Furthermore, the PDF
@@ -497,6 +498,12 @@ by adding in quadrature scale and PDF uncertainties.
 
 We now provide some numerical comparisons of the heavy-flavor schemes
 using their separate input conditions and associated PDF sets.
+%
+Caution is necessary in these comparisons as the PDF sets are
+extracted with different input assumptions, data sets, and tolerance
+criteria; this is, in part, why we shall separately display the
+$\mu_\mathrm{r}$, $\mu_\mathrm{f}$  and PDF
+uncertainties in the following.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Comparison of theoretical predictions in the \ffns and \fonll schemes}
@@ -511,8 +518,9 @@ values of $Q^2$, respectively.
 %
 The \ffns and \fonll results agree reasonably well within
 uncertainties in the bulk of the phase space. However, in phase-space
-corners such as $Q^2 \gtrsim 10000$ GeV$^2$ or $y \lesssim 0.05$ the
-predictions in the two schemes differ by more than $50\%$, exceeding
+corners such as $Q^2 \gtrsim 10000$ GeV$^2$ or small $y$
+% $y \lesssim 0.05$ the
+the predictions in the two schemes differ by more than $50\%$, exceeding
 the theoretical uncertainties.
 
 \begin{figure}
@@ -574,7 +582,7 @@ Examining the results of Fig.~\ref{fig:thpred-q2-unc}, we also observe
 some other interesting features.
 %
 For both the calculations, the PDF uncertainties are relatively stable
-as a function of $Q^2$, but tend to increase at larger \xbj values.
+across the  $Q^2$ range for fixed \xbj, but tend to increase at larger \xbj values.
 %
 As is well known, in pQCD calculations the effect of scale variations
 is indicative of the convergence of the series.
@@ -638,11 +646,10 @@ displayed in Fig.~\ref{fig:thpred-ff3abfonll}. The differences between
 \ffns and \fonll are similar to those displayed in
 Figs.~\ref{fig:thpred-x}-\ref{fig:thpred-y} and demonstrate that these
 differences arise from the different treatment of the heavy quarks in
-the two schemes. The \ffnsb predictions are between the \ffns and
-\fonll predictions, indicating that a large part of these differences
+the two schemes. The \ffnsb predictions lie between the \ffns and
+\fonll predictions, indicating that a large part of the difference
 is due to the different treatment of heavy quarks in the running of
-$\alpha_s$. The \ffnsb scheme catches a large fraction of the 
-difference between \ffns and \fonll at high \xbj or low $y$.
+$\alpha_s$ at high \xbj or low $y$.
 
 
 Furthermore, to investigate the impact of the NNLO corrections
@@ -871,17 +878,19 @@ charm-quark PDFs in the VFNS.
 Now we turn to examine how the LHeC can reduce the PDF uncertainties
 and thus improve our predictive power.
 
-The impact of charm CC cross-section measurements at the LHeC on the
+The impact of charm CC cross section measurements at the LHeC on the
 PDFs is quantitatively estimated using the profiling
 technique~\cite{Paukkunen:2014zia}. This technique is based on
 minimizing the \chisq between data and theoretical predictions taking
 into account both experimental and theoretical uncertainties arising
-from PDF variations. Two NLO PDF sets were chosen for this study:
+from PDF variations.
+%
+Two NLO PDF sets were chosen for this study:
 \abmp~\cite{Alekhin:2018pai} and \nnpdf~\cite{Ball:2017nwa}. All PDF sets are provided with
 uncertainties in the format of eigenvectors.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{The CC  charm pseudodata}
+\Subsection{The CC  charm pseudodata}
 \label{sec:pseudodata}
 
 For this study, pseudodata for charm CC production cross section
