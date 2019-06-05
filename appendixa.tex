@@ -1,47 +1,9 @@
-%  %% LyX 2.3.1 created this file.  For more info, see http://www.lyx.org/.
-%  %% Do not edit unless you really know what you are doing.
-%  \documentclass[twocolumn,english,showpacs,preprintnumbers,amsmath,amssymb,floatfix]{revtex4-1}
-%  \usepackage[T1]{fontenc}
-%  \usepackage[latin9]{inputenc}
-%  \setcounter{secnumdepth}{3}
-%  \usepackage{color}
-%  \usepackage{babel}
-%  \usepackage{graphicx}
-%  \usepackage{esint}
-%  \usepackage[unicode=true,
-%   bookmarks=false,
-%   breaklinks=false,pdfborder={0 0 1},backref=section,colorlinks=false]
-%   {hyperref}
-%  
-%  \makeatletter
-%  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
-%  \hyphenpenalty=10000
-%  
-%  \makeatother
-%  
-%  \begin{document}
-%  
 \clearpage
 \newcommand{\xsec}[1]{\vskip 6pt \noindent {\bf #1} \quad }
-
 \appendix
-% Need to adjust TOC column widths to allow for ``Appendix''
-% Needds: \usepackage{tocloft}
 \addtocontents{toc}{\setlength{\cftsecnumwidth}{14ex}}
 
-%  {\small
-%  \textbf{\textcolor{blue}{TO DO LIST:}}
-%  \textcolor{blue}{{*} Follow up on John Collins' list {[}MOSTLY DONE{]} }
-%  \textcolor{blue}{{*} Add brief mention at end that this applies also
-%  to bottom quark {[}at end{]}}
-%  \textcolor{blue}{{*} refs from Sasha: LHC W+c measurements:
-%    \cite{Chatrchyan:2013uja,Aad:2014xca,Sirunyan:2018hde}}
-%    }
-
 \section{$F_{2}^{c}$ Beyond leading-order}\label{sec:appendix}
-% \addcontentsline{toc}{section}{A:\quad $F_{2}^{charm}$ Beyond
-% Leading-Order}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure*}
@@ -88,10 +50,6 @@ theoretically it is free of divergences and independent of the
 renormalization scales when calculated to all orders, 
 and ii) experimentally it matches what is
 measured by the detector.
-
-%\xsec{Overview:}
-%
-%\textcolor{blue}{... to be filled in ... (what other detailed are needed???)}
 
 \xsec{The mass scales:}
 %
@@ -305,7 +263,7 @@ property is evident in Fig.~\ref{fig:acot}.
 
 \xsec{Explanation \#2: removing ``double counting:''}
 %
-A second way to understand why we require the LO process
+A~second way to understand why we require the LO process
 \mbox{$\bar{c}W^{+}\to\bar{s}$} is to consider the regions of phase
 space covered by each of the subprocesses. The singularity of the
 $u$-channel NLO \mbox{$gW^{+}\to c\bar{s}$} processes arises from the
@@ -363,8 +321,9 @@ difficulties that we encounter if we try and extend the concept of
 ``fully inclusive'' $F_{2}^{c}$ to higher orders. We note that in
 Ref.~\cite{Collins:1998rz} Collins extended the proof of factorization
 to include heavy quarks such as charm and bottom for an inclusive
-structure function $F_{2}$; there is no corresponding proof for an
-\textit{``fully inclusive''} $F_{2}^{c}$.
+structure function $F_{2}$;
+analysis of a  \textit{``fully inclusive''} $F_{2}^{c}$
+is more complex for a number of reasons. 
 %
 Whereas $F_2$ only requires measurement of the outgoing lepton energy
 and angle, $F_2^c$ also requires information on the hadronic final state.  At
@@ -401,7 +360,7 @@ singularities.\footnote{For the NLO quark-initiated contributions (not
 also allow for the possibility that a gluon or a light quark fragments
 into a charmed hadron.
 
-\xsec{The bubble  diagram:}
+
 %
 \begin{figure}[t]
 \centering \includegraphics[width=0.45\textwidth]{pics/fred/feyngraph}
@@ -417,6 +376,9 @@ into a charmed hadron.
     eff}$. \label{fig:bubble}}
 \end{figure}
 
+
+\xsec{The bubble  diagram:}
+%
 Some of the theoretical intricacies of defining a \textit{``fully
   inclusive''} $F_{2}^{c}$ are illustrated in Fig.~\ref{fig:bubble}
 which shows a higher-order DIS process with a quark-antiquark loop.
@@ -484,8 +446,9 @@ For the case of the top quark, the very large mass $m_{t}$ yields a
 much smaller $\alpha_{s}(\mu)$ for $\mu\sim m_{t}$ and the evolution
 of $f_{t}(x,\mu)$ is comparatively reduced.
 
-\subsection*{Summary}
-
+%\subsection*{Summary}
+\xsec{Summary}
+%
 To properly define $F_{2}^{c}$ at higher orders, we encounter the
 theoretical issues discussed above: as the charm quark fragments into
 a charmed meson, we must be careful to ensure that the theoretical
@@ -508,12 +471,3 @@ this can be delicate to implement numerically, we have the option of
 displacing the matching scale $\mu_{c}$ to a larger scale where the
 cancellation is more stable~\cite{Bertone:2017ehk,Bertone:2018ids}.
 
-
-%\subsection*{Acknowledgements}
-%Thanks to:
-%John Collins, Ted Rogers, George Sterman, Ingo Schienbein, Aleksander Kusina
-
-%\bibliographystyle{unsrt}
-%\bibliography{fred}
-
-%\end{document}
