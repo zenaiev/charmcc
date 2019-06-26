@@ -20,7 +20,6 @@
 \RequirePackage{amssymb}
 \RequirePackage{booktabs}
 \RequirePackage{xspace}
-\journalname{Eur. Phys. J. C}
 
 \usepackage{widetext}
 \newcommand{\DIC}{\Delta_{\rm IC}}
@@ -43,10 +42,32 @@
 \newcommand\new[1]{{\color{blue} #1}}
 \renewcommand\new[1]{{ #1}}
 
+%\journalname{Eur. Phys. J. C}
+\journalname{DESY Report 19-107}
+
 % Hyperref needs to be loaded last
 \RequirePackage[colorlinks,citecolor=blue,urlcolor=blue,linkcolor=blue]{hyperref}
 \begin{document}
 \sloppy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand\rightmark{Probing the strange content of the proton with charm production in charged current at LHeC} 
+%\renewcommand\rightmark{Probing the strange content of the proton}
+\renewcommand\leftmark{\xfitter Developers' team:}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter % changes the catcode of @ to 11
+% <your changes here>
+\def\makeheadbox{{%
+\hbox to0pt{\vbox{\baselineskip=10dd\hrule\hbox
+to\hsize{\vrule\kern3pt\vbox{\kern3pt
+\hbox{\bfseries\@journalname }
+%\hbox{\bfseries\@journalname\ manuscript No.}
+%\hbox{(will be inserted by the editor)}
+\kern3pt}\hfil\kern3pt\vrule}\hrule}%
+\hss}}}
+\makeatother % changes the catcode of @ back to 12
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \title{Probing the strange content of the proton with charm production in charged current at LHeC}
 
@@ -103,6 +124,12 @@
 \date{Received: date / Accepted: date}
 % The correct dates will be entered by the editor
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\headnote{XXXXXXXXXXXXXXXXXXXXXXXXXX}
+\titlerunning{XXXXXXXXXXXXXX}
+\authorrunning{Short form of author list} % if too long for running head
+\titlerunning{Short form of title} % if too long for running head
+
 \maketitle
 
 \begin{abstract}
@@ -128,7 +155,7 @@ wide kinematic range could substantially reduce the strange PDF uncertainty.
   % substantially improve the strange PDF uncertainty.
 
   \footnotetext{%Preprint numbers: DESY ...\\
-    Correspondence: {\tt ...}}
+    Correspondence: {\tt olness@smu.edu}}
 \end{abstract}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -144,7 +171,8 @@ wide kinematic range could substantially reduce the strange PDF uncertainty.
 %\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\linenumbers
+%\linenumbers
+
 
 \setcounter{tocdepth}{4}
 \newpage
@@ -292,6 +320,8 @@ results.
 Finally, in \ref{sec:appendix} we discuss some of the more subtle
 theoretical issues that we encounter at higher orders.
 
+\goodbreak
+%\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Theoretical predictions for CC charm production at the LHeC} \label{sec:thpred}
 
@@ -1105,6 +1135,8 @@ heavy flavor scheme.
 %} %%%% end blue color
 
 
+\goodbreak
+\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
 \section{Discussion and summary}
 \label{sec:discuss}
