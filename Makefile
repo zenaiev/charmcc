@@ -1,9 +1,10 @@
 #!/bin/bash
-filename= "c_c-paper"
+# filename= "c_c-paper"
+filename= "main"
 
 default:
 	pdflatex ${filename}
-	bibtex   ${filename}
+#	bibtex   ${filename}   # main.tex does not use bibitex
 	pdflatex ${filename}
 	pdflatex ${filename}
 
