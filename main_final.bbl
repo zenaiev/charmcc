@@ -111,6 +111,13 @@ G.~Aad, et~al., JHEP \textbf{05}, 068 (2014).
 A.M. Sirunyan, et~al., Eur. Phys. J. \textbf{C79}(3), 269 (2019).
 \newblock \doi{10.1140/epjc/s10052-019-6752-1}
 
+\bibitem{AbdulKhalek:2019mps}
+R.~Abdul~Khalek, S.~Bailey, J.~Gao, L.~Harland-Lang, J.~Rojo,   (2019)
+
+\bibitem{Kramer:1995yp}
+G.~Kramer, B.~Lampe, H.~Spiesberger, Z. Phys. \textbf{C72}, 99 (1996).
+\newblock \doi{10.1007/s002880050228}
+
 \bibitem{Seligman:1997mc}
 W.G. Seligman, et~al., Phys. Rev. Lett. \textbf{79}, 1213 (1997).
 \newblock \doi{10.1103/PhysRevLett.79.1213}
@@ -143,6 +150,14 @@ I.~Abt, et~al., JHEP \textbf{05}, 201 (2019).
 H.L. Lai, P.M. Nadolsky, J.~Pumplin, D.~Stump, W.K. Tung, C.P. Yuan, JHEP
   \textbf{04}, 089 (2007).
 \newblock \doi{10.1088/1126-6708/2007/04/089}
+
+\bibitem{Aaltonen:2012wn}
+T.~Aaltonen, et~al., Phys. Rev. Lett. \textbf{110}(7), 071801 (2013).
+\newblock \doi{10.1103/PhysRevLett.110.071801}
+
+\bibitem{Aaltonen:2015aka}
+T.A. Aaltonen, et~al., Phys. Rev. \textbf{D93}(5), 052012 (2016).
+\newblock \doi{10.1103/PhysRevD.93.052012}
 
 \bibitem{Kretzer:2003it}
 S.~Kretzer, H.L. Lai, F.I. Olness, W.K. Tung, Phys. Rev. \textbf{D69}, 114005
@@ -228,6 +243,10 @@ H.~Paukkunen, P.~Zurita, JHEP \textbf{12}, 100 (2014).
 \bibitem{Blumlein:1992we}
 J.~Bl{\"u}mlein, M.~Klein, Nucl. Instrum. Meth. \textbf{A329}, 112 (1993).
 \newblock \doi{10.1016/0168-9002(93)90925-8}
+
+\bibitem{Atlas:2019qfx}
+ATLAS, C.~Collaborations, in \emph{{HL/HE-LHC Physics Workshop: final jamboree
+  Geneva, CERN, March 1, 2019}} (2019)
 
 \bibitem{AbelleiraFernandez:2012ty}
 J.L. Abelleira~Fernandez, et~al., arXiv:1211.5102  (2012)

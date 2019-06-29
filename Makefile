@@ -4,7 +4,7 @@ filename= "main"
 
 default:
 	pdflatex ${filename}
-#	bibtex   ${filename}   # main.tex does not use bibitex
+	bibtex   ${filename}   # main.tex does not use bibitex
 	pdflatex ${filename}
 	pdflatex ${filename}
 

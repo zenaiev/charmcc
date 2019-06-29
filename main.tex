@@ -227,7 +227,7 @@ distribution.
 The strange sea has been extensively investigated in a number of
 experiments including  the associated production of a $W$~boson
 with a charm-jet final state, which (at LO)
-arises from strange--gluon initial states~\cite{Aaltonen:2007dm,Abazov:2008qz,Abazov:2014fka,Chatrchyan:2013uja,Aad:2014xca,Sirunyan:2018hde}.
+arises from strange--gluon initial states~\cite{Aaltonen:2007dm,Abazov:2008qz,Abazov:2014fka,Chatrchyan:2013uja,Aad:2014xca,Sirunyan:2018hde,AbdulKhalek:2019mps,Kramer:1995yp}.
 %
 Additionally, charm production in neutrino/antineutrino-nucleon DIS
 has been studied by a number of experiments including:
@@ -257,7 +257,7 @@ charm-quark distributions, and is complementary to the DIS final-state
 charm-quark experiments~\cite{Lai:2007dq}.
 %
 The Tevatron measured the charm-quark cross section in association
-with a $W$ boson at CDF~\cite{Aaltonen:2007dm} and
+with a $W$ boson at CDF~\cite{Aaltonen:2007dm,Aaltonen:2012wn,Aaltonen:2015aka} and
 D0~\cite{Abazov:2008qz}, but these results were limited by low
 statistics.
 
@@ -358,11 +358,12 @@ charm quarks, while the latter creates an even number of charm quarks
 with total electric charge equal to zero. If the electric charge of
 the tagged charm quark can be accessed experimentally
 (\textit{e.g.}~when reconstructing $D$ mesons), the QCD contribution
-can be excluded by taking the difference of the yields in the events
+can be subtracted by taking the difference of the yields in the events
 with odd and even numbers of charm quarks, otherwise the QCD
-contribution can be subtracted only in a model-dependent way.
+contribution can be estimated only in a model-dependent way.
 
-The CC charm process directly depends on the CKM matrix. Here, the CKM
+The CC charm process directly depends on the CKM matrix~\cite{anabashi:2018oca}
+Here, the CKM
 matrix elements $V_{cd}$ and $V_{cs}$ are particularly relevant
 and we use the values $V_{cd} = 0.2252$ and $V_{cs} = 0.9734$.
 Three different heavy-flavor schemes are employed, all including a full
@@ -469,7 +470,10 @@ functions become:
 The terms $xU$, $xD$, $x\overline{U}$ and $x\overline{D}$ denote the
 sum of parton distributions for up-type and down-type quarks and
 anti-quarks, respectively.%
-\footnote{In these expressions, we neglect the CKM mixing for brevity, but it is fully contained in the calculations.} 
+\footnote{In these expressions, we neglect the CKM mixing for brevity, but it is fully contained in the calculations.}
+%
+The $\pm$ superscript on $\sigma$ and $F$ correspond to the sign of $W^\pm$. 
+%
 Below the $b$-quark mass threshold, these
 sums are related to the quark distributions as follows:
 \begin{equation}
@@ -924,6 +928,11 @@ from PDF variations.
 Two NLO PDF sets were chosen for this study:
 \abmp~\cite{Alekhin:2018pai} and \nnpdf~\cite{Ball:2017nwa}. All PDF sets are provided with
 uncertainties in the format of eigenvectors.
+%
+In the presence of strong contraints (the LHeC data is very precise),
+it is preferable to use the eigenvector representation as only a few MC
+replicas would survive the Bayesian reweighting.
+
 
 %
 \subsection{The CC  charm pseudodata}
@@ -964,8 +973,9 @@ prior knowledge of the parameter. No theoretical uncertainties except
 the PDF uncertainties are considered. The full covariance matrix ${\bf Cov }$
 representing the statistical and systematic uncertainties of the data
 is used in the fit. The statistical and systematic uncertainties are
-treated as additive, \textit{i.e.} they do not change in the fit. The
-systematic uncertainties are assumed uncorrelated between bins.
+treated as additive, \textit{i.e.} they do not change in the fit.
+%
+% The systematic uncertainties are assumed uncorrelated between bins.
 
 To treat the asymmetric PDF uncertainties of the \nnpdf set, the
 \chisq function in Eq.~(\ref{eq:chisq}) is generalized assuming a
@@ -1151,10 +1161,11 @@ calculations to match.
 The uncertainty for many of these precision measurements stems
 primarily from the PDFs.
 %
-Hence, our ability to fully characterize the Higgs boson and constrain
-beyond-standard-model (BSM) signatures ultimately comes down to how
-accurately we determine the underlying PDFs; this has been the objective of this
-study.
+Hence, our ability to measure fundamental parameters of the Standard Model (SM)
+such as the $W$ boson mass and $\sin^2\theta_W$ ultimately comes down to how
+accurately we determine the underlying PDFs~\cite{Atlas:2019qfx}. 
+Additionally, our ability to characterize and constrain
+SM process can indirectly impact beyond-standard-model (BSM) signatures.
 
 %
 %
@@ -1286,8 +1297,7 @@ This work F.\,O. was supported by the U.S. Department of Energy under Grant No. 
 %
 %
 \input{main_final.bbl}
-%
-
+%\bibliographystyle{spphys} \bibliography{c_cpaper,extra}
 
 
 \end{document}
