@@ -112,7 +112,12 @@ A.M. Sirunyan, et~al., Eur. Phys. J. \textbf{C79}(3), 269 (2019).
 \newblock \doi{10.1140/epjc/s10052-019-6752-1}
 
 \bibitem{AbdulKhalek:2019mps}
-R.~Abdul~Khalek, S.~Bailey, J.~Gao, L.~Harland-Lang, J.~Rojo,   (2019)
+%\cite{AbdulKhalek:2019mps}
+  R.~Abdul Khalek, S.~Bailey, J.~Gao, L.~Harland-Lang and J.~Rojo,
+  %``Probing Proton Structure at the Large Hadron electron Collider,''
+  arXiv:1906.10127 [hep-ph].
+  %%CITATION = ARXIV:1906.10127;%%
+ 
 
 \bibitem{Kramer:1995yp}
 G.~Kramer, B.~Lampe, H.~Spiesberger, Z. Phys. \textbf{C72}, 99 (1996).
