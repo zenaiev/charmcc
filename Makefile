@@ -1,12 +1,21 @@
 #!/bin/bash
-# filename= "c_c-paper"
-filename= "main"
+#LATEX    = lualatex
+#LATEX    = latex
+LATEX    = latexmk  # J.C.Collins version; auto runs correc # of times
+BIBTEX   = bibtex
+DVIPS    = dvips
+
+FILE= "main"
+
+all: default 
 
 default:
-	pdflatex ${filename}
-	bibtex   ${filename}   # main.tex does not use bibitex
-	pdflatex ${filename}
-	pdflatex ${filename}
+	$(LATEX) -pdf $(FILE)
+#
+#	bibtex   ${FILE}   # ALL DONE AUTOMATICALLY WIHT latexmk
+#	pdflatex ${FILE}   # ALL DONE AUTOMATICALLY WIHT latexmk
+#	pdflatex ${FILE}   # ALL DONE AUTOMATICALLY WIHT latexmk
 
 clean:
-	rm -rf *~ *.out *.toc *.log ${filename}.pdf *.aux *.blg *.bbl
+	rm -rfv *~ *.out *.toc *.log *.aux *.blg *.bbl
+#	rm -rfv *~ *.out *.toc *.log *.aux *.blg *.bbl ${FILE}.pdf
