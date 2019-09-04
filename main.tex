@@ -438,9 +438,26 @@ In summary, the schemes used are:
 \item[$\bullet$] {\bf FONLL-B :} a VFNS used with the \nnpdf NLO PDF
   set~\cite{Ball:2017nwa}.
 \end{itemize}
+%
 The PDF sets are available via the \lhapdf interface (version
 6.1.5)~\cite{Buckley:2014ana}.
-
+%
+Note that we use the PDFs directly from the LHAPDF tables without any additional fitting,
+and we use the default values for $\alpha_s(M_Z)$ and the quark masses $m_{c,b}$.
+%
+\textcolor{red}{
+The different PDF sets will result in a shift of the cross sections displayed
+by approximately{\bf  ************* percent}.
+********* \\
+%
+If we compare the cross sections at low values of $Q^2$ where the VFNS approaches  the FFNS limit, we see
+that on the scale of our comparisons (c.f., Figs ****** 2 and 6-a) the effects are minimal except for the largest x bin ($x\simeq 0.25$). 
+%
+********** STILL NEEDS WORK HERE ***********
+\\
+********** ALSO COMMENT ABOUT PROFILING: NOTE HERAPDF2.0 has fixed strange, so we cannot profile this.
+[See referee comment \# 9]
+}
 %
 \subsection{The reduced cross section}\label{sec-redsigma}
 
@@ -712,9 +729,14 @@ predictions are obtained using the \abmp NNLO PDF
 set~\cite{Alekhin:2017kpj}. The results for the cross section as a
 function of $Q^2$ for different values of \xbj are shown in
 Fig.~\ref{fig:thpred-q2-nnlo}, where they are compared to the NLO
-\ffns predictions from Fig.~\ref{fig:thpred-q2}. The NNLO corrections
+\ffns predictions from Fig.~\ref{fig:thpred-q2}.
+\textcolor{red}{\bf 
+The NNLO corrections
 do not exceed $10\%$ and thus cannot account for the differences
-between the \ffns and \fonll theoretical predictions. Similar results
+between the \ffns and \fonll theoretical predictions.
+*** HELP!!! PLEASE CHECK REFEREE COMMENT HERE ****
+}
+Similar results
 are observed for the cross sections as functions of other kinematic
 variables.
 
@@ -796,13 +818,21 @@ The VFNS includes a resummation of higher-order logarithms of the form $\alpha_s
 In Fig.~\ref{fig:acot} of the Appendix we display the separate contributions of the VFNS for a choice of
 $\{\xbj,Q^2\}$; the difference  between the LO and SUB curves is indicative of the
 additional contribution of the resummed logarithms.
-This contribution depends on the particular $\xbj$ value and we find
-({\it c.f.,} Fig.~11 of Ref.~\cite{Kusina:2013slm})
-that these terms increase for larger $\xbj$ values. 
+This contribution depends on the particular $\xbj$ value 
+({\it c.f.,} Fig.~11 of Ref.~\cite{Kusina:2013slm}).
+The final result will depend on the balance between the LO and SUB contributions,
+so the behavior is not just a simple factor.
 %
-Figure~\ref{fig:thpred-ff3abfonll} indicates that a large fraction of these seems to be caught by the \ffnsb scheme.
+Figure~\ref{fig:thpred-ff3abfonll}-b)
+displays the results as a function of $\xbj$;  
+we observe that for $Q^2$ values not too large ($Q^2 \lesssim 4924$),
+the VFNS is above the \ffns\ results for $\xbj \gtrsim 0.1$.
+Interestingly, we see the \ffnsb scheme is quite similar to the VFNS in this kinematic region. 
 %
-Thus, we have identified the source of the scheme differences at large $\xbj$.
+For larger scales the patterns are not so clear, as the large $Q^2$ effects discussed previously
+now complicate the situation. 
+%
+%Thus, we have identified the source of the scheme differences at large $\xbj$.
 %
 
 
@@ -824,6 +854,12 @@ To better appreciate these differences, we will study the individual
 partonic contributions to the cross section as functions of the
 kinematic variables \xbj, $Q^2$, and $y$.
 
+
+
+\textcolor{red}{\bf ************ WHAT ABOUT \ffnsb\ ****************}
+
+
+
 Figs.~\ref{fig:partonic-x}, \ref{fig:partonic-q2}
 and~\ref{fig:partonic-y} show the contributions from separate partonic
 subprocesses to the CC charm production cross section in the \ffns and
@@ -838,7 +874,7 @@ strikingly similar to the charm contribution to the VFNS.
 %
 This is explained by the fact that in the FFNS the charm is present
 only in the final state and produced predominantly in the hard process
-$\gamma g \to c\bar{c}$. In contrast, in the VFNS the charm is present also
+$W^+ g \to c\bar{s}$. In contrast, in the VFNS the charm is present also
 in the initial state and mainly produced by $g\to c\bar{c}$ collinear
 splitting through DGLAP evolution.
 %
@@ -854,7 +890,10 @@ the scale $\mu$ and the scheme choice) is different.\footnote{Note
 
 These figures highlight another interesting feature of the QCD theory;
 we observe that for the VFNS the gluon contribution (green curves) can
-become negative in particular kinematic regions.
+become negative in particular kinematic regions.\footnote{%
+  Note, the FFNS can also have  negative contributions at higher orders due
+  to a similar ``subtration'' term for the strange PDF~\cite{Gao:2017kkx}.
+  }
 This is because in the VFNS we combine the gluon-boson fusion process
 (the NLO terms of Figs.~\ref{fig:tchannel} and~\ref{fig:uchannel})
 with the counter-term  (the SUB terms),
@@ -971,29 +1010,32 @@ theory predictions described by $\Gamma_{\beta,\rm th}$, where the
 index $\beta$ runs over all PDF eigenvectors. For each nuisance
 parameter a penalty term is added to the \chisq, representing the
 prior knowledge of the parameter. No theoretical uncertainties except
-the PDF uncertainties are considered. The full covariance matrix ${\bf Cov }$
+the PDF uncertainties are considered; the PDF Hessian uncertainties are treated symmetrically.
+The full covariance matrix ${\bf Cov }$
 representing the statistical and systematic uncertainties of the data
 is used in the fit. The statistical and systematic uncertainties are
 treated as additive, \textit{i.e.} they do not change in the fit.
 %
 The systematic uncertainties are assumed uncorrelated between bins.
 
-To treat the asymmetric PDF uncertainties of the \nnpdf set, the
-\chisq function in Eq.~(\ref{eq:chisq}) is generalized assuming a
-parabolic dependence of the prediction on the nuisance
-parameters~\cite{Alekhin:2014irh}:
-\begin{eqnarray}
-\Gamma^{}_{\beta, \rm th} \to \Gamma^{}_{\beta, \rm th} +  \Omega^{}_{\beta, \rm th}b_{\beta, \rm th}\,, \label{eq:iter}
-\end{eqnarray}
-where
-$\Gamma^{}_{\beta, \rm th} = \frac12(\Gamma^{+}_{\beta, \rm th} -
-\Gamma^{-}_{\beta, \rm th})$
-and
-$\Omega^{}_{\beta} = \frac12 (\Gamma^{+}_{\beta, \rm th} +
-\Gamma^{-}_{\beta, \rm th})$
-are determined from the shifts of the predictions corresponding to up
-($\Gamma^{+}_{\beta, \rm th}$) and down
-($ \Gamma^{-}_{\beta, \rm th}$) variations of each PDF eigenvector.
+
+%% To treat the asymmetric PDF uncertainties of the \nnpdf set, the
+%% \chisq function in Eq.~(\ref{eq:chisq}) is generalized assuming a
+%% parabolic dependence of the prediction on the nuisance
+%% parameters~\cite{Alekhin:2014irh}:
+%% \begin{eqnarray}
+%% \Gamma^{}_{\beta, \rm th} \to \Gamma^{}_{\beta, \rm th} +  \Omega^{}_{\beta, \rm th}b_{\beta, \rm th}\,, \label{eq:iter}
+%% \end{eqnarray}
+%% where
+%% $\Gamma^{}_{\beta, \rm th} = \frac12(\Gamma^{+}_{\beta, \rm th} -
+%% \Gamma^{-}_{\beta, \rm th})$
+%% and
+%% $\Omega^{}_{\beta} = \frac12 (\Gamma^{+}_{\beta, \rm th} +
+%% \Gamma^{-}_{\beta, \rm th})$
+%% are determined from the shifts of the predictions corresponding to up
+%% ($\Gamma^{+}_{\beta, \rm th}$) and down
+%% ($ \Gamma^{-}_{\beta, \rm th}$) variations of each PDF eigenvector.
+
 
 The values of the nuisance parameters at the minimum,
 $b^{\rm min}_{\beta,\rm th}$, are interpreted as optimized, or
@@ -1135,6 +1177,22 @@ determination of $s/\overline{s}$ both $e^{-}p$ and $e^{+}p$ data will be needed
   \label{fig:pdf-nnpdf-100000}
 \end{figure}
 }
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textcolor{red}{************ add comment and ref
+\cite{AbdulKhalek:2019mps}
+********** \\
+A recent study\cite{AbdulKhalek:2019mps}
+has examined potential improvments in the PDFs
+for both the LHeC and HL-LHC facilities with both CC and NC.
+Our improvement in the strange PDF is comparable,
+while the additional channels yields improved constraints on the gluon. 
+}
+
+
+
 
 
 %
@@ -1298,7 +1356,7 @@ This work F.\,O. was supported by the U.S. Department of Energy under Grant No. 
 %
 %
 %\input{main_final.bbl}
-\bibliographystyle{spphys} \bibliography{c_cpaper,extra}
+\bibliographystyle{spphys} \bibliography{main,extra}
 
 
 \end{document}
