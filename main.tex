@@ -454,7 +454,6 @@ In summary, the schemes used are:
 The PDF sets are available via the \lhapdf interface (version
 6.1.5)~\cite{Buckley:2014ana}.
 %
-\textcolor{red}{
 Note that we use the PDFs directly from the LHAPDF tables without any additional fitting,
 and we use the default values for $\alpha_s(M_Z)$ and the quark masses $m_{c,b}$.
 %
@@ -464,7 +463,6 @@ and we use the default values for $\alpha_s(M_Z)$ and the quark masses $m_{c,b}$
   These differences will lead to a small shift in the ratio plots,
   but will not affect the general features which are the focus of this paper,
   {\it c.f.}, Fig.~\ref{fig:thpred-q2}.
-}%
 
 \subsection{The reduced cross section}\label{sec-redsigma}
 
@@ -737,40 +735,15 @@ set~\cite{Alekhin:2017kpj}. The results for the cross section as a
 function of $Q^2$ for different values of \xbj are shown in
 Fig.~\ref{fig:thpred-q2-nnlo}, where they are compared to the NLO
 \ffns predictions from Fig.~\ref{fig:thpred-q2}.
-\textcolor{red}{
+%
 The approximate NNLO corrections
 do not exceed $\sim 10\%$ and thus cannot account for the differences
 between the \ffns and \fonll theoretical predictions.
-} %%%%%%%%%%%%%%%
+%
 Similar results
 are observed for the cross sections as functions of other kinematic
 variables.
 
-
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
 
 \begin{figure}
   \centering
@@ -819,7 +792,6 @@ contributions.
 Thus, we have identified the source of the scheme differences at large $Q^2$.
 
 
-\color{red}
 %
 The  source of the scheme differences at large $\xbj$ is a bit more subtle. 
 The VFNS includes a resummation of higher-order logarithms of the form $\alpha_s \ln(\mu^2/\mu_c^2 )$.
@@ -843,7 +815,7 @@ now complicate the situation.
 %
 %Thus, we have identified the source of the scheme differences at large $\xbj$.
 %
-\color{black}
+
 
 
 %
@@ -878,9 +850,8 @@ strikingly similar to the charm contribution to the VFNS.
 %
 This is explained by the fact that in the FFNS the charm is present
 only in the final state and produced predominantly in the hard process
-\textcolor{red}{
 $W^+ g \to c\bar{s}$.
-} %%%%%%%%%%%%%%%%%
+%
 In contrast, in the VFNS the charm is present also
 in the initial state and mainly produced by $g\to c\bar{c}$ collinear
 splitting through DGLAP evolution.
@@ -896,14 +867,12 @@ the scale $\mu$ and the scheme choice) is different.\footnote{%
   see~\ref{sec:appendix} 
 }
 
-\textcolor{red}{
+
 These figures highlight another interesting feature of the QCD theory;
 we observe that for the VFNS the gluon contribution (green curves) can
 become negative in particular kinematic regions.\footnote{%
-  \textcolor{red}{
   Note, the FFNS can also have  negative contributions at higher orders due
   to a similar ``subtration'' term for the strange PDF~\cite{Gao:2017kkx}.
-  } %% color
   }
 This is because in the VFNS we combine the gluon-boson fusion process
 (the NLO terms of Figs.~\ref{fig:tchannel} and~\ref{fig:uchannel})
@@ -915,9 +884,9 @@ is simply ``shuffling'' contributions among the separate sub-pieces,
 but the total physical cross section remains positive and stable,
 {\it cf.}, Fig.~\ref{fig:acot} and Ref.~\cite{Aivazis:1993pi}.
 This is a triumph of the QCD theory. 
-} %% color
 
-%
+
+
 
 Next, turning our attention to the strange PDF contribution, it is
 notable that the FFNS and VFNS behave qualitatively very similar as
@@ -932,13 +901,13 @@ $Q^2$. In these phase-space regions, the dominant contributions to the
 cross section are proportional to the gluon PDF in the FFNS or to the
 charm-quark PDFs in the VFNS.
 
-\textcolor{red}{
+
   Finally, we note that in Fig.~\ref{fig:partonic-q2} for the  \ffns,
   the gluon contribution at high \xbj ($\xbj\sim 0.25$) is minimal throughout
   the $Q^2$ range. To ensure this is not an artifact of either the \ffns or the \abmp set,
   we regenerated these curves (not shown) in the \ffnsb with the \ffthreeb set and found the same behaviour;
   hence, this feature is truly a characteristic of the FFNS in the hi-\xbj region.
-  } %%% colro
+
 
 
 \begin{figure*}
@@ -1030,34 +999,16 @@ theory predictions described by $\Gamma_{\beta,\rm th}$, where the
 index $\beta$ runs over all PDF eigenvectors. For each nuisance
 parameter a penalty term is added to the \chisq, representing the
 prior knowledge of the parameter.
-\textcolor{red}{
+%
 No theoretical uncertainties except
 the PDF uncertainties are considered; the PDF Hessian uncertainties are treated symmetrically.
-} %% color
+%
 The full covariance matrix ${\bf Cov }$
 representing the statistical and systematic uncertainties of the data
 is used in the fit. The statistical and systematic uncertainties are
 treated as additive, \textit{i.e.} they do not change in the fit.
 %
 The systematic uncertainties are assumed uncorrelated between bins.
-
-
-%% To treat the asymmetric PDF uncertainties of the \nnpdf set, the
-%% \chisq function in Eq.~(\ref{eq:chisq}) is generalized assuming a
-%% parabolic dependence of the prediction on the nuisance
-%% parameters~\cite{Alekhin:2014irh}:
-%% \begin{eqnarray}
-%% \Gamma^{}_{\beta, \rm th} \to \Gamma^{}_{\beta, \rm th} +  \Omega^{}_{\beta, \rm th}b_{\beta, \rm th}\,, \label{eq:iter}
-%% \end{eqnarray}
-%% where
-%% $\Gamma^{}_{\beta, \rm th} = \frac12(\Gamma^{+}_{\beta, \rm th} -
-%% \Gamma^{-}_{\beta, \rm th})$
-%% and
-%% $\Omega^{}_{\beta} = \frac12 (\Gamma^{+}_{\beta, \rm th} +
-%% \Gamma^{-}_{\beta, \rm th})$
-%% are determined from the shifts of the predictions corresponding to up
-%% ($\Gamma^{+}_{\beta, \rm th}$) and down
-%% ($ \Gamma^{-}_{\beta, \rm th}$) variations of each PDF eigenvector.
 
 
 The values of the nuisance parameters at the minimum,
@@ -1088,14 +1039,13 @@ Given the sizable differences observed between the \ffns and \fonll predictions,
 
 %%%%%%%%%%%%%%%%
 %
-\textcolor{red}{
 The comparison between  \abmp  and \nnpdf is insightful as \abmp represents a more restricted parametrization.
 %
 For the HERAPDF2.0 set, the strange PDF was not fit directly, but computed via the relation
 $f_s = \bar{s}/(\bar{s}+\bar{d})=0.4\pm 0.1$ and the uncertainty was approximated using the variation on $f_s$;
 hence, these uncertainties are not the same as the Hessian diagonalized eigenvectors, so we will not
 profile the HERAPDF2.0 PDF set.
-} %%% color
+
 
 
 
@@ -1217,14 +1167,13 @@ determination of $s/\overline{s}$ both $e^{-}p$ and $e^{+}p$ data will be needed
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\textcolor{red}{
 A recent study~\cite{AbdulKhalek:2019mps}
 has examined potential improvments in the PDFs
 for both the LHeC and HL-LHC facilities with both CC and NC.
 Our improvement in the strange PDF is comparable,
 while  additional channels of Ref.~\cite{AbdulKhalek:2019mps}
 yields improved constraints on the gluon. 
-}
+
 
 
 
