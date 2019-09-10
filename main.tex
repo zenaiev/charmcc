@@ -8,7 +8,7 @@
 \RequirePackage{graphicx}
 \RequirePackage{mathptmx}      %
 \RequirePackage{flushend}
-\RequirePackage[numbers,sort&compress]{natbib}
+%\RequirePackage[numbers,sort&compress]{natbib}
 \RequirePackage{amsmath}
 \RequirePackage[british]{babel} 
 \RequirePackage{bm}              
@@ -22,9 +22,21 @@
 \RequirePackage{xspace}
 
 \usepackage{widetext}
-\newcommand{\DIC}{\Delta_{\rm IC}}
+\newcommand{\DIC}{\Delta_{\rm IC}} 
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[backend=bibtex,style=numeric,sorting=none,doi=false]{biblatex}
+%\usepackage[backend=bibtex,style=numeric,sorting=none,doi=false]{biblatex}
+%\AtEveryCitekey{\clearfield{title}}
+%\AtEveryBibitem{\clearfield{title}}  %%% THIS CAN SUPPRESS TITLES IN BIBLIOGRAPHY 
+%\usepackage[backend=bibtex,style=verbose-trad2]{biblatex}
+%\bibliographystyle{unsrt}
+% \bibliography{refs}
+% \bibdata{refs}
+\addbibresource{main.bib}
+\addbibresource{extra.bib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \newcommand{\abmp} {ABMP16\xspace}
@@ -200,7 +212,7 @@ the PDFs~\cite{Abdolmaleki:2018jln,Abramowicz:2015mha,Gao:2017yyd,Alekhin:2017kp
 
 In the Standard Model (SM), the charm quark plays an important role in
 the investigation of the nucleon
-structure~\cite{Behnke:2015qja,Zenaiev:2016kfl,Abdolmaleki:2017wlg,Abdolmaleki:2019tbb:custom}.
+structure~\cite{Behnke:2015qja,Zenaiev:2016kfl,Abdolmaleki:2017wlg,Abdolmaleki:2019tbb}.
 %
 In the NC case, the photon-gluon fusion process for charm production
 was calculated at ${\cal O}(\alpha_s^2)$ with the full
@@ -822,7 +834,7 @@ difference between the VFNS and FFNS; hence,  the behavior is not just a simple 
 %
 In 
 Figure~\ref{fig:thpred-ff3abfonll}-b)
-we observe that for $Q^2$ values not too large ($Q^2 \lesssim 4924$),
+we observe that for $Q^2$ values not too large ($Q^2 \lesssim 4924~{\rm GeV}^2$),
 the VFNS is above the \ffns\ result for $\xbj \gtrsim 0.1$.
 Interestingly, we see the \ffnsb scheme is quite similar to the VFNS in this kinematic region. 
 %
@@ -1379,7 +1391,8 @@ This work F.\,O. was supported by the U.S. Department of Energy under Grant No. 
 %
 %
 %\input{main_final.bbl}
-\bibliographystyle{spphys} \bibliography{main,extra}
+%\bibliographystyle{spphys} \bibliography{main,extra}
+\printbibliography 
 
 
 \end{document}
